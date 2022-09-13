@@ -170,7 +170,7 @@ Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed i
 ![alt Subject 3 clustering for WS nonTDA](output/clusters_kmeans_non_tda/subject_3.png)
 
 ### References
-- [https://gudhi.inria.fr/python/latest/rips_complex_user.html](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
+- [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
 - [Wasserstein docs](https://gudhi.inria.fr/python/3.3.0/wasserstein_distance_user.html)
 - [Bottleneck docs](https://gudhi.inria.fr/python/latest/bottleneck_distance_user.html)
 - [Cheaha slurm docs](https://docs.uabgrid.uab.edu/wiki/Slurm)
