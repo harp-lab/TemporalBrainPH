@@ -169,6 +169,14 @@ Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed i
 - Clustering result for subject 3 for nonTDA pipeline using Wasserstein metrics:
 ![alt Subject 3 clustering for WS nonTDA](output/clusters_kmeans_non_tda/subject_3.png)
 
+- Clustering result for TDA pipeline:
+
+![alt Subject clusters for TDA](output/TDA_clusters.png)
+
+- Clustering result for NonTDA pipeline:
+
+![alt Subject clusters for NonTDA](output/Non_TDA_clusters.png)
+
 ### References
 - [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
 - [Wasserstein docs](https://gudhi.inria.fr/python/3.3.0/wasserstein_distance_user.html)
