@@ -47,6 +47,8 @@ python -u distance_calculation.py --data 645 --method ws --start 1 --end 316 --d
 python -u distance_calculation.py --data 1400 --method ws --start 1 --end 316 --distance y --mds y
 python -u distance_calculation.py --data 2500 --method ws --start 1 --end 316 --distance y --mds y
 python -u cluster_calculation.py
+python statistical_calculation.py -d output/clusters_kmeans/clusters.json
+python statistical_calculation.py -d output/clusters_kmeans_non_tda/clusters.json
 ```
 
 ### Results
@@ -171,11 +173,15 @@ Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed i
 
 - Clustering result for TDA pipeline:
 
-![alt Subject clusters for TDA](output/TDA_clusters.png)
+![alt Subject clusters for TDA](output/TDA_clusters_line.png)
+
+![alt Subject clusters for TDA](output/TDA_clusters_scatter.png)
 
 - Clustering result for NonTDA pipeline:
 
-![alt Subject clusters for NonTDA](output/Non_TDA_clusters.png)
+![alt Subject clusters for NonTDA](output/Non_TDA_clusters_line.png)
+
+![alt Subject clusters for NonTDA](output/Non_TDA_clusters_scatter.png)
 
 ### References
 - [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
