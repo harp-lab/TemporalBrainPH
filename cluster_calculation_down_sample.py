@@ -61,7 +61,8 @@ def generate_kmeans_clusters(start_subject, end_subject,
         dataset_645 = get_dataset(datafile_645)
         n_clusters_2500, labels_2500 = get_labels_highest_score(dataset_2500)
         unique_labels_2500 = np.unique(labels_2500)
-        n_clusters_645_down_sample, labels_645_down_sample = get_labels_highest_score(dataset_645_down_sample)
+        n_clusters_645_down_sample, labels_645_down_sample = get_labels_highest_score(
+            dataset_645_down_sample)
         unique_labels_645_down_sample = np.unique(labels_645_down_sample)
         n_clusters_645, labels_645 = get_labels_highest_score(dataset_645)
         unique_labels_645 = np.unique(labels_645)
@@ -71,7 +72,8 @@ def generate_kmeans_clusters(start_subject, end_subject,
         title = f'DFC2500: {n_clusters_2500} clusters'
         show_clusters(labels_2500, unique_labels_2500, dataset_2500, title, 1)
         title = f'DFC645 DS: {n_clusters_645_down_sample} clusters'
-        show_clusters(labels_645_down_sample, unique_labels_645_down_sample, dataset_645_down_sample, title, 2)
+        show_clusters(labels_645_down_sample, unique_labels_645_down_sample,
+                      dataset_645_down_sample, title, 2)
         title = f'DFC645: {n_clusters_645} clusters'
         show_clusters(labels_645, unique_labels_645, dataset_645, title, 3)
         image_name = f"{output_directory}/subject_{i}.png"
@@ -149,18 +151,19 @@ def main():
     # dfc_1400_mds = "../dfc_1400_non_tda_subjects_mds_eu"
     # dfc_645_mds = "../dfc_645_non_tda_subjects_mds_eu"
     # output_dir = "../clusters_kmeans_non_tda"
-    start_subject_number = 1
-    end_subject_number = 316
-    cluster_summary = generate_kmeans_clusters(start_subject_number,
-                                               end_subject_number,
-                                               dfc_2500_mds,
-                                               dfc_645_ds_mds,
-                                               dfc_645_mds,
-                                               output_dir)
+    # start_subject_number = 1
+    # end_subject_number = 316
+    # cluster_summary = generate_kmeans_clusters(start_subject_number,
+    #                                            end_subject_number,
+    #                                            dfc_2500_mds,
+    #                                            dfc_645_ds_mds,
+    #                                            dfc_645_mds,
+    #                                            output_dir)
     note = "Best cluster selection using Silhouette Score in 2-15 range"
     show_clustering_results(None,
                             clustering_algorithm="KMeans",
-                            comments=note, file_path="clusters_down.json",
+                            comments=note,
+                            file_path=output_dir + "/clusters_down.json",
                             csv_file_path="clusters_down.csv")
 
     # note = "Best cluster selection using Silhouette Score in 2-15 range"
@@ -168,6 +171,7 @@ def main():
     #                         clustering_algorithm="KMeans",
     #                         comments=note, file_path=None,
     #                         csv_file_path="clusters_nontda.csv")
+
 
 if __name__ == "__main__":
     main()
