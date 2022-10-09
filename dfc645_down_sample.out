@@ -1,0 +1,2220 @@
+Generating distance matrix for Subject 1
+Method get_distance_matrix(('../dfc_645_normal', 1, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0925 seconds
+
+ws distance JSON created for Subject 1
+Generating distance matrix for Subject 2
+Method get_distance_matrix(('../dfc_645_normal', 2, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6158 seconds
+
+ws distance JSON created for Subject 2
+Generating distance matrix for Subject 3
+Method get_distance_matrix(('../dfc_645_normal', 3, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0580 seconds
+
+ws distance JSON created for Subject 3
+Generating distance matrix for Subject 4
+Method get_distance_matrix(('../dfc_645_normal', 4, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9954 seconds
+
+ws distance JSON created for Subject 4
+Generating distance matrix for Subject 5
+Method get_distance_matrix(('../dfc_645_normal', 5, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8802 seconds
+
+ws distance JSON created for Subject 5
+Generating distance matrix for Subject 6
+Method get_distance_matrix(('../dfc_645_normal', 6, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6169 seconds
+
+ws distance JSON created for Subject 6
+Generating distance matrix for Subject 7
+Method get_distance_matrix(('../dfc_645_normal', 7, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2658 seconds
+
+ws distance JSON created for Subject 7
+Generating distance matrix for Subject 8
+Method get_distance_matrix(('../dfc_645_normal', 8, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8598 seconds
+
+ws distance JSON created for Subject 8
+Generating distance matrix for Subject 9
+Method get_distance_matrix(('../dfc_645_normal', 9, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3133 seconds
+
+ws distance JSON created for Subject 9
+Generating distance matrix for Subject 10
+Method get_distance_matrix(('../dfc_645_normal', 10, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4775 seconds
+
+ws distance JSON created for Subject 10
+Generating distance matrix for Subject 11
+Method get_distance_matrix(('../dfc_645_normal', 11, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2191 seconds
+
+ws distance JSON created for Subject 11
+Generating distance matrix for Subject 12
+Method get_distance_matrix(('../dfc_645_normal', 12, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2541 seconds
+
+ws distance JSON created for Subject 12
+Generating distance matrix for Subject 13
+Method get_distance_matrix(('../dfc_645_normal', 13, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8037 seconds
+
+ws distance JSON created for Subject 13
+Generating distance matrix for Subject 14
+Method get_distance_matrix(('../dfc_645_normal', 14, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7269 seconds
+
+ws distance JSON created for Subject 14
+Generating distance matrix for Subject 15
+Method get_distance_matrix(('../dfc_645_normal', 15, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7646 seconds
+
+ws distance JSON created for Subject 15
+Generating distance matrix for Subject 16
+Method get_distance_matrix(('../dfc_645_normal', 16, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7152 seconds
+
+ws distance JSON created for Subject 16
+Generating distance matrix for Subject 17
+Method get_distance_matrix(('../dfc_645_normal', 17, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5151 seconds
+
+ws distance JSON created for Subject 17
+Generating distance matrix for Subject 18
+Method get_distance_matrix(('../dfc_645_normal', 18, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6826 seconds
+
+ws distance JSON created for Subject 18
+Generating distance matrix for Subject 19
+Method get_distance_matrix(('../dfc_645_normal', 19, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 49.0395 seconds
+
+ws distance JSON created for Subject 19
+Generating distance matrix for Subject 20
+Method get_distance_matrix(('../dfc_645_normal', 20, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4054 seconds
+
+ws distance JSON created for Subject 20
+Generating distance matrix for Subject 21
+Method get_distance_matrix(('../dfc_645_normal', 21, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4759 seconds
+
+ws distance JSON created for Subject 21
+Generating distance matrix for Subject 22
+Method get_distance_matrix(('../dfc_645_normal', 22, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6468 seconds
+
+ws distance JSON created for Subject 22
+Generating distance matrix for Subject 23
+Method get_distance_matrix(('../dfc_645_normal', 23, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7870 seconds
+
+ws distance JSON created for Subject 23
+Generating distance matrix for Subject 24
+Method get_distance_matrix(('../dfc_645_normal', 24, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4537 seconds
+
+ws distance JSON created for Subject 24
+Generating distance matrix for Subject 25
+Method get_distance_matrix(('../dfc_645_normal', 25, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5778 seconds
+
+ws distance JSON created for Subject 25
+Generating distance matrix for Subject 26
+Method get_distance_matrix(('../dfc_645_normal', 26, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8359 seconds
+
+ws distance JSON created for Subject 26
+Generating distance matrix for Subject 27
+Method get_distance_matrix(('../dfc_645_normal', 27, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5992 seconds
+
+ws distance JSON created for Subject 27
+Generating distance matrix for Subject 28
+Method get_distance_matrix(('../dfc_645_normal', 28, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8532 seconds
+
+ws distance JSON created for Subject 28
+Generating distance matrix for Subject 29
+Method get_distance_matrix(('../dfc_645_normal', 29, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1945 seconds
+
+ws distance JSON created for Subject 29
+Generating distance matrix for Subject 30
+Method get_distance_matrix(('../dfc_645_normal', 30, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3204 seconds
+
+ws distance JSON created for Subject 30
+Generating distance matrix for Subject 31
+Method get_distance_matrix(('../dfc_645_normal', 31, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4036 seconds
+
+ws distance JSON created for Subject 31
+Generating distance matrix for Subject 32
+Method get_distance_matrix(('../dfc_645_normal', 32, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1342 seconds
+
+ws distance JSON created for Subject 32
+Generating distance matrix for Subject 33
+Method get_distance_matrix(('../dfc_645_normal', 33, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9221 seconds
+
+ws distance JSON created for Subject 33
+Generating distance matrix for Subject 34
+Method get_distance_matrix(('../dfc_645_normal', 34, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6975 seconds
+
+ws distance JSON created for Subject 34
+Generating distance matrix for Subject 35
+Method get_distance_matrix(('../dfc_645_normal', 35, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9489 seconds
+
+ws distance JSON created for Subject 35
+Generating distance matrix for Subject 36
+Method get_distance_matrix(('../dfc_645_normal', 36, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2806 seconds
+
+ws distance JSON created for Subject 36
+Generating distance matrix for Subject 37
+Method get_distance_matrix(('../dfc_645_normal', 37, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3809 seconds
+
+ws distance JSON created for Subject 37
+Generating distance matrix for Subject 38
+Method get_distance_matrix(('../dfc_645_normal', 38, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.6957 seconds
+
+ws distance JSON created for Subject 38
+Generating distance matrix for Subject 39
+Method get_distance_matrix(('../dfc_645_normal', 39, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8860 seconds
+
+ws distance JSON created for Subject 39
+Generating distance matrix for Subject 40
+Method get_distance_matrix(('../dfc_645_normal', 40, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 49.0943 seconds
+
+ws distance JSON created for Subject 40
+Generating distance matrix for Subject 41
+Method get_distance_matrix(('../dfc_645_normal', 41, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3799 seconds
+
+ws distance JSON created for Subject 41
+Generating distance matrix for Subject 42
+Method get_distance_matrix(('../dfc_645_normal', 42, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0211 seconds
+
+ws distance JSON created for Subject 42
+Generating distance matrix for Subject 43
+Method get_distance_matrix(('../dfc_645_normal', 43, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0528 seconds
+
+ws distance JSON created for Subject 43
+Generating distance matrix for Subject 44
+Method get_distance_matrix(('../dfc_645_normal', 44, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.4242 seconds
+
+ws distance JSON created for Subject 44
+Generating distance matrix for Subject 45
+Method get_distance_matrix(('../dfc_645_normal', 45, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8770 seconds
+
+ws distance JSON created for Subject 45
+Generating distance matrix for Subject 46
+Method get_distance_matrix(('../dfc_645_normal', 46, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3246 seconds
+
+ws distance JSON created for Subject 46
+Generating distance matrix for Subject 47
+Method get_distance_matrix(('../dfc_645_normal', 47, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1543 seconds
+
+ws distance JSON created for Subject 47
+Generating distance matrix for Subject 48
+Method get_distance_matrix(('../dfc_645_normal', 48, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7678 seconds
+
+ws distance JSON created for Subject 48
+Generating distance matrix for Subject 49
+Method get_distance_matrix(('../dfc_645_normal', 49, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0549 seconds
+
+ws distance JSON created for Subject 49
+Generating distance matrix for Subject 50
+Method get_distance_matrix(('../dfc_645_normal', 50, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9372 seconds
+
+ws distance JSON created for Subject 50
+Generating distance matrix for Subject 51
+Method get_distance_matrix(('../dfc_645_normal', 51, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5319 seconds
+
+ws distance JSON created for Subject 51
+Generating distance matrix for Subject 52
+Method get_distance_matrix(('../dfc_645_normal', 52, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9677 seconds
+
+ws distance JSON created for Subject 52
+Generating distance matrix for Subject 53
+Method get_distance_matrix(('../dfc_645_normal', 53, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0102 seconds
+
+ws distance JSON created for Subject 53
+Generating distance matrix for Subject 54
+Method get_distance_matrix(('../dfc_645_normal', 54, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7231 seconds
+
+ws distance JSON created for Subject 54
+Generating distance matrix for Subject 55
+Method get_distance_matrix(('../dfc_645_normal', 55, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3860 seconds
+
+ws distance JSON created for Subject 55
+Generating distance matrix for Subject 56
+Method get_distance_matrix(('../dfc_645_normal', 56, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8447 seconds
+
+ws distance JSON created for Subject 56
+Generating distance matrix for Subject 57
+Method get_distance_matrix(('../dfc_645_normal', 57, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0859 seconds
+
+ws distance JSON created for Subject 57
+Generating distance matrix for Subject 58
+Method get_distance_matrix(('../dfc_645_normal', 58, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1096 seconds
+
+ws distance JSON created for Subject 58
+Generating distance matrix for Subject 59
+Method get_distance_matrix(('../dfc_645_normal', 59, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0846 seconds
+
+ws distance JSON created for Subject 59
+Generating distance matrix for Subject 60
+Method get_distance_matrix(('../dfc_645_normal', 60, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2358 seconds
+
+ws distance JSON created for Subject 60
+Generating distance matrix for Subject 61
+Method get_distance_matrix(('../dfc_645_normal', 61, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.4406 seconds
+
+ws distance JSON created for Subject 61
+Generating distance matrix for Subject 62
+Method get_distance_matrix(('../dfc_645_normal', 62, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6464 seconds
+
+ws distance JSON created for Subject 62
+Generating distance matrix for Subject 63
+Method get_distance_matrix(('../dfc_645_normal', 63, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8364 seconds
+
+ws distance JSON created for Subject 63
+Generating distance matrix for Subject 64
+Method get_distance_matrix(('../dfc_645_normal', 64, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9966 seconds
+
+ws distance JSON created for Subject 64
+Generating distance matrix for Subject 65
+Method get_distance_matrix(('../dfc_645_normal', 65, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9008 seconds
+
+ws distance JSON created for Subject 65
+Generating distance matrix for Subject 66
+Method get_distance_matrix(('../dfc_645_normal', 66, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2376 seconds
+
+ws distance JSON created for Subject 66
+Generating distance matrix for Subject 67
+Method get_distance_matrix(('../dfc_645_normal', 67, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5712 seconds
+
+ws distance JSON created for Subject 67
+Generating distance matrix for Subject 68
+Method get_distance_matrix(('../dfc_645_normal', 68, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.4328 seconds
+
+ws distance JSON created for Subject 68
+Generating distance matrix for Subject 69
+Method get_distance_matrix(('../dfc_645_normal', 69, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3353 seconds
+
+ws distance JSON created for Subject 69
+Generating distance matrix for Subject 70
+Method get_distance_matrix(('../dfc_645_normal', 70, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0980 seconds
+
+ws distance JSON created for Subject 70
+Generating distance matrix for Subject 71
+Method get_distance_matrix(('../dfc_645_normal', 71, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2141 seconds
+
+ws distance JSON created for Subject 71
+Generating distance matrix for Subject 72
+Method get_distance_matrix(('../dfc_645_normal', 72, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5788 seconds
+
+ws distance JSON created for Subject 72
+Generating distance matrix for Subject 73
+Method get_distance_matrix(('../dfc_645_normal', 73, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2180 seconds
+
+ws distance JSON created for Subject 73
+Generating distance matrix for Subject 74
+Method get_distance_matrix(('../dfc_645_normal', 74, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5431 seconds
+
+ws distance JSON created for Subject 74
+Generating distance matrix for Subject 75
+Method get_distance_matrix(('../dfc_645_normal', 75, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.4417 seconds
+
+ws distance JSON created for Subject 75
+Generating distance matrix for Subject 76
+Method get_distance_matrix(('../dfc_645_normal', 76, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3199 seconds
+
+ws distance JSON created for Subject 76
+Generating distance matrix for Subject 77
+Method get_distance_matrix(('../dfc_645_normal', 77, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2187 seconds
+
+ws distance JSON created for Subject 77
+Generating distance matrix for Subject 78
+Method get_distance_matrix(('../dfc_645_normal', 78, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0676 seconds
+
+ws distance JSON created for Subject 78
+Generating distance matrix for Subject 79
+Method get_distance_matrix(('../dfc_645_normal', 79, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3379 seconds
+
+ws distance JSON created for Subject 79
+Generating distance matrix for Subject 80
+Method get_distance_matrix(('../dfc_645_normal', 80, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0490 seconds
+
+ws distance JSON created for Subject 80
+Generating distance matrix for Subject 81
+Method get_distance_matrix(('../dfc_645_normal', 81, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5246 seconds
+
+ws distance JSON created for Subject 81
+Generating distance matrix for Subject 82
+Method get_distance_matrix(('../dfc_645_normal', 82, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9152 seconds
+
+ws distance JSON created for Subject 82
+Generating distance matrix for Subject 83
+Method get_distance_matrix(('../dfc_645_normal', 83, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5340 seconds
+
+ws distance JSON created for Subject 83
+Generating distance matrix for Subject 84
+Method get_distance_matrix(('../dfc_645_normal', 84, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.4887 seconds
+
+ws distance JSON created for Subject 84
+Generating distance matrix for Subject 85
+Method get_distance_matrix(('../dfc_645_normal', 85, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5812 seconds
+
+ws distance JSON created for Subject 85
+Generating distance matrix for Subject 86
+Method get_distance_matrix(('../dfc_645_normal', 86, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7115 seconds
+
+ws distance JSON created for Subject 86
+Generating distance matrix for Subject 87
+Method get_distance_matrix(('../dfc_645_normal', 87, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8376 seconds
+
+ws distance JSON created for Subject 87
+Generating distance matrix for Subject 88
+Method get_distance_matrix(('../dfc_645_normal', 88, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9412 seconds
+
+ws distance JSON created for Subject 88
+Generating distance matrix for Subject 89
+Method get_distance_matrix(('../dfc_645_normal', 89, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1046 seconds
+
+ws distance JSON created for Subject 89
+Generating distance matrix for Subject 90
+Method get_distance_matrix(('../dfc_645_normal', 90, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1390 seconds
+
+ws distance JSON created for Subject 90
+Generating distance matrix for Subject 91
+Method get_distance_matrix(('../dfc_645_normal', 91, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9729 seconds
+
+ws distance JSON created for Subject 91
+Generating distance matrix for Subject 92
+Method get_distance_matrix(('../dfc_645_normal', 92, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0717 seconds
+
+ws distance JSON created for Subject 92
+Generating distance matrix for Subject 93
+Method get_distance_matrix(('../dfc_645_normal', 93, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8249 seconds
+
+ws distance JSON created for Subject 93
+Generating distance matrix for Subject 94
+Method get_distance_matrix(('../dfc_645_normal', 94, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1190 seconds
+
+ws distance JSON created for Subject 94
+Generating distance matrix for Subject 95
+Method get_distance_matrix(('../dfc_645_normal', 95, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4194 seconds
+
+ws distance JSON created for Subject 95
+Generating distance matrix for Subject 96
+Method get_distance_matrix(('../dfc_645_normal', 96, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9558 seconds
+
+ws distance JSON created for Subject 96
+Generating distance matrix for Subject 97
+Method get_distance_matrix(('../dfc_645_normal', 97, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4780 seconds
+
+ws distance JSON created for Subject 97
+Generating distance matrix for Subject 98
+Method get_distance_matrix(('../dfc_645_normal', 98, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0426 seconds
+
+ws distance JSON created for Subject 98
+Generating distance matrix for Subject 99
+Method get_distance_matrix(('../dfc_645_normal', 99, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4567 seconds
+
+ws distance JSON created for Subject 99
+Generating distance matrix for Subject 100
+Method get_distance_matrix(('../dfc_645_normal', 100, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1713 seconds
+
+ws distance JSON created for Subject 100
+Generating distance matrix for Subject 101
+Method get_distance_matrix(('../dfc_645_normal', 101, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5337 seconds
+
+ws distance JSON created for Subject 101
+Generating distance matrix for Subject 102
+Method get_distance_matrix(('../dfc_645_normal', 102, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6417 seconds
+
+ws distance JSON created for Subject 102
+Generating distance matrix for Subject 103
+Method get_distance_matrix(('../dfc_645_normal', 103, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8540 seconds
+
+ws distance JSON created for Subject 103
+Generating distance matrix for Subject 104
+Method get_distance_matrix(('../dfc_645_normal', 104, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2998 seconds
+
+ws distance JSON created for Subject 104
+Generating distance matrix for Subject 105
+Method get_distance_matrix(('../dfc_645_normal', 105, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1214 seconds
+
+ws distance JSON created for Subject 105
+Generating distance matrix for Subject 106
+Method get_distance_matrix(('../dfc_645_normal', 106, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4716 seconds
+
+ws distance JSON created for Subject 106
+Generating distance matrix for Subject 107
+Method get_distance_matrix(('../dfc_645_normal', 107, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8895 seconds
+
+ws distance JSON created for Subject 107
+Generating distance matrix for Subject 108
+Method get_distance_matrix(('../dfc_645_normal', 108, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9715 seconds
+
+ws distance JSON created for Subject 108
+Generating distance matrix for Subject 109
+Method get_distance_matrix(('../dfc_645_normal', 109, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6976 seconds
+
+ws distance JSON created for Subject 109
+Generating distance matrix for Subject 110
+Method get_distance_matrix(('../dfc_645_normal', 110, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2731 seconds
+
+ws distance JSON created for Subject 110
+Generating distance matrix for Subject 111
+Method get_distance_matrix(('../dfc_645_normal', 111, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6512 seconds
+
+ws distance JSON created for Subject 111
+Generating distance matrix for Subject 112
+Method get_distance_matrix(('../dfc_645_normal', 112, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5153 seconds
+
+ws distance JSON created for Subject 112
+Generating distance matrix for Subject 113
+Method get_distance_matrix(('../dfc_645_normal', 113, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0368 seconds
+
+ws distance JSON created for Subject 113
+Generating distance matrix for Subject 114
+Method get_distance_matrix(('../dfc_645_normal', 114, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2121 seconds
+
+ws distance JSON created for Subject 114
+Generating distance matrix for Subject 115
+Method get_distance_matrix(('../dfc_645_normal', 115, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4075 seconds
+
+ws distance JSON created for Subject 115
+Generating distance matrix for Subject 116
+Method get_distance_matrix(('../dfc_645_normal', 116, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6661 seconds
+
+ws distance JSON created for Subject 116
+Generating distance matrix for Subject 117
+Method get_distance_matrix(('../dfc_645_normal', 117, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2253 seconds
+
+ws distance JSON created for Subject 117
+Generating distance matrix for Subject 118
+Method get_distance_matrix(('../dfc_645_normal', 118, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9693 seconds
+
+ws distance JSON created for Subject 118
+Generating distance matrix for Subject 119
+Method get_distance_matrix(('../dfc_645_normal', 119, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7599 seconds
+
+ws distance JSON created for Subject 119
+Generating distance matrix for Subject 120
+Method get_distance_matrix(('../dfc_645_normal', 120, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6643 seconds
+
+ws distance JSON created for Subject 120
+Generating distance matrix for Subject 121
+Method get_distance_matrix(('../dfc_645_normal', 121, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2986 seconds
+
+ws distance JSON created for Subject 121
+Generating distance matrix for Subject 122
+Method get_distance_matrix(('../dfc_645_normal', 122, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8347 seconds
+
+ws distance JSON created for Subject 122
+Generating distance matrix for Subject 123
+Method get_distance_matrix(('../dfc_645_normal', 123, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2139 seconds
+
+ws distance JSON created for Subject 123
+Generating distance matrix for Subject 124
+Method get_distance_matrix(('../dfc_645_normal', 124, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8375 seconds
+
+ws distance JSON created for Subject 124
+Generating distance matrix for Subject 125
+Method get_distance_matrix(('../dfc_645_normal', 125, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3475 seconds
+
+ws distance JSON created for Subject 125
+Generating distance matrix for Subject 126
+Method get_distance_matrix(('../dfc_645_normal', 126, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4977 seconds
+
+ws distance JSON created for Subject 126
+Generating distance matrix for Subject 127
+Method get_distance_matrix(('../dfc_645_normal', 127, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1358 seconds
+
+ws distance JSON created for Subject 127
+Generating distance matrix for Subject 128
+Method get_distance_matrix(('../dfc_645_normal', 128, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8792 seconds
+
+ws distance JSON created for Subject 128
+Generating distance matrix for Subject 129
+Method get_distance_matrix(('../dfc_645_normal', 129, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4457 seconds
+
+ws distance JSON created for Subject 129
+Generating distance matrix for Subject 130
+Method get_distance_matrix(('../dfc_645_normal', 130, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5808 seconds
+
+ws distance JSON created for Subject 130
+Generating distance matrix for Subject 131
+Method get_distance_matrix(('../dfc_645_normal', 131, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8892 seconds
+
+ws distance JSON created for Subject 131
+Generating distance matrix for Subject 132
+Method get_distance_matrix(('../dfc_645_normal', 132, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5351 seconds
+
+ws distance JSON created for Subject 132
+Generating distance matrix for Subject 133
+Method get_distance_matrix(('../dfc_645_normal', 133, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6065 seconds
+
+ws distance JSON created for Subject 133
+Generating distance matrix for Subject 134
+Method get_distance_matrix(('../dfc_645_normal', 134, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6379 seconds
+
+ws distance JSON created for Subject 134
+Generating distance matrix for Subject 135
+Method get_distance_matrix(('../dfc_645_normal', 135, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5277 seconds
+
+ws distance JSON created for Subject 135
+Generating distance matrix for Subject 136
+Method get_distance_matrix(('../dfc_645_normal', 136, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0441 seconds
+
+ws distance JSON created for Subject 136
+Generating distance matrix for Subject 137
+Method get_distance_matrix(('../dfc_645_normal', 137, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7382 seconds
+
+ws distance JSON created for Subject 137
+Generating distance matrix for Subject 138
+Method get_distance_matrix(('../dfc_645_normal', 138, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.4701 seconds
+
+ws distance JSON created for Subject 138
+Generating distance matrix for Subject 139
+Method get_distance_matrix(('../dfc_645_normal', 139, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1757 seconds
+
+ws distance JSON created for Subject 139
+Generating distance matrix for Subject 140
+Method get_distance_matrix(('../dfc_645_normal', 140, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5702 seconds
+
+ws distance JSON created for Subject 140
+Generating distance matrix for Subject 141
+Method get_distance_matrix(('../dfc_645_normal', 141, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.8844 seconds
+
+ws distance JSON created for Subject 141
+Generating distance matrix for Subject 142
+Method get_distance_matrix(('../dfc_645_normal', 142, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6151 seconds
+
+ws distance JSON created for Subject 142
+Generating distance matrix for Subject 143
+Method get_distance_matrix(('../dfc_645_normal', 143, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8521 seconds
+
+ws distance JSON created for Subject 143
+Generating distance matrix for Subject 144
+Method get_distance_matrix(('../dfc_645_normal', 144, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8010 seconds
+
+ws distance JSON created for Subject 144
+Generating distance matrix for Subject 145
+Method get_distance_matrix(('../dfc_645_normal', 145, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.0370 seconds
+
+ws distance JSON created for Subject 145
+Generating distance matrix for Subject 146
+Method get_distance_matrix(('../dfc_645_normal', 146, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9913 seconds
+
+ws distance JSON created for Subject 146
+Generating distance matrix for Subject 147
+Method get_distance_matrix(('../dfc_645_normal', 147, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8884 seconds
+
+ws distance JSON created for Subject 147
+Generating distance matrix for Subject 148
+Method get_distance_matrix(('../dfc_645_normal', 148, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4568 seconds
+
+ws distance JSON created for Subject 148
+Generating distance matrix for Subject 149
+Method get_distance_matrix(('../dfc_645_normal', 149, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3434 seconds
+
+ws distance JSON created for Subject 149
+Generating distance matrix for Subject 150
+Method get_distance_matrix(('../dfc_645_normal', 150, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5322 seconds
+
+ws distance JSON created for Subject 150
+Generating distance matrix for Subject 151
+Method get_distance_matrix(('../dfc_645_normal', 151, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6016 seconds
+
+ws distance JSON created for Subject 151
+Generating distance matrix for Subject 152
+Method get_distance_matrix(('../dfc_645_normal', 152, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4450 seconds
+
+ws distance JSON created for Subject 152
+Generating distance matrix for Subject 153
+Method get_distance_matrix(('../dfc_645_normal', 153, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3641 seconds
+
+ws distance JSON created for Subject 153
+Generating distance matrix for Subject 154
+Method get_distance_matrix(('../dfc_645_normal', 154, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1052 seconds
+
+ws distance JSON created for Subject 154
+Generating distance matrix for Subject 155
+Method get_distance_matrix(('../dfc_645_normal', 155, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1478 seconds
+
+ws distance JSON created for Subject 155
+Generating distance matrix for Subject 156
+Method get_distance_matrix(('../dfc_645_normal', 156, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4662 seconds
+
+ws distance JSON created for Subject 156
+Generating distance matrix for Subject 157
+Method get_distance_matrix(('../dfc_645_normal', 157, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0684 seconds
+
+ws distance JSON created for Subject 157
+Generating distance matrix for Subject 158
+Method get_distance_matrix(('../dfc_645_normal', 158, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5305 seconds
+
+ws distance JSON created for Subject 158
+Generating distance matrix for Subject 159
+Method get_distance_matrix(('../dfc_645_normal', 159, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0215 seconds
+
+ws distance JSON created for Subject 159
+Generating distance matrix for Subject 160
+Method get_distance_matrix(('../dfc_645_normal', 160, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.3659 seconds
+
+ws distance JSON created for Subject 160
+Generating distance matrix for Subject 161
+Method get_distance_matrix(('../dfc_645_normal', 161, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4795 seconds
+
+ws distance JSON created for Subject 161
+Generating distance matrix for Subject 162
+Method get_distance_matrix(('../dfc_645_normal', 162, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4349 seconds
+
+ws distance JSON created for Subject 162
+Generating distance matrix for Subject 163
+Method get_distance_matrix(('../dfc_645_normal', 163, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5035 seconds
+
+ws distance JSON created for Subject 163
+Generating distance matrix for Subject 164
+Method get_distance_matrix(('../dfc_645_normal', 164, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5429 seconds
+
+ws distance JSON created for Subject 164
+Generating distance matrix for Subject 165
+Method get_distance_matrix(('../dfc_645_normal', 165, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7163 seconds
+
+ws distance JSON created for Subject 165
+Generating distance matrix for Subject 166
+Method get_distance_matrix(('../dfc_645_normal', 166, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6891 seconds
+
+ws distance JSON created for Subject 166
+Generating distance matrix for Subject 167
+Method get_distance_matrix(('../dfc_645_normal', 167, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4126 seconds
+
+ws distance JSON created for Subject 167
+Generating distance matrix for Subject 168
+Method get_distance_matrix(('../dfc_645_normal', 168, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.0837 seconds
+
+ws distance JSON created for Subject 168
+Generating distance matrix for Subject 169
+Method get_distance_matrix(('../dfc_645_normal', 169, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2259 seconds
+
+ws distance JSON created for Subject 169
+Generating distance matrix for Subject 170
+Method get_distance_matrix(('../dfc_645_normal', 170, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5933 seconds
+
+ws distance JSON created for Subject 170
+Generating distance matrix for Subject 171
+Method get_distance_matrix(('../dfc_645_normal', 171, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2254 seconds
+
+ws distance JSON created for Subject 171
+Generating distance matrix for Subject 172
+Method get_distance_matrix(('../dfc_645_normal', 172, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7062 seconds
+
+ws distance JSON created for Subject 172
+Generating distance matrix for Subject 173
+Method get_distance_matrix(('../dfc_645_normal', 173, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8011 seconds
+
+ws distance JSON created for Subject 173
+Generating distance matrix for Subject 174
+Method get_distance_matrix(('../dfc_645_normal', 174, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.3831 seconds
+
+ws distance JSON created for Subject 174
+Generating distance matrix for Subject 175
+Method get_distance_matrix(('../dfc_645_normal', 175, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1376 seconds
+
+ws distance JSON created for Subject 175
+Generating distance matrix for Subject 176
+Method get_distance_matrix(('../dfc_645_normal', 176, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3078 seconds
+
+ws distance JSON created for Subject 176
+Generating distance matrix for Subject 177
+Method get_distance_matrix(('../dfc_645_normal', 177, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1383 seconds
+
+ws distance JSON created for Subject 177
+Generating distance matrix for Subject 178
+Method get_distance_matrix(('../dfc_645_normal', 178, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1049 seconds
+
+ws distance JSON created for Subject 178
+Generating distance matrix for Subject 179
+Method get_distance_matrix(('../dfc_645_normal', 179, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8092 seconds
+
+ws distance JSON created for Subject 179
+Generating distance matrix for Subject 180
+Method get_distance_matrix(('../dfc_645_normal', 180, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.4629 seconds
+
+ws distance JSON created for Subject 180
+Generating distance matrix for Subject 181
+Method get_distance_matrix(('../dfc_645_normal', 181, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1473 seconds
+
+ws distance JSON created for Subject 181
+Generating distance matrix for Subject 182
+Method get_distance_matrix(('../dfc_645_normal', 182, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8776 seconds
+
+ws distance JSON created for Subject 182
+Generating distance matrix for Subject 183
+Method get_distance_matrix(('../dfc_645_normal', 183, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5757 seconds
+
+ws distance JSON created for Subject 183
+Generating distance matrix for Subject 184
+Method get_distance_matrix(('../dfc_645_normal', 184, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3011 seconds
+
+ws distance JSON created for Subject 184
+Generating distance matrix for Subject 185
+Method get_distance_matrix(('../dfc_645_normal', 185, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9324 seconds
+
+ws distance JSON created for Subject 185
+Generating distance matrix for Subject 186
+Method get_distance_matrix(('../dfc_645_normal', 186, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1291 seconds
+
+ws distance JSON created for Subject 186
+Generating distance matrix for Subject 187
+Method get_distance_matrix(('../dfc_645_normal', 187, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8444 seconds
+
+ws distance JSON created for Subject 187
+Generating distance matrix for Subject 188
+Method get_distance_matrix(('../dfc_645_normal', 188, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2850 seconds
+
+ws distance JSON created for Subject 188
+Generating distance matrix for Subject 189
+Method get_distance_matrix(('../dfc_645_normal', 189, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0343 seconds
+
+ws distance JSON created for Subject 189
+Generating distance matrix for Subject 190
+Method get_distance_matrix(('../dfc_645_normal', 190, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6149 seconds
+
+ws distance JSON created for Subject 190
+Generating distance matrix for Subject 191
+Method get_distance_matrix(('../dfc_645_normal', 191, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0633 seconds
+
+ws distance JSON created for Subject 191
+Generating distance matrix for Subject 192
+Method get_distance_matrix(('../dfc_645_normal', 192, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2276 seconds
+
+ws distance JSON created for Subject 192
+Generating distance matrix for Subject 193
+Method get_distance_matrix(('../dfc_645_normal', 193, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6191 seconds
+
+ws distance JSON created for Subject 193
+Generating distance matrix for Subject 194
+Method get_distance_matrix(('../dfc_645_normal', 194, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2122 seconds
+
+ws distance JSON created for Subject 194
+Generating distance matrix for Subject 195
+Method get_distance_matrix(('../dfc_645_normal', 195, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4695 seconds
+
+ws distance JSON created for Subject 195
+Generating distance matrix for Subject 196
+Method get_distance_matrix(('../dfc_645_normal', 196, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3573 seconds
+
+ws distance JSON created for Subject 196
+Generating distance matrix for Subject 197
+Method get_distance_matrix(('../dfc_645_normal', 197, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8021 seconds
+
+ws distance JSON created for Subject 197
+Generating distance matrix for Subject 198
+Method get_distance_matrix(('../dfc_645_normal', 198, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2180 seconds
+
+ws distance JSON created for Subject 198
+Generating distance matrix for Subject 199
+Method get_distance_matrix(('../dfc_645_normal', 199, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8463 seconds
+
+ws distance JSON created for Subject 199
+Generating distance matrix for Subject 200
+Method get_distance_matrix(('../dfc_645_normal', 200, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7830 seconds
+
+ws distance JSON created for Subject 200
+Generating distance matrix for Subject 201
+Method get_distance_matrix(('../dfc_645_normal', 201, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7461 seconds
+
+ws distance JSON created for Subject 201
+Generating distance matrix for Subject 202
+Method get_distance_matrix(('../dfc_645_normal', 202, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5047 seconds
+
+ws distance JSON created for Subject 202
+Generating distance matrix for Subject 203
+Method get_distance_matrix(('../dfc_645_normal', 203, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5211 seconds
+
+ws distance JSON created for Subject 203
+Generating distance matrix for Subject 204
+Method get_distance_matrix(('../dfc_645_normal', 204, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7688 seconds
+
+ws distance JSON created for Subject 204
+Generating distance matrix for Subject 205
+Method get_distance_matrix(('../dfc_645_normal', 205, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9942 seconds
+
+ws distance JSON created for Subject 205
+Generating distance matrix for Subject 206
+Method get_distance_matrix(('../dfc_645_normal', 206, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0363 seconds
+
+ws distance JSON created for Subject 206
+Generating distance matrix for Subject 207
+Method get_distance_matrix(('../dfc_645_normal', 207, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.3460 seconds
+
+ws distance JSON created for Subject 207
+Generating distance matrix for Subject 208
+Method get_distance_matrix(('../dfc_645_normal', 208, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1451 seconds
+
+ws distance JSON created for Subject 208
+Generating distance matrix for Subject 209
+Method get_distance_matrix(('../dfc_645_normal', 209, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4000 seconds
+
+ws distance JSON created for Subject 209
+Generating distance matrix for Subject 210
+Method get_distance_matrix(('../dfc_645_normal', 210, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2122 seconds
+
+ws distance JSON created for Subject 210
+Generating distance matrix for Subject 211
+Method get_distance_matrix(('../dfc_645_normal', 211, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2727 seconds
+
+ws distance JSON created for Subject 211
+Generating distance matrix for Subject 212
+Method get_distance_matrix(('../dfc_645_normal', 212, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2935 seconds
+
+ws distance JSON created for Subject 212
+Generating distance matrix for Subject 213
+Method get_distance_matrix(('../dfc_645_normal', 213, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1926 seconds
+
+ws distance JSON created for Subject 213
+Generating distance matrix for Subject 214
+Method get_distance_matrix(('../dfc_645_normal', 214, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.0043 seconds
+
+ws distance JSON created for Subject 214
+Generating distance matrix for Subject 215
+Method get_distance_matrix(('../dfc_645_normal', 215, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8359 seconds
+
+ws distance JSON created for Subject 215
+Generating distance matrix for Subject 216
+Method get_distance_matrix(('../dfc_645_normal', 216, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.4894 seconds
+
+ws distance JSON created for Subject 216
+Generating distance matrix for Subject 217
+Method get_distance_matrix(('../dfc_645_normal', 217, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.8585 seconds
+
+ws distance JSON created for Subject 217
+Generating distance matrix for Subject 218
+Method get_distance_matrix(('../dfc_645_normal', 218, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1380 seconds
+
+ws distance JSON created for Subject 218
+Generating distance matrix for Subject 219
+Method get_distance_matrix(('../dfc_645_normal', 219, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6144 seconds
+
+ws distance JSON created for Subject 219
+Generating distance matrix for Subject 220
+Method get_distance_matrix(('../dfc_645_normal', 220, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6485 seconds
+
+ws distance JSON created for Subject 220
+Generating distance matrix for Subject 221
+Method get_distance_matrix(('../dfc_645_normal', 221, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7974 seconds
+
+ws distance JSON created for Subject 221
+Generating distance matrix for Subject 222
+Method get_distance_matrix(('../dfc_645_normal', 222, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5052 seconds
+
+ws distance JSON created for Subject 222
+Generating distance matrix for Subject 223
+Method get_distance_matrix(('../dfc_645_normal', 223, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8323 seconds
+
+ws distance JSON created for Subject 223
+Generating distance matrix for Subject 224
+Method get_distance_matrix(('../dfc_645_normal', 224, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0948 seconds
+
+ws distance JSON created for Subject 224
+Generating distance matrix for Subject 225
+Method get_distance_matrix(('../dfc_645_normal', 225, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.3795 seconds
+
+ws distance JSON created for Subject 225
+Generating distance matrix for Subject 226
+Method get_distance_matrix(('../dfc_645_normal', 226, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4031 seconds
+
+ws distance JSON created for Subject 226
+Generating distance matrix for Subject 227
+Method get_distance_matrix(('../dfc_645_normal', 227, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4205 seconds
+
+ws distance JSON created for Subject 227
+Generating distance matrix for Subject 228
+Method get_distance_matrix(('../dfc_645_normal', 228, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1193 seconds
+
+ws distance JSON created for Subject 228
+Generating distance matrix for Subject 229
+Method get_distance_matrix(('../dfc_645_normal', 229, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2159 seconds
+
+ws distance JSON created for Subject 229
+Generating distance matrix for Subject 230
+Method get_distance_matrix(('../dfc_645_normal', 230, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3892 seconds
+
+ws distance JSON created for Subject 230
+Generating distance matrix for Subject 231
+Method get_distance_matrix(('../dfc_645_normal', 231, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6278 seconds
+
+ws distance JSON created for Subject 231
+Generating distance matrix for Subject 232
+Method get_distance_matrix(('../dfc_645_normal', 232, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7025 seconds
+
+ws distance JSON created for Subject 232
+Generating distance matrix for Subject 233
+Method get_distance_matrix(('../dfc_645_normal', 233, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9168 seconds
+
+ws distance JSON created for Subject 233
+Generating distance matrix for Subject 234
+Method get_distance_matrix(('../dfc_645_normal', 234, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0727 seconds
+
+ws distance JSON created for Subject 234
+Generating distance matrix for Subject 235
+Method get_distance_matrix(('../dfc_645_normal', 235, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8909 seconds
+
+ws distance JSON created for Subject 235
+Generating distance matrix for Subject 236
+Method get_distance_matrix(('../dfc_645_normal', 236, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2455 seconds
+
+ws distance JSON created for Subject 236
+Generating distance matrix for Subject 237
+Method get_distance_matrix(('../dfc_645_normal', 237, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1206 seconds
+
+ws distance JSON created for Subject 237
+Generating distance matrix for Subject 238
+Method get_distance_matrix(('../dfc_645_normal', 238, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8233 seconds
+
+ws distance JSON created for Subject 238
+Generating distance matrix for Subject 239
+Method get_distance_matrix(('../dfc_645_normal', 239, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7122 seconds
+
+ws distance JSON created for Subject 239
+Generating distance matrix for Subject 240
+Method get_distance_matrix(('../dfc_645_normal', 240, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.5303 seconds
+
+ws distance JSON created for Subject 240
+Generating distance matrix for Subject 241
+Method get_distance_matrix(('../dfc_645_normal', 241, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0922 seconds
+
+ws distance JSON created for Subject 241
+Generating distance matrix for Subject 242
+Method get_distance_matrix(('../dfc_645_normal', 242, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1898 seconds
+
+ws distance JSON created for Subject 242
+Generating distance matrix for Subject 243
+Method get_distance_matrix(('../dfc_645_normal', 243, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0784 seconds
+
+ws distance JSON created for Subject 243
+Generating distance matrix for Subject 244
+Method get_distance_matrix(('../dfc_645_normal', 244, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5521 seconds
+
+ws distance JSON created for Subject 244
+Generating distance matrix for Subject 245
+Method get_distance_matrix(('../dfc_645_normal', 245, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1198 seconds
+
+ws distance JSON created for Subject 245
+Generating distance matrix for Subject 246
+Method get_distance_matrix(('../dfc_645_normal', 246, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6901 seconds
+
+ws distance JSON created for Subject 246
+Generating distance matrix for Subject 247
+Method get_distance_matrix(('../dfc_645_normal', 247, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3822 seconds
+
+ws distance JSON created for Subject 247
+Generating distance matrix for Subject 248
+Method get_distance_matrix(('../dfc_645_normal', 248, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3677 seconds
+
+ws distance JSON created for Subject 248
+Generating distance matrix for Subject 249
+Method get_distance_matrix(('../dfc_645_normal', 249, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8319 seconds
+
+ws distance JSON created for Subject 249
+Generating distance matrix for Subject 250
+Method get_distance_matrix(('../dfc_645_normal', 250, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5335 seconds
+
+ws distance JSON created for Subject 250
+Generating distance matrix for Subject 251
+Method get_distance_matrix(('../dfc_645_normal', 251, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2604 seconds
+
+ws distance JSON created for Subject 251
+Generating distance matrix for Subject 252
+Method get_distance_matrix(('../dfc_645_normal', 252, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.3348 seconds
+
+ws distance JSON created for Subject 252
+Generating distance matrix for Subject 253
+Method get_distance_matrix(('../dfc_645_normal', 253, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4258 seconds
+
+ws distance JSON created for Subject 253
+Generating distance matrix for Subject 254
+Method get_distance_matrix(('../dfc_645_normal', 254, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.1551 seconds
+
+ws distance JSON created for Subject 254
+Generating distance matrix for Subject 255
+Method get_distance_matrix(('../dfc_645_normal', 255, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9812 seconds
+
+ws distance JSON created for Subject 255
+Generating distance matrix for Subject 256
+Method get_distance_matrix(('../dfc_645_normal', 256, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9285 seconds
+
+ws distance JSON created for Subject 256
+Generating distance matrix for Subject 257
+Method get_distance_matrix(('../dfc_645_normal', 257, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3798 seconds
+
+ws distance JSON created for Subject 257
+Generating distance matrix for Subject 258
+Method get_distance_matrix(('../dfc_645_normal', 258, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9600 seconds
+
+ws distance JSON created for Subject 258
+Generating distance matrix for Subject 259
+Method get_distance_matrix(('../dfc_645_normal', 259, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0358 seconds
+
+ws distance JSON created for Subject 259
+Generating distance matrix for Subject 260
+Method get_distance_matrix(('../dfc_645_normal', 260, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7298 seconds
+
+ws distance JSON created for Subject 260
+Generating distance matrix for Subject 261
+Method get_distance_matrix(('../dfc_645_normal', 261, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7614 seconds
+
+ws distance JSON created for Subject 261
+Generating distance matrix for Subject 262
+Method get_distance_matrix(('../dfc_645_normal', 262, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4427 seconds
+
+ws distance JSON created for Subject 262
+Generating distance matrix for Subject 263
+Method get_distance_matrix(('../dfc_645_normal', 263, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5638 seconds
+
+ws distance JSON created for Subject 263
+Generating distance matrix for Subject 264
+Method get_distance_matrix(('../dfc_645_normal', 264, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3062 seconds
+
+ws distance JSON created for Subject 264
+Generating distance matrix for Subject 265
+Method get_distance_matrix(('../dfc_645_normal', 265, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4755 seconds
+
+ws distance JSON created for Subject 265
+Generating distance matrix for Subject 266
+Method get_distance_matrix(('../dfc_645_normal', 266, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7901 seconds
+
+ws distance JSON created for Subject 266
+Generating distance matrix for Subject 267
+Method get_distance_matrix(('../dfc_645_normal', 267, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8471 seconds
+
+ws distance JSON created for Subject 267
+Generating distance matrix for Subject 268
+Method get_distance_matrix(('../dfc_645_normal', 268, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5258 seconds
+
+ws distance JSON created for Subject 268
+Generating distance matrix for Subject 269
+Method get_distance_matrix(('../dfc_645_normal', 269, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.5721 seconds
+
+ws distance JSON created for Subject 269
+Generating distance matrix for Subject 270
+Method get_distance_matrix(('../dfc_645_normal', 270, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9464 seconds
+
+ws distance JSON created for Subject 270
+Generating distance matrix for Subject 271
+Method get_distance_matrix(('../dfc_645_normal', 271, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0354 seconds
+
+ws distance JSON created for Subject 271
+Generating distance matrix for Subject 272
+Method get_distance_matrix(('../dfc_645_normal', 272, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4848 seconds
+
+ws distance JSON created for Subject 272
+Generating distance matrix for Subject 273
+Method get_distance_matrix(('../dfc_645_normal', 273, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.3920 seconds
+
+ws distance JSON created for Subject 273
+Generating distance matrix for Subject 274
+Method get_distance_matrix(('../dfc_645_normal', 274, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.1639 seconds
+
+ws distance JSON created for Subject 274
+Generating distance matrix for Subject 275
+Method get_distance_matrix(('../dfc_645_normal', 275, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.3636 seconds
+
+ws distance JSON created for Subject 275
+Generating distance matrix for Subject 276
+Method get_distance_matrix(('../dfc_645_normal', 276, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3510 seconds
+
+ws distance JSON created for Subject 276
+Generating distance matrix for Subject 277
+Method get_distance_matrix(('../dfc_645_normal', 277, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4452 seconds
+
+ws distance JSON created for Subject 277
+Generating distance matrix for Subject 278
+Method get_distance_matrix(('../dfc_645_normal', 278, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5502 seconds
+
+ws distance JSON created for Subject 278
+Generating distance matrix for Subject 279
+Method get_distance_matrix(('../dfc_645_normal', 279, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8706 seconds
+
+ws distance JSON created for Subject 279
+Generating distance matrix for Subject 280
+Method get_distance_matrix(('../dfc_645_normal', 280, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3986 seconds
+
+ws distance JSON created for Subject 280
+Generating distance matrix for Subject 281
+Method get_distance_matrix(('../dfc_645_normal', 281, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9743 seconds
+
+ws distance JSON created for Subject 281
+Generating distance matrix for Subject 282
+Method get_distance_matrix(('../dfc_645_normal', 282, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9815 seconds
+
+ws distance JSON created for Subject 282
+Generating distance matrix for Subject 283
+Method get_distance_matrix(('../dfc_645_normal', 283, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.6042 seconds
+
+ws distance JSON created for Subject 283
+Generating distance matrix for Subject 284
+Method get_distance_matrix(('../dfc_645_normal', 284, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1054 seconds
+
+ws distance JSON created for Subject 284
+Generating distance matrix for Subject 285
+Method get_distance_matrix(('../dfc_645_normal', 285, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7954 seconds
+
+ws distance JSON created for Subject 285
+Generating distance matrix for Subject 286
+Method get_distance_matrix(('../dfc_645_normal', 286, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5380 seconds
+
+ws distance JSON created for Subject 286
+Generating distance matrix for Subject 287
+Method get_distance_matrix(('../dfc_645_normal', 287, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0229 seconds
+
+ws distance JSON created for Subject 287
+Generating distance matrix for Subject 288
+Method get_distance_matrix(('../dfc_645_normal', 288, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3328 seconds
+
+ws distance JSON created for Subject 288
+Generating distance matrix for Subject 289
+Method get_distance_matrix(('../dfc_645_normal', 289, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.5555 seconds
+
+ws distance JSON created for Subject 289
+Generating distance matrix for Subject 290
+Method get_distance_matrix(('../dfc_645_normal', 290, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.4949 seconds
+
+ws distance JSON created for Subject 290
+Generating distance matrix for Subject 291
+Method get_distance_matrix(('../dfc_645_normal', 291, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.7371 seconds
+
+ws distance JSON created for Subject 291
+Generating distance matrix for Subject 292
+Method get_distance_matrix(('../dfc_645_normal', 292, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9628 seconds
+
+ws distance JSON created for Subject 292
+Generating distance matrix for Subject 293
+Method get_distance_matrix(('../dfc_645_normal', 293, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.2428 seconds
+
+ws distance JSON created for Subject 293
+Generating distance matrix for Subject 294
+Method get_distance_matrix(('../dfc_645_normal', 294, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.8430 seconds
+
+ws distance JSON created for Subject 294
+Generating distance matrix for Subject 295
+Method get_distance_matrix(('../dfc_645_normal', 295, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4126 seconds
+
+ws distance JSON created for Subject 295
+Generating distance matrix for Subject 296
+Method get_distance_matrix(('../dfc_645_normal', 296, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.6365 seconds
+
+ws distance JSON created for Subject 296
+Generating distance matrix for Subject 297
+Method get_distance_matrix(('../dfc_645_normal', 297, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5694 seconds
+
+ws distance JSON created for Subject 297
+Generating distance matrix for Subject 298
+Method get_distance_matrix(('../dfc_645_normal', 298, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7205 seconds
+
+ws distance JSON created for Subject 298
+Generating distance matrix for Subject 299
+Method get_distance_matrix(('../dfc_645_normal', 299, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8229 seconds
+
+ws distance JSON created for Subject 299
+Generating distance matrix for Subject 300
+Method get_distance_matrix(('../dfc_645_normal', 300, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.9086 seconds
+
+ws distance JSON created for Subject 300
+Generating distance matrix for Subject 301
+Method get_distance_matrix(('../dfc_645_normal', 301, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7543 seconds
+
+ws distance JSON created for Subject 301
+Generating distance matrix for Subject 302
+Method get_distance_matrix(('../dfc_645_normal', 302, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1756 seconds
+
+ws distance JSON created for Subject 302
+Generating distance matrix for Subject 303
+Method get_distance_matrix(('../dfc_645_normal', 303, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.9654 seconds
+
+ws distance JSON created for Subject 303
+Generating distance matrix for Subject 304
+Method get_distance_matrix(('../dfc_645_normal', 304, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.0965 seconds
+
+ws distance JSON created for Subject 304
+Generating distance matrix for Subject 305
+Method get_distance_matrix(('../dfc_645_normal', 305, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8649 seconds
+
+ws distance JSON created for Subject 305
+Generating distance matrix for Subject 306
+Method get_distance_matrix(('../dfc_645_normal', 306, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1077 seconds
+
+ws distance JSON created for Subject 306
+Generating distance matrix for Subject 307
+Method get_distance_matrix(('../dfc_645_normal', 307, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.0301 seconds
+
+ws distance JSON created for Subject 307
+Generating distance matrix for Subject 308
+Method get_distance_matrix(('../dfc_645_normal', 308, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1774 seconds
+
+ws distance JSON created for Subject 308
+Generating distance matrix for Subject 309
+Method get_distance_matrix(('../dfc_645_normal', 309, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.0662 seconds
+
+ws distance JSON created for Subject 309
+Generating distance matrix for Subject 310
+Method get_distance_matrix(('../dfc_645_normal', 310, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.5416 seconds
+
+ws distance JSON created for Subject 310
+Generating distance matrix for Subject 311
+Method get_distance_matrix(('../dfc_645_normal', 311, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 48.0701 seconds
+
+ws distance JSON created for Subject 311
+Generating distance matrix for Subject 312
+Method get_distance_matrix(('../dfc_645_normal', 312, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.8795 seconds
+
+ws distance JSON created for Subject 312
+Generating distance matrix for Subject 313
+Method get_distance_matrix(('../dfc_645_normal', 313, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.1302 seconds
+
+ws distance JSON created for Subject 313
+Generating distance matrix for Subject 314
+Method get_distance_matrix(('../dfc_645_normal', 314, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.3020 seconds
+
+ws distance JSON created for Subject 314
+Generating distance matrix for Subject 315
+Method get_distance_matrix(('../dfc_645_normal', 315, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 46.7524 seconds
+
+ws distance JSON created for Subject 315
+Generating distance matrix for Subject 316
+Method get_distance_matrix(('../dfc_645_normal', 316, 754, 'normalize_dfc_645_subject_', 'ws'), {'down_sampling': 4}) executed in 47.4551 seconds
+
+ws distance JSON created for Subject 316
+Done generating the {distance_method} distance matrix JSON files
+Method generate_distance_matrix(('../dfc_645_normal', '../dfc_645_down_subjects_distance_matrix_ws', 316, 754, 'normalize_dfc_645_subject_', 1, 316), {'distance_method': 'ws', 'down_sampling': 4}) executed in 14951.9630 seconds
+
+Method get_mds_matrix((1, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4823 seconds
+
+MDS JSON created for Subject 1
+Method get_mds_matrix((2, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4820 seconds
+
+MDS JSON created for Subject 2
+Method get_mds_matrix((3, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4520 seconds
+
+MDS JSON created for Subject 3
+Method get_mds_matrix((4, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6611 seconds
+
+MDS JSON created for Subject 4
+Method get_mds_matrix((5, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4830 seconds
+
+MDS JSON created for Subject 5
+Method get_mds_matrix((6, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2948 seconds
+
+MDS JSON created for Subject 6
+Method get_mds_matrix((7, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3077 seconds
+
+MDS JSON created for Subject 7
+Method get_mds_matrix((8, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4837 seconds
+
+MDS JSON created for Subject 8
+Method get_mds_matrix((9, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5259 seconds
+
+MDS JSON created for Subject 9
+Method get_mds_matrix((10, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3843 seconds
+
+MDS JSON created for Subject 10
+Method get_mds_matrix((11, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3518 seconds
+
+MDS JSON created for Subject 11
+Method get_mds_matrix((12, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3939 seconds
+
+MDS JSON created for Subject 12
+Method get_mds_matrix((13, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4828 seconds
+
+MDS JSON created for Subject 13
+Method get_mds_matrix((14, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3450 seconds
+
+MDS JSON created for Subject 14
+Method get_mds_matrix((15, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2957 seconds
+
+MDS JSON created for Subject 15
+Method get_mds_matrix((16, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3140 seconds
+
+MDS JSON created for Subject 16
+Method get_mds_matrix((17, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3311 seconds
+
+MDS JSON created for Subject 17
+Method get_mds_matrix((18, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6387 seconds
+
+MDS JSON created for Subject 18
+Method get_mds_matrix((19, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4882 seconds
+
+MDS JSON created for Subject 19
+Method get_mds_matrix((20, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.7372 seconds
+
+MDS JSON created for Subject 20
+Method get_mds_matrix((21, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4671 seconds
+
+MDS JSON created for Subject 21
+Method get_mds_matrix((22, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6032 seconds
+
+MDS JSON created for Subject 22
+Method get_mds_matrix((23, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5305 seconds
+
+MDS JSON created for Subject 23
+Method get_mds_matrix((24, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3935 seconds
+
+MDS JSON created for Subject 24
+Method get_mds_matrix((25, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3912 seconds
+
+MDS JSON created for Subject 25
+Method get_mds_matrix((26, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2874 seconds
+
+MDS JSON created for Subject 26
+Method get_mds_matrix((27, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5638 seconds
+
+MDS JSON created for Subject 27
+Method get_mds_matrix((28, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4432 seconds
+
+MDS JSON created for Subject 28
+Method get_mds_matrix((29, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3880 seconds
+
+MDS JSON created for Subject 29
+Method get_mds_matrix((30, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5345 seconds
+
+MDS JSON created for Subject 30
+Method get_mds_matrix((31, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3566 seconds
+
+MDS JSON created for Subject 31
+Method get_mds_matrix((32, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2466 seconds
+
+MDS JSON created for Subject 32
+Method get_mds_matrix((33, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4322 seconds
+
+MDS JSON created for Subject 33
+Method get_mds_matrix((34, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5326 seconds
+
+MDS JSON created for Subject 34
+Method get_mds_matrix((35, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3755 seconds
+
+MDS JSON created for Subject 35
+Method get_mds_matrix((36, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2178 seconds
+
+MDS JSON created for Subject 36
+Method get_mds_matrix((37, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4352 seconds
+
+MDS JSON created for Subject 37
+Method get_mds_matrix((38, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5402 seconds
+
+MDS JSON created for Subject 38
+Method get_mds_matrix((39, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2156 seconds
+
+MDS JSON created for Subject 39
+Method get_mds_matrix((40, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4932 seconds
+
+MDS JSON created for Subject 40
+Method get_mds_matrix((41, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3738 seconds
+
+MDS JSON created for Subject 41
+Method get_mds_matrix((42, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5541 seconds
+
+MDS JSON created for Subject 42
+Method get_mds_matrix((43, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3814 seconds
+
+MDS JSON created for Subject 43
+Method get_mds_matrix((44, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6369 seconds
+
+MDS JSON created for Subject 44
+Method get_mds_matrix((45, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5235 seconds
+
+MDS JSON created for Subject 45
+Method get_mds_matrix((46, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3142 seconds
+
+MDS JSON created for Subject 46
+Method get_mds_matrix((47, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4308 seconds
+
+MDS JSON created for Subject 47
+Method get_mds_matrix((48, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3938 seconds
+
+MDS JSON created for Subject 48
+Method get_mds_matrix((49, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5349 seconds
+
+MDS JSON created for Subject 49
+Method get_mds_matrix((50, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2834 seconds
+
+MDS JSON created for Subject 50
+Method get_mds_matrix((51, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4242 seconds
+
+MDS JSON created for Subject 51
+Method get_mds_matrix((52, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3132 seconds
+
+MDS JSON created for Subject 52
+Method get_mds_matrix((53, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4218 seconds
+
+MDS JSON created for Subject 53
+Method get_mds_matrix((54, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3993 seconds
+
+MDS JSON created for Subject 54
+Method get_mds_matrix((55, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2966 seconds
+
+MDS JSON created for Subject 55
+Method get_mds_matrix((56, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4970 seconds
+
+MDS JSON created for Subject 56
+Method get_mds_matrix((57, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4374 seconds
+
+MDS JSON created for Subject 57
+Method get_mds_matrix((58, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3532 seconds
+
+MDS JSON created for Subject 58
+Method get_mds_matrix((59, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4421 seconds
+
+MDS JSON created for Subject 59
+Method get_mds_matrix((60, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5768 seconds
+
+MDS JSON created for Subject 60
+Method get_mds_matrix((61, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4328 seconds
+
+MDS JSON created for Subject 61
+Method get_mds_matrix((62, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2829 seconds
+
+MDS JSON created for Subject 62
+Method get_mds_matrix((63, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5543 seconds
+
+MDS JSON created for Subject 63
+Method get_mds_matrix((64, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6057 seconds
+
+MDS JSON created for Subject 64
+Method get_mds_matrix((65, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6337 seconds
+
+MDS JSON created for Subject 65
+Method get_mds_matrix((66, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5817 seconds
+
+MDS JSON created for Subject 66
+Method get_mds_matrix((67, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4557 seconds
+
+MDS JSON created for Subject 67
+Method get_mds_matrix((68, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6712 seconds
+
+MDS JSON created for Subject 68
+Method get_mds_matrix((69, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2517 seconds
+
+MDS JSON created for Subject 69
+Method get_mds_matrix((70, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4729 seconds
+
+MDS JSON created for Subject 70
+Method get_mds_matrix((71, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5848 seconds
+
+MDS JSON created for Subject 71
+Method get_mds_matrix((72, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5391 seconds
+
+MDS JSON created for Subject 72
+Method get_mds_matrix((73, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6023 seconds
+
+MDS JSON created for Subject 73
+Method get_mds_matrix((74, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4301 seconds
+
+MDS JSON created for Subject 74
+Method get_mds_matrix((75, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3828 seconds
+
+MDS JSON created for Subject 75
+Method get_mds_matrix((76, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2943 seconds
+
+MDS JSON created for Subject 76
+Method get_mds_matrix((77, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4826 seconds
+
+MDS JSON created for Subject 77
+Method get_mds_matrix((78, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3324 seconds
+
+MDS JSON created for Subject 78
+Method get_mds_matrix((79, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4635 seconds
+
+MDS JSON created for Subject 79
+Method get_mds_matrix((80, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3839 seconds
+
+MDS JSON created for Subject 80
+Method get_mds_matrix((81, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4067 seconds
+
+MDS JSON created for Subject 81
+Method get_mds_matrix((82, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4136 seconds
+
+MDS JSON created for Subject 82
+Method get_mds_matrix((83, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4305 seconds
+
+MDS JSON created for Subject 83
+Method get_mds_matrix((84, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.7736 seconds
+
+MDS JSON created for Subject 84
+Method get_mds_matrix((85, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4069 seconds
+
+MDS JSON created for Subject 85
+Method get_mds_matrix((86, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6421 seconds
+
+MDS JSON created for Subject 86
+Method get_mds_matrix((87, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4873 seconds
+
+MDS JSON created for Subject 87
+Method get_mds_matrix((88, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4586 seconds
+
+MDS JSON created for Subject 88
+Method get_mds_matrix((89, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3506 seconds
+
+MDS JSON created for Subject 89
+Method get_mds_matrix((90, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2938 seconds
+
+MDS JSON created for Subject 90
+Method get_mds_matrix((91, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5196 seconds
+
+MDS JSON created for Subject 91
+Method get_mds_matrix((92, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4284 seconds
+
+MDS JSON created for Subject 92
+Method get_mds_matrix((93, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3712 seconds
+
+MDS JSON created for Subject 93
+Method get_mds_matrix((94, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5165 seconds
+
+MDS JSON created for Subject 94
+Method get_mds_matrix((95, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3094 seconds
+
+MDS JSON created for Subject 95
+Method get_mds_matrix((96, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5815 seconds
+
+MDS JSON created for Subject 96
+Method get_mds_matrix((97, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3366 seconds
+
+MDS JSON created for Subject 97
+Method get_mds_matrix((98, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3913 seconds
+
+MDS JSON created for Subject 98
+Method get_mds_matrix((99, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4448 seconds
+
+MDS JSON created for Subject 99
+Method get_mds_matrix((100, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6654 seconds
+
+MDS JSON created for Subject 100
+Method get_mds_matrix((101, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6033 seconds
+
+MDS JSON created for Subject 101
+Method get_mds_matrix((102, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5280 seconds
+
+MDS JSON created for Subject 102
+Method get_mds_matrix((103, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2512 seconds
+
+MDS JSON created for Subject 103
+Method get_mds_matrix((104, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4171 seconds
+
+MDS JSON created for Subject 104
+Method get_mds_matrix((105, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3721 seconds
+
+MDS JSON created for Subject 105
+Method get_mds_matrix((106, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3980 seconds
+
+MDS JSON created for Subject 106
+Method get_mds_matrix((107, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3956 seconds
+
+MDS JSON created for Subject 107
+Method get_mds_matrix((108, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5035 seconds
+
+MDS JSON created for Subject 108
+Method get_mds_matrix((109, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3429 seconds
+
+MDS JSON created for Subject 109
+Method get_mds_matrix((110, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3981 seconds
+
+MDS JSON created for Subject 110
+Method get_mds_matrix((111, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2979 seconds
+
+MDS JSON created for Subject 111
+Method get_mds_matrix((112, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4145 seconds
+
+MDS JSON created for Subject 112
+Method get_mds_matrix((113, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4729 seconds
+
+MDS JSON created for Subject 113
+Method get_mds_matrix((114, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3045 seconds
+
+MDS JSON created for Subject 114
+Method get_mds_matrix((115, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3827 seconds
+
+MDS JSON created for Subject 115
+Method get_mds_matrix((116, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3864 seconds
+
+MDS JSON created for Subject 116
+Method get_mds_matrix((117, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3148 seconds
+
+MDS JSON created for Subject 117
+Method get_mds_matrix((118, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2351 seconds
+
+MDS JSON created for Subject 118
+Method get_mds_matrix((119, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5432 seconds
+
+MDS JSON created for Subject 119
+Method get_mds_matrix((120, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5987 seconds
+
+MDS JSON created for Subject 120
+Method get_mds_matrix((121, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4668 seconds
+
+MDS JSON created for Subject 121
+Method get_mds_matrix((122, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4267 seconds
+
+MDS JSON created for Subject 122
+Method get_mds_matrix((123, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5963 seconds
+
+MDS JSON created for Subject 123
+Method get_mds_matrix((124, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3289 seconds
+
+MDS JSON created for Subject 124
+Method get_mds_matrix((125, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4561 seconds
+
+MDS JSON created for Subject 125
+Method get_mds_matrix((126, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3713 seconds
+
+MDS JSON created for Subject 126
+Method get_mds_matrix((127, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3718 seconds
+
+MDS JSON created for Subject 127
+Method get_mds_matrix((128, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4126 seconds
+
+MDS JSON created for Subject 128
+Method get_mds_matrix((129, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3449 seconds
+
+MDS JSON created for Subject 129
+Method get_mds_matrix((130, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4352 seconds
+
+MDS JSON created for Subject 130
+Method get_mds_matrix((131, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5870 seconds
+
+MDS JSON created for Subject 131
+Method get_mds_matrix((132, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2275 seconds
+
+MDS JSON created for Subject 132
+Method get_mds_matrix((133, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3641 seconds
+
+MDS JSON created for Subject 133
+Method get_mds_matrix((134, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3173 seconds
+
+MDS JSON created for Subject 134
+Method get_mds_matrix((135, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5105 seconds
+
+MDS JSON created for Subject 135
+Method get_mds_matrix((136, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3672 seconds
+
+MDS JSON created for Subject 136
+Method get_mds_matrix((137, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4590 seconds
+
+MDS JSON created for Subject 137
+Method get_mds_matrix((138, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4393 seconds
+
+MDS JSON created for Subject 138
+Method get_mds_matrix((139, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4955 seconds
+
+MDS JSON created for Subject 139
+Method get_mds_matrix((140, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4087 seconds
+
+MDS JSON created for Subject 140
+Method get_mds_matrix((141, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3934 seconds
+
+MDS JSON created for Subject 141
+Method get_mds_matrix((142, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4671 seconds
+
+MDS JSON created for Subject 142
+Method get_mds_matrix((143, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3330 seconds
+
+MDS JSON created for Subject 143
+Method get_mds_matrix((144, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4954 seconds
+
+MDS JSON created for Subject 144
+Method get_mds_matrix((145, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2742 seconds
+
+MDS JSON created for Subject 145
+Method get_mds_matrix((146, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3102 seconds
+
+MDS JSON created for Subject 146
+Method get_mds_matrix((147, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5078 seconds
+
+MDS JSON created for Subject 147
+Method get_mds_matrix((148, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2889 seconds
+
+MDS JSON created for Subject 148
+Method get_mds_matrix((149, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6685 seconds
+
+MDS JSON created for Subject 149
+Method get_mds_matrix((150, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2698 seconds
+
+MDS JSON created for Subject 150
+Method get_mds_matrix((151, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4389 seconds
+
+MDS JSON created for Subject 151
+Method get_mds_matrix((152, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3048 seconds
+
+MDS JSON created for Subject 152
+Method get_mds_matrix((153, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5711 seconds
+
+MDS JSON created for Subject 153
+Method get_mds_matrix((154, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3176 seconds
+
+MDS JSON created for Subject 154
+Method get_mds_matrix((155, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3996 seconds
+
+MDS JSON created for Subject 155
+Method get_mds_matrix((156, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3921 seconds
+
+MDS JSON created for Subject 156
+Method get_mds_matrix((157, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2740 seconds
+
+MDS JSON created for Subject 157
+Method get_mds_matrix((158, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4465 seconds
+
+MDS JSON created for Subject 158
+Method get_mds_matrix((159, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3907 seconds
+
+MDS JSON created for Subject 159
+Method get_mds_matrix((160, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4909 seconds
+
+MDS JSON created for Subject 160
+Method get_mds_matrix((161, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3956 seconds
+
+MDS JSON created for Subject 161
+Method get_mds_matrix((162, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3717 seconds
+
+MDS JSON created for Subject 162
+Method get_mds_matrix((163, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2944 seconds
+
+MDS JSON created for Subject 163
+Method get_mds_matrix((164, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5157 seconds
+
+MDS JSON created for Subject 164
+Method get_mds_matrix((165, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4080 seconds
+
+MDS JSON created for Subject 165
+Method get_mds_matrix((166, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4571 seconds
+
+MDS JSON created for Subject 166
+Method get_mds_matrix((167, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6393 seconds
+
+MDS JSON created for Subject 167
+Method get_mds_matrix((168, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4756 seconds
+
+MDS JSON created for Subject 168
+Method get_mds_matrix((169, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4418 seconds
+
+MDS JSON created for Subject 169
+Method get_mds_matrix((170, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6240 seconds
+
+MDS JSON created for Subject 170
+Method get_mds_matrix((171, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5814 seconds
+
+MDS JSON created for Subject 171
+Method get_mds_matrix((172, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5014 seconds
+
+MDS JSON created for Subject 172
+Method get_mds_matrix((173, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3052 seconds
+
+MDS JSON created for Subject 173
+Method get_mds_matrix((174, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5021 seconds
+
+MDS JSON created for Subject 174
+Method get_mds_matrix((175, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3242 seconds
+
+MDS JSON created for Subject 175
+Method get_mds_matrix((176, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4975 seconds
+
+MDS JSON created for Subject 176
+Method get_mds_matrix((177, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5981 seconds
+
+MDS JSON created for Subject 177
+Method get_mds_matrix((178, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4119 seconds
+
+MDS JSON created for Subject 178
+Method get_mds_matrix((179, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3975 seconds
+
+MDS JSON created for Subject 179
+Method get_mds_matrix((180, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3995 seconds
+
+MDS JSON created for Subject 180
+Method get_mds_matrix((181, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3477 seconds
+
+MDS JSON created for Subject 181
+Method get_mds_matrix((182, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4824 seconds
+
+MDS JSON created for Subject 182
+Method get_mds_matrix((183, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5377 seconds
+
+MDS JSON created for Subject 183
+Method get_mds_matrix((184, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2816 seconds
+
+MDS JSON created for Subject 184
+Method get_mds_matrix((185, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3905 seconds
+
+MDS JSON created for Subject 185
+Method get_mds_matrix((186, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3878 seconds
+
+MDS JSON created for Subject 186
+Method get_mds_matrix((187, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4766 seconds
+
+MDS JSON created for Subject 187
+Method get_mds_matrix((188, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2771 seconds
+
+MDS JSON created for Subject 188
+Method get_mds_matrix((189, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3780 seconds
+
+MDS JSON created for Subject 189
+Method get_mds_matrix((190, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2969 seconds
+
+MDS JSON created for Subject 190
+Method get_mds_matrix((191, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6122 seconds
+
+MDS JSON created for Subject 191
+Method get_mds_matrix((192, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2686 seconds
+
+MDS JSON created for Subject 192
+Method get_mds_matrix((193, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4664 seconds
+
+MDS JSON created for Subject 193
+Method get_mds_matrix((194, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4569 seconds
+
+MDS JSON created for Subject 194
+Method get_mds_matrix((195, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4440 seconds
+
+MDS JSON created for Subject 195
+Method get_mds_matrix((196, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4074 seconds
+
+MDS JSON created for Subject 196
+Method get_mds_matrix((197, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2371 seconds
+
+MDS JSON created for Subject 197
+Method get_mds_matrix((198, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5895 seconds
+
+MDS JSON created for Subject 198
+Method get_mds_matrix((199, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2735 seconds
+
+MDS JSON created for Subject 199
+Method get_mds_matrix((200, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4141 seconds
+
+MDS JSON created for Subject 200
+Method get_mds_matrix((201, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4819 seconds
+
+MDS JSON created for Subject 201
+Method get_mds_matrix((202, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5381 seconds
+
+MDS JSON created for Subject 202
+Method get_mds_matrix((203, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3513 seconds
+
+MDS JSON created for Subject 203
+Method get_mds_matrix((204, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3227 seconds
+
+MDS JSON created for Subject 204
+Method get_mds_matrix((205, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5033 seconds
+
+MDS JSON created for Subject 205
+Method get_mds_matrix((206, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3483 seconds
+
+MDS JSON created for Subject 206
+Method get_mds_matrix((207, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5068 seconds
+
+MDS JSON created for Subject 207
+Method get_mds_matrix((208, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2382 seconds
+
+MDS JSON created for Subject 208
+Method get_mds_matrix((209, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4762 seconds
+
+MDS JSON created for Subject 209
+Method get_mds_matrix((210, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.7116 seconds
+
+MDS JSON created for Subject 210
+Method get_mds_matrix((211, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4458 seconds
+
+MDS JSON created for Subject 211
+Method get_mds_matrix((212, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4993 seconds
+
+MDS JSON created for Subject 212
+Method get_mds_matrix((213, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4619 seconds
+
+MDS JSON created for Subject 213
+Method get_mds_matrix((214, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2730 seconds
+
+MDS JSON created for Subject 214
+Method get_mds_matrix((215, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5332 seconds
+
+MDS JSON created for Subject 215
+Method get_mds_matrix((216, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4704 seconds
+
+MDS JSON created for Subject 216
+Method get_mds_matrix((217, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4028 seconds
+
+MDS JSON created for Subject 217
+Method get_mds_matrix((218, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3749 seconds
+
+MDS JSON created for Subject 218
+Method get_mds_matrix((219, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4311 seconds
+
+MDS JSON created for Subject 219
+Method get_mds_matrix((220, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3871 seconds
+
+MDS JSON created for Subject 220
+Method get_mds_matrix((221, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4999 seconds
+
+MDS JSON created for Subject 221
+Method get_mds_matrix((222, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4032 seconds
+
+MDS JSON created for Subject 222
+Method get_mds_matrix((223, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4373 seconds
+
+MDS JSON created for Subject 223
+Method get_mds_matrix((224, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4532 seconds
+
+MDS JSON created for Subject 224
+Method get_mds_matrix((225, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3919 seconds
+
+MDS JSON created for Subject 225
+Method get_mds_matrix((226, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3735 seconds
+
+MDS JSON created for Subject 226
+Method get_mds_matrix((227, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3622 seconds
+
+MDS JSON created for Subject 227
+Method get_mds_matrix((228, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4917 seconds
+
+MDS JSON created for Subject 228
+Method get_mds_matrix((229, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4976 seconds
+
+MDS JSON created for Subject 229
+Method get_mds_matrix((230, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4826 seconds
+
+MDS JSON created for Subject 230
+Method get_mds_matrix((231, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4631 seconds
+
+MDS JSON created for Subject 231
+Method get_mds_matrix((232, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2584 seconds
+
+MDS JSON created for Subject 232
+Method get_mds_matrix((233, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4051 seconds
+
+MDS JSON created for Subject 233
+Method get_mds_matrix((234, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3551 seconds
+
+MDS JSON created for Subject 234
+Method get_mds_matrix((235, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4869 seconds
+
+MDS JSON created for Subject 235
+Method get_mds_matrix((236, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5727 seconds
+
+MDS JSON created for Subject 236
+Method get_mds_matrix((237, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5811 seconds
+
+MDS JSON created for Subject 237
+Method get_mds_matrix((238, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4635 seconds
+
+MDS JSON created for Subject 238
+Method get_mds_matrix((239, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5343 seconds
+
+MDS JSON created for Subject 239
+Method get_mds_matrix((240, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5963 seconds
+
+MDS JSON created for Subject 240
+Method get_mds_matrix((241, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4112 seconds
+
+MDS JSON created for Subject 241
+Method get_mds_matrix((242, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4803 seconds
+
+MDS JSON created for Subject 242
+Method get_mds_matrix((243, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4704 seconds
+
+MDS JSON created for Subject 243
+Method get_mds_matrix((244, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4139 seconds
+
+MDS JSON created for Subject 244
+Method get_mds_matrix((245, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5452 seconds
+
+MDS JSON created for Subject 245
+Method get_mds_matrix((246, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4869 seconds
+
+MDS JSON created for Subject 246
+Method get_mds_matrix((247, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3419 seconds
+
+MDS JSON created for Subject 247
+Method get_mds_matrix((248, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4421 seconds
+
+MDS JSON created for Subject 248
+Method get_mds_matrix((249, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3087 seconds
+
+MDS JSON created for Subject 249
+Method get_mds_matrix((250, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5040 seconds
+
+MDS JSON created for Subject 250
+Method get_mds_matrix((251, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3832 seconds
+
+MDS JSON created for Subject 251
+Method get_mds_matrix((252, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3909 seconds
+
+MDS JSON created for Subject 252
+Method get_mds_matrix((253, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4809 seconds
+
+MDS JSON created for Subject 253
+Method get_mds_matrix((254, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3050 seconds
+
+MDS JSON created for Subject 254
+Method get_mds_matrix((255, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4387 seconds
+
+MDS JSON created for Subject 255
+Method get_mds_matrix((256, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4294 seconds
+
+MDS JSON created for Subject 256
+Method get_mds_matrix((257, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3038 seconds
+
+MDS JSON created for Subject 257
+Method get_mds_matrix((258, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3920 seconds
+
+MDS JSON created for Subject 258
+Method get_mds_matrix((259, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3902 seconds
+
+MDS JSON created for Subject 259
+Method get_mds_matrix((260, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3795 seconds
+
+MDS JSON created for Subject 260
+Method get_mds_matrix((261, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3083 seconds
+
+MDS JSON created for Subject 261
+Method get_mds_matrix((262, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2516 seconds
+
+MDS JSON created for Subject 262
+Method get_mds_matrix((263, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4965 seconds
+
+MDS JSON created for Subject 263
+Method get_mds_matrix((264, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5766 seconds
+
+MDS JSON created for Subject 264
+Method get_mds_matrix((265, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4377 seconds
+
+MDS JSON created for Subject 265
+Method get_mds_matrix((266, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3149 seconds
+
+MDS JSON created for Subject 266
+Method get_mds_matrix((267, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5010 seconds
+
+MDS JSON created for Subject 267
+Method get_mds_matrix((268, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4883 seconds
+
+MDS JSON created for Subject 268
+Method get_mds_matrix((269, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6392 seconds
+
+MDS JSON created for Subject 269
+Method get_mds_matrix((270, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4508 seconds
+
+MDS JSON created for Subject 270
+Method get_mds_matrix((271, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5428 seconds
+
+MDS JSON created for Subject 271
+Method get_mds_matrix((272, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4954 seconds
+
+MDS JSON created for Subject 272
+Method get_mds_matrix((273, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5329 seconds
+
+MDS JSON created for Subject 273
+Method get_mds_matrix((274, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2923 seconds
+
+MDS JSON created for Subject 274
+Method get_mds_matrix((275, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5278 seconds
+
+MDS JSON created for Subject 275
+Method get_mds_matrix((276, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4802 seconds
+
+MDS JSON created for Subject 276
+Method get_mds_matrix((277, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5220 seconds
+
+MDS JSON created for Subject 277
+Method get_mds_matrix((278, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2210 seconds
+
+MDS JSON created for Subject 278
+Method get_mds_matrix((279, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3461 seconds
+
+MDS JSON created for Subject 279
+Method get_mds_matrix((280, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5089 seconds
+
+MDS JSON created for Subject 280
+Method get_mds_matrix((281, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4060 seconds
+
+MDS JSON created for Subject 281
+Method get_mds_matrix((282, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6136 seconds
+
+MDS JSON created for Subject 282
+Method get_mds_matrix((283, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4389 seconds
+
+MDS JSON created for Subject 283
+Method get_mds_matrix((284, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3138 seconds
+
+MDS JSON created for Subject 284
+Method get_mds_matrix((285, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3877 seconds
+
+MDS JSON created for Subject 285
+Method get_mds_matrix((286, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3394 seconds
+
+MDS JSON created for Subject 286
+Method get_mds_matrix((287, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.6945 seconds
+
+MDS JSON created for Subject 287
+Method get_mds_matrix((288, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5105 seconds
+
+MDS JSON created for Subject 288
+Method get_mds_matrix((289, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3622 seconds
+
+MDS JSON created for Subject 289
+Method get_mds_matrix((290, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3513 seconds
+
+MDS JSON created for Subject 290
+Method get_mds_matrix((291, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2630 seconds
+
+MDS JSON created for Subject 291
+Method get_mds_matrix((292, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5202 seconds
+
+MDS JSON created for Subject 292
+Method get_mds_matrix((293, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2887 seconds
+
+MDS JSON created for Subject 293
+Method get_mds_matrix((294, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5112 seconds
+
+MDS JSON created for Subject 294
+Method get_mds_matrix((295, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2215 seconds
+
+MDS JSON created for Subject 295
+Method get_mds_matrix((296, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2643 seconds
+
+MDS JSON created for Subject 296
+Method get_mds_matrix((297, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4360 seconds
+
+MDS JSON created for Subject 297
+Method get_mds_matrix((298, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4849 seconds
+
+MDS JSON created for Subject 298
+Method get_mds_matrix((299, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4475 seconds
+
+MDS JSON created for Subject 299
+Method get_mds_matrix((300, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5554 seconds
+
+MDS JSON created for Subject 300
+Method get_mds_matrix((301, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4589 seconds
+
+MDS JSON created for Subject 301
+Method get_mds_matrix((302, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4109 seconds
+
+MDS JSON created for Subject 302
+Method get_mds_matrix((303, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4311 seconds
+
+MDS JSON created for Subject 303
+Method get_mds_matrix((304, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4052 seconds
+
+MDS JSON created for Subject 304
+Method get_mds_matrix((305, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4786 seconds
+
+MDS JSON created for Subject 305
+Method get_mds_matrix((306, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4665 seconds
+
+MDS JSON created for Subject 306
+Method get_mds_matrix((307, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3360 seconds
+
+MDS JSON created for Subject 307
+Method get_mds_matrix((308, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5618 seconds
+
+MDS JSON created for Subject 308
+Method get_mds_matrix((309, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3788 seconds
+
+MDS JSON created for Subject 309
+Method get_mds_matrix((310, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4774 seconds
+
+MDS JSON created for Subject 310
+Method get_mds_matrix((311, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.4419 seconds
+
+MDS JSON created for Subject 311
+Method get_mds_matrix((312, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3062 seconds
+
+MDS JSON created for Subject 312
+Method get_mds_matrix((313, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.2679 seconds
+
+MDS JSON created for Subject 313
+Method get_mds_matrix((314, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3189 seconds
+
+MDS JSON created for Subject 314
+Method get_mds_matrix((315, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.3133 seconds
+
+MDS JSON created for Subject 315
+Method get_mds_matrix((316, '../dfc_645_down_subjects_distance_matrix_ws'), {}) executed in 0.5211 seconds
+
+MDS JSON created for Subject 316
+Done generating the MDS JSON files
+Method generate_mds(('../dfc_645_down_subjects_mds_ws', '../dfc_645_down_subjects_distance_matrix_ws', 316, 1, 316), {'distance_method': 'ws'}) executed in 136.7110 seconds
+
+Method main((645, 'ws'), {'start_subject': 1, 'end_subject': 316, 'distance_calculation': 'y', 'mds_calculation': 'y', 'down_sampling': 4}) executed in 15088.6741 seconds
+
