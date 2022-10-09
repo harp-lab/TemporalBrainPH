@@ -74,6 +74,33 @@ Distance:  11, number of subjects:   5, percentage: 1.58%
 Distance:  12, number of subjects:   6, percentage: 1.90%
 Distance:  13, number of subjects:   6, percentage: 1.90%
 ```
+- Clustering DFC 2500, DFC 645 (Down sample 4), DFC 645:
+```shell
+#clusters DFC 2500 == DFC 645 (Down sample 4): 166
+#clusters DFC 645 == DFC 645 (Down sample 4): 293
+```
+```shell
+cat clusteringresult_down_job.out 
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects: 158, percentage: 50.00%
+Distance:   1, number of subjects:  65, percentage: 20.57%
+Distance:   2, number of subjects:  19, percentage: 6.01%
+Distance:   3, number of subjects:   8, percentage: 2.53%
+Distance:   4, number of subjects:  18, percentage: 5.70%
+Distance:   5, number of subjects:  11, percentage: 3.48%
+Distance:   6, number of subjects:   4, percentage: 1.27%
+Distance:   7, number of subjects:   8, percentage: 2.53%
+Distance:   8, number of subjects:   5, percentage: 1.58%
+Distance:   9, number of subjects:   4, percentage: 1.27%
+Distance:  10, number of subjects:   4, percentage: 1.27%
+Distance:  11, number of subjects:   4, percentage: 1.27%
+Distance:  12, number of subjects:   6, percentage: 1.90%
+Distance:  13, number of subjects:   2, percentage: 0.63%
+Method main((), {}) executed in 0.0207 seconds
+```
 - Clustering with Bottleneck distance:
 ```
 Done. Generated clusters: subject 1 - 316
@@ -154,6 +181,8 @@ Method generate_mds(('../dfc_1400_subjects_mds_bn', '../dfc_1400_subjects_distan
 Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed in 9149.4538 seconds
 ```
 
+### TDA with Wasserstein distance
+
 - Clustering result for subject 1 for TDA pipeline using Wasserstein metrics:
 ![alt Subject 1 clustering for WS TDA](output/clusters_kmeans/subject_1.png)
 
@@ -163,13 +192,28 @@ Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed i
 - Clustering result for subject 3 for TDA pipeline using Wasserstein metrics:
 ![alt Subject 3 clustering for WS TDA](output/clusters_kmeans/subject_3.png)
 
-- Clustering result for subject 1 for nonTDA pipeline using Wasserstein metrics:
+### TDA with Wasserstein distance where DFC 645 is down sampled
+
+- Clustering result for subject 1 DFC 645 down sampled by 4:
+![alt Subject 1 clustering for WS TDA](output/clusters_kmeans_down/subject_1.png)
+
+- Clustering result for subject 2 DFC 645 down sampled by 4:
+![alt Subject 2 clustering for WS TDA](output/clusters_kmeans_down/subject_2.png)
+
+- Clustering result for subject 3 DFC 645 down sampled by 4:
+![alt Subject 3 clustering for WS TDA](output/clusters_kmeans_down/subject_3.png)
+
+
+
+### nonTDA clustering
+
+- Clustering result for subject 1 for nonTDA pipeline:
 ![alt Subject 1 clustering for WS nonTDA](output/clusters_kmeans_non_tda/subject_1.png)
 
-- Clustering result for subject 2 for nonTDA pipeline using Wasserstein metrics:
+- Clustering result for subject 2 for nonTDA pipeline:
 ![alt Subject 2 clustering for WS nonTDA](output/clusters_kmeans_non_tda/subject_2.png)
 
-- Clustering result for subject 3 for nonTDA pipeline using Wasserstein metrics:
+- Clustering result for subject 3 for nonTDA pipeline:
 ![alt Subject 3 clustering for WS nonTDA](output/clusters_kmeans_non_tda/subject_3.png)
 
 - Clustering result for TDA pipeline:
