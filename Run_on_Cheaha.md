@@ -59,6 +59,10 @@ scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjec
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds/ .
 ```
+- Download all files from a Cheaha directory to local machine which has a specific pattern:
+```shell
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_normal/normalize_dfc_645_subject_1_time_\*.txt
+```
 - Create a batch job:
 ```
 #!/bin/bash

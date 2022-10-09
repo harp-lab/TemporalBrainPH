@@ -49,6 +49,7 @@ python -u distance_calculation.py --data 2500 --method ws --start 1 --end 316 --
 python -u cluster_calculation.py
 python statistical_calculation.py -d output/clusters_kmeans/clusters.json
 python statistical_calculation.py -d output/clusters_kmeans_non_tda/clusters.json
+python -u distance_calculation_down_sampling.py --data 645 --method ws --start 1 --end 316 --distance y --mds y --down 4
 ```
 
 ### Results
