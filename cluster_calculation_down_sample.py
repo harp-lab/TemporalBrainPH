@@ -135,9 +135,9 @@ def show_clustering_results(cluster_summary,
 
 @timer
 def main():
-    dfc_2500_mds = "../dfc_2500_subjects_mds_ws"
+    dfc_2500_mds = "../dfc_2500_subjects_mds"
     dfc_645_ds_mds = "../dfc_645_down_subjects_mds_ws"
-    dfc_645_mds = "../dfc_645_subjects_mds_ws"
+    dfc_645_mds = "../dfc_645_subjects_mds"
     output_dir = "../clusters_kmeans_down"
 
     # dfc_2500_mds = "../dfc_2500_subjects_mds_bn"
