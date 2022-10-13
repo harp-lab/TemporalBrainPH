@@ -80,7 +80,7 @@ def generate_kmeans_clusters(start_subject, end_subject,
         plt.tight_layout()
         plt.savefig(image_name, dpi=250)
         plt.close()
-        print(f"Generated cluster for Subject: {i}\n")
+        print(f"Generated cluster for Subject: {i}: {image_name}\n")
     with open(f"{output_directory}/clusters.json", "w") as json_file:
         json.dump(cluster_info, json_file)
     print(
@@ -151,7 +151,7 @@ def main():
     # dfc_645_mds = "../dfc_645_non_tda_subjects_mds_eu"
     # output_dir = "../clusters_kmeans_non_tda"
     start_subject_number = 1
-    end_subject_number = 316
+    end_subject_number = 1
     cluster_summary = generate_kmeans_clusters(start_subject_number,
                                                end_subject_number,
                                                dfc_2500_mds,
