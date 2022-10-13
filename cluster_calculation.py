@@ -76,8 +76,9 @@ def generate_kmeans_clusters(start_subject, end_subject,
         show_clusters(labels_645, unique_labels_645, dataset_645, title, 3)
         image_name = f"{output_directory}/subject_{i}.png"
         plt.suptitle(f"Clustering for Subject {i}")
+        plt.gcf().set_size_inches(10, 4)
         plt.tight_layout()
-        plt.savefig(image_name, dpi=500)
+        plt.savefig(image_name, dpi=250)
         plt.close()
         print(f"Generated cluster for Subject: {i}\n")
     with open(f"{output_directory}/clusters.json", "w") as json_file:
@@ -135,9 +136,9 @@ def show_clustering_results(cluster_summary,
 
 @timer
 def main():
-    dfc_2500_mds = "../dfc_2500_subjects_mds_ws"
-    dfc_1400_mds = "../dfc_1400_subjects_mds_ws"
-    dfc_645_mds = "../dfc_645_subjects_mds_ws"
+    dfc_2500_mds = "../dfc_2500_subjects_mds"
+    dfc_1400_mds = "../dfc_1400_subjects_mds"
+    dfc_645_mds = "../dfc_645_subjects_mds"
     output_dir = "../clusters_kmeans"
 
     # dfc_2500_mds = "../dfc_2500_subjects_mds_bn"

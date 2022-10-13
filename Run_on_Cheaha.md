@@ -45,6 +45,10 @@ scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/analysis/cluste
 ```
 - Download single file from Cheaha to local machine:
 ```
+scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds/subject_1.json .
+scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_down_subjects_mds_ws/subject_1.json .
+scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds/subject_1.json .
+
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/fmri/clusters_bn.csv .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_normal_nonan/normalize_dfc_645_subject_1_time_1.txt .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_normal_nonan/normalize_dfc_645_subject_2_time_4.txt .

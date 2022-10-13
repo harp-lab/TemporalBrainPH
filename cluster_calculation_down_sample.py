@@ -37,7 +37,7 @@ def show_clusters(labels, unique_labels, dataset, title, index):
         label = f"cluster {i + 1}"
         if i == -1:
             label = "noise"
-        ax.scatter(x, y, label=label)
+        ax.scatter(x, y, label=label, s=5)
         ax.legend()
     ax.set_title(title)
     plt.tight_layout()
@@ -78,8 +78,9 @@ def generate_kmeans_clusters(start_subject, end_subject,
         show_clusters(labels_645, unique_labels_645, dataset_645, title, 3)
         image_name = f"{output_directory}/subject_{i}.png"
         plt.suptitle(f"Clustering for Subject {i}")
+        plt.gcf().set_size_inches(10, 4)
         plt.tight_layout()
-        plt.savefig(image_name, dpi=500)
+        plt.savefig(image_name, dpi=250)
         plt.close()
         print(f"Generated cluster for Subject: {i}\n")
     with open(f"{output_directory}/clusters_down.json", "w") as json_file:
@@ -151,20 +152,20 @@ def main():
     # dfc_1400_mds = "../dfc_1400_non_tda_subjects_mds_eu"
     # dfc_645_mds = "../dfc_645_non_tda_subjects_mds_eu"
     # output_dir = "../clusters_kmeans_non_tda"
-    # start_subject_number = 1
-    # end_subject_number = 316
-    # cluster_summary = generate_kmeans_clusters(start_subject_number,
-    #                                            end_subject_number,
-    #                                            dfc_2500_mds,
-    #                                            dfc_645_ds_mds,
-    #                                            dfc_645_mds,
-    #                                            output_dir)
-    note = "Best cluster selection using Silhouette Score in 2-15 range"
-    show_clustering_results(None,
-                            clustering_algorithm="KMeans",
-                            comments=note,
-                            file_path=output_dir + "/clusters_down.json",
-                            csv_file_path="clusters_down.csv")
+    start_subject_number = 1
+    end_subject_number = 316
+    cluster_summary = generate_kmeans_clusters(start_subject_number,
+                                               end_subject_number,
+                                               dfc_2500_mds,
+                                               dfc_645_ds_mds,
+                                               dfc_645_mds,
+                                               output_dir)
+    # note = "Best cluster selection using Silhouette Score in 2-15 range"
+    # show_clustering_results(None,
+    #                         clustering_algorithm="KMeans",
+    #                         comments=note,
+    #                         file_path=output_dir + "/clusters_down.json",
+    #                         csv_file_path="clusters_down.csv")
 
     # note = "Best cluster selection using Silhouette Score in 2-15 range"
     # show_clustering_results(cluster_summary,
