@@ -37,7 +37,7 @@ def show_clusters(labels, unique_labels, dataset, title, index):
         label = f"cluster {i + 1}"
         if i == -1:
             label = "noise"
-        ax.scatter(x, y, label=label)
+        ax.scatter(x, y, label=label, s=5)
         ax.legend()
     ax.set_title(title)
     plt.tight_layout()
