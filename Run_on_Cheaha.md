@@ -49,7 +49,7 @@ scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_m
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_down_subjects_mds_ws/subject_1.json .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds/subject_1.json .
 
-scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/fmri/clusters_bn.csv .
+scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/clusters_bn.csv .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_normal_nonan/normalize_dfc_645_subject_1_time_1.txt .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_normal_nonan/normalize_dfc_645_subject_2_time_4.txt .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/normalize_645.m .
@@ -85,7 +85,7 @@ source /home/ashovon/newaumri/matfiles/venv/bin/activate
 
 
 # execute your python scripts (change it to whatever it needs to be for you).
-python -u /home/ashovon/newaumri/matfiles/fmri/distance_calculation.py
+python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/distance_calculation.py
 ```
 - Run the Job in Cheaha:
 ```

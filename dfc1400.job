@@ -14,4 +14,4 @@ source /home/ashovon/newaumri/matfiles/venv/bin/activate
 
 
 # execute your python scripts (change it to whatever it needs to be for you).
-python -u /home/ashovon/newaumri/matfiles/fmri/distance_calculation.py --data 1400 --method bn --start 255 --end 316 --distance y --mds y
+python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/distance_calculation.py --data 1400 --method bn --start 255 --end 316 --distance y --mds y
