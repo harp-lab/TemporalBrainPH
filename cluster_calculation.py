@@ -151,7 +151,7 @@ def main():
     # dfc_645_mds = "../dfc_645_non_tda_subjects_mds_eu"
     # output_dir = "../clusters_kmeans_non_tda"
     start_subject_number = 1
-    end_subject_number = 1
+    end_subject_number = 316
     cluster_summary = generate_kmeans_clusters(start_subject_number,
                                                end_subject_number,
                                                dfc_2500_mds,
@@ -161,7 +161,8 @@ def main():
     note = "Best cluster selection using Silhouette Score in 2-15 range"
     show_clustering_results(None,
                             clustering_algorithm="KMeans",
-                            comments=note, file_path="clusters.json",
+                            comments=note,
+                            file_path=output_dir + "/clusters.json",
                             csv_file_path="clusters.csv")
 
     # note = "Best cluster selection using Silhouette Score in 2-15 range"
