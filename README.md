@@ -145,6 +145,58 @@ Distance:  11, number of subjects:  32, percentage: 10.13%
 Distance:  12, number of subjects:  29, percentage: 9.18%
 Distance:  13, number of subjects:  10, percentage: 3.16%
 ```
+- Pairwise analysis for TDA:
+```
+Similarity between DFC2500 and DFC1400
+Distance:   0, number of subjects: 172, percentage: 54.43%
+Distance:   1, number of subjects:  47, percentage: 14.87%
+Distance:   2, number of subjects:  18, percentage: 5.70%
+Distance:   3, number of subjects:  17, percentage: 5.38%
+Distance:   4, number of subjects:  20, percentage: 6.33%
+Distance:   5, number of subjects:   8, percentage: 2.53%
+Distance:   6, number of subjects:   3, percentage: 0.95%
+Distance:   7, number of subjects:   8, percentage: 2.53%
+Distance:   8, number of subjects:   6, percentage: 1.90%
+Distance:   9, number of subjects:   5, percentage: 1.58%
+Distance:  10, number of subjects:   4, percentage: 1.27%
+Distance:  11, number of subjects:   1, percentage: 0.32%
+Distance:  12, number of subjects:   3, percentage: 0.95%
+Distance:  13, number of subjects:   4, percentage: 1.27%
+
+
+Similarity between DFC1400 and DFC645
+Distance:   0, number of subjects: 176, percentage: 55.70%
+Distance:   1, number of subjects:  61, percentage: 19.30%
+Distance:   2, number of subjects:  12, percentage: 3.80%
+Distance:   3, number of subjects:  11, percentage: 3.48%
+Distance:   4, number of subjects:   9, percentage: 2.85%
+Distance:   5, number of subjects:   9, percentage: 2.85%
+Distance:   6, number of subjects:   8, percentage: 2.53%
+Distance:   7, number of subjects:   6, percentage: 1.90%
+Distance:   8, number of subjects:   3, percentage: 0.95%
+Distance:   9, number of subjects:   7, percentage: 2.22%
+Distance:  10, number of subjects:   3, percentage: 0.95%
+Distance:  11, number of subjects:   5, percentage: 1.58%
+Distance:  12, number of subjects:   3, percentage: 0.95%
+Distance:  13, number of subjects:   3, percentage: 0.95%
+
+
+Similarity between DFC645 and DFC2500
+Distance:   0, number of subjects: 160, percentage: 50.63%
+Distance:   1, number of subjects:  65, percentage: 20.57%
+Distance:   2, number of subjects:  19, percentage: 6.01%
+Distance:   3, number of subjects:   8, percentage: 2.53%
+Distance:   4, number of subjects:  17, percentage: 5.38%
+Distance:   5, number of subjects:  10, percentage: 3.16%
+Distance:   6, number of subjects:   5, percentage: 1.58%
+Distance:   7, number of subjects:   9, percentage: 2.85%
+Distance:   8, number of subjects:   5, percentage: 1.58%
+Distance:   9, number of subjects:   3, percentage: 0.95%
+Distance:  10, number of subjects:   4, percentage: 1.27%
+Distance:  11, number of subjects:   3, percentage: 0.95%
+Distance:  12, number of subjects:   6, percentage: 1.90%
+Distance:  13, number of subjects:   2, percentage: 0.63%
+```
 - Distance with Bottleneck distance output for DFC 2500:
 ```
 bn distance JSON created for Subject 316
