@@ -167,11 +167,13 @@ def show_pairwise_analysis(file_path):
             dfc_645_2500_subjects = dfc_645_2500[i][1]
         print(i, end=" & ")
         print(dfc_2500_1400_subjects, end=" & ")
-        print(f"{(dfc_2500_1400_subjects / total_subjects):.3f}\\%", end=" & ")
+        print(f"{(dfc_2500_1400_subjects / total_subjects) * 100:.3f}\\%",
+              end=" & ")
         print(dfc_1400_645_subjects, end=" & ")
-        print(f"{(dfc_1400_645_subjects / total_subjects):.3f}\\%", end=" & ")
+        print(f"{(dfc_1400_645_subjects / total_subjects) * 100:.3f}\\%",
+              end=" & ")
         print(dfc_645_2500_subjects, end=" & ")
-        print(f"{(dfc_645_2500_subjects / total_subjects):.3f}\\%",
+        print(f"{(dfc_645_2500_subjects / total_subjects) * 100:.3f}\\%",
               end=" \\\\ \hline \n")
 
 
@@ -207,9 +209,11 @@ def main():
                             csv_file_path="clusters.csv")
 
     # show_pairwise_analysis(file_path="output/clusters_kmeans/clusters.json")
-    # show_pairwise_analysis(file_path="output/clusters_kmeans_down/clusters_down.json")
+    # show_pairwise_analysis(
+    #     file_path="output/clusters_kmeans_down/clusters_down.json")
     # show_pairwise_analysis(
     #     file_path="output/clusters_kmeans_non_tda/clusters.json")
+
 
 if __name__ == "__main__":
     main()
