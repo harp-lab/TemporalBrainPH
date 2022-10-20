@@ -280,6 +280,24 @@ Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed i
 
 ![alt Subject clusters for NonTDA](output/Non_TDA_clusters_scatter.png)
 
+### Result summary
+
+- Clustering result between all three cohorts for TDA, downsampled TDA, and nonTDA:
+
+![alt Clustering result summary](output/clustering_result_all.png)
+
+- Pairwise clustering result for TDA pipeline:
+
+![alt Pairwise clustering result summary TDA](output/pairwise_clustering_result_tda.png)
+
+- Pairwise clustering result for Downsampled TDA pipeline:
+
+![alt Pairwise clustering result summary downsampled TDA](output/pairwise_clustering_result_downsampled_tda.png)
+
+- Pairwise clustering result for nonTDA pipeline:
+
+![alt Pairwise clustering result summary nonTDA](output/pairwise_clustering_result_nontda.png)
+
 ### References
 - [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
 - [Wasserstein docs](https://gudhi.inria.fr/python/3.3.0/wasserstein_distance_user.html)

@@ -152,48 +152,27 @@ def show_pairwise_analysis(file_path):
     dfc_2500_1400 = sorted(dfc_2500_1400.items(), key=lambda x: x[0])
     dfc_1400_645 = sorted(dfc_1400_645.items(), key=lambda x: x[0])
     dfc_645_2500 = sorted(dfc_645_2500.items(), key=lambda x: x[0])
-    print("Similarity between DFC2500 and DFC1400")
-    for pair in dfc_2500_1400:
-        percentage = (pair[1] / total_subjects) * 100
-        print(
-            f"Distance: {pair[0]:3d}, number of subjects: {pair[1]:3d}, percentage: {percentage:.2f}%")
-    print("\n")
+    # print(len(dfc_2500_1400), len(dfc_1400_645), len(dfc_645_2500))
 
-    print("Similarity between DFC1400 and DFC645")
-    for pair in dfc_1400_645:
-        percentage = (pair[1] / total_subjects) * 100
-        print(
-            f"Distance: {pair[0]:3d}, number of subjects: {pair[1]:3d}, percentage: {percentage:.2f}%")
-    print("\n")
-
-    print("Similarity between DFC645 and DFC2500")
-    for pair in dfc_645_2500:
-        percentage = (pair[1] / total_subjects) * 100
-        print(
-            f"Distance: {pair[0]:3d}, number of subjects: {pair[1]:3d}, percentage: {percentage:.2f}%")
-    print("\n")
-
-    # total_matches = 0
-    # total_subjects = 0
-    # matches = []
-    # distances = {}
-    # for subject in cluster_summary:
-    #     dfc_2500, dfc_1400, dfc_645 = cluster_summary[subject]
-    #     a, b, c = sorted([dfc_2500, dfc_1400, dfc_645])
-    #     distance = abs(b - a) + abs(c - b)
-    #     distances[distance] = distances.get(distance, 0) + 1
-    #     if dfc_2500 == dfc_1400 and dfc_1400 == dfc_645:
-    #         total_matches += 1
-    #         matches.append(subject)
-    #     total_subjects += 1
-    # match_percentage = (total_matches / total_subjects) * 100
-    # print(f"Total subjects: {total_subjects}")
-    # distances = sorted(distances.items(), key=lambda x: x[0])
-    # print("Match percentages:")
-    # for pair in distances:
-    #     percentage = (pair[1] / total_subjects) * 100
-    #     print(
-    #         f"Distance: {pair[0]:3d}, number of subjects: {pair[1]:3d}, percentage: {percentage:.2f}%")
+    for i in range(
+            max([len(dfc_2500_1400), len(dfc_1400_645), len(dfc_645_2500)])):
+        dfc_2500_1400_subjects = 0
+        dfc_1400_645_subjects = 0
+        dfc_645_2500_subjects = 0
+        if i < len(dfc_2500_1400):
+            dfc_2500_1400_subjects = dfc_2500_1400[i][1]
+        if i < len(dfc_1400_645):
+            dfc_1400_645_subjects = dfc_1400_645[i][1]
+        if i < len(dfc_645_2500):
+            dfc_645_2500_subjects = dfc_645_2500[i][1]
+        print(i, end=" & ")
+        print(dfc_2500_1400_subjects, end=" & ")
+        print(f"{(dfc_2500_1400_subjects / total_subjects):.3f}\\%", end=" & ")
+        print(dfc_1400_645_subjects, end=" & ")
+        print(f"{(dfc_1400_645_subjects / total_subjects):.3f}\\%", end=" & ")
+        print(dfc_645_2500_subjects, end=" & ")
+        print(f"{(dfc_645_2500_subjects / total_subjects):.3f}\\%",
+              end=" \\\\ \hline \n")
 
 
 @timer
@@ -212,29 +191,25 @@ def main():
     # dfc_1400_mds = "../dfc_1400_non_tda_subjects_mds_eu"
     # dfc_645_mds = "../dfc_645_non_tda_subjects_mds_eu"
     # output_dir = "../clusters_kmeans_non_tda"
-    # start_subject_number = 1
-    # end_subject_number = 316
-    # cluster_summary = generate_kmeans_clusters(start_subject_number,
-    #                                            end_subject_number,
-    #                                            dfc_2500_mds,
-    #                                            dfc_1400_mds,
-    #                                            dfc_645_mds,
-    #                                            output_dir)
-    # note = "Best cluster selection using Silhouette Score in 2-15 range"
-    # show_clustering_results(None,
-    #                         clustering_algorithm="KMeans",
-    #                         comments=note,
-    #                         file_path=output_dir + "/clusters.json",
-    #                         csv_file_path="clusters.csv")
+    start_subject_number = 1
+    end_subject_number = 316
+    cluster_summary = generate_kmeans_clusters(start_subject_number,
+                                               end_subject_number,
+                                               dfc_2500_mds,
+                                               dfc_1400_mds,
+                                               dfc_645_mds,
+                                               output_dir)
+    note = "Best cluster selection using Silhouette Score in 2-15 range"
+    show_clustering_results(None,
+                            clustering_algorithm="KMeans",
+                            comments=note,
+                            file_path=output_dir + "/clusters.json",
+                            csv_file_path="clusters.csv")
 
-    show_pairwise_analysis(file_path="output/clusters_kmeans/clusters.json")
-
-    # note = "Best cluster selection using Silhouette Score in 2-15 range"
-    # show_clustering_results(cluster_summary,
-    #                         clustering_algorithm="KMeans",
-    #                         comments=note, file_path=None,
-    #                         csv_file_path="clusters_nontda.csv")
-
+    # show_pairwise_analysis(file_path="output/clusters_kmeans/clusters.json")
+    # show_pairwise_analysis(file_path="output/clusters_kmeans_down/clusters_down.json")
+    # show_pairwise_analysis(
+    #     file_path="output/clusters_kmeans_non_tda/clusters.json")
 
 if __name__ == "__main__":
     main()
