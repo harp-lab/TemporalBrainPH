@@ -1,4 +1,4 @@
-conn_dfc = load("../dynamic_FC_645.mat").conn_dfc_data_645_all;
+conn_dfc = load("dynamic_FC_645.mat").conn_dfc_data_645_all;
 conn_dfc(:, 24, :, :) = [];
 conn_dfc(:, :, 24, :) = [];
 % data = load("dynamic_FC_645.mat");
@@ -10,7 +10,8 @@ conn_dfc(:, :, 24, :) = [];
 
 count = 0;
 [number_of_time_points, number_of_rois_1, number_of_rois_2, number_of_subjects] = size(conn_dfc);
-for i = 254:number_of_subjects
+% for i = 1:number_of_subjects (we need to split this because of the time limit in Cheaha)
+for i = 1:69
     M = zeros(number_of_time_points, number_of_rois_1, number_of_rois_2);
     for j = 1:number_of_rois_1
         for k = 1:number_of_rois_2
@@ -26,10 +27,10 @@ for i = 254:number_of_subjects
         end
     end
     for j = 1:number_of_time_points
-        filename = "../dfc_645_normal/normalize_dfc_645_subject_" + i + "_time_"+j+".txt";
+        filename = "dfc_645_normal/normalize_dfc_645_subject_" + i + "_time_"+j+".txt";
         time_data = reshape(M(j,:,:), [number_of_rois_1, number_of_rois_2]);
         subject_data = corrcoef(transpose(time_data));
-        subject_data_normalize = sqrt(1 - subject_data.*subject_data);
+        subject_data_normalize = 1 - subject_data;
         writematrix(subject_data_normalize, filename, 'Delimiter', 'tab');
         %disp("Done writing "+filename);
         count = count + 1;

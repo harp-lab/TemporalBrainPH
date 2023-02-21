@@ -1,4 +1,4 @@
-conn_dfc = load("../dynamic_FC_1400.mat").conn_dfc_data_1400;
+conn_dfc = load("dynamic_FC_1400.mat").conn_dfc_data_1400;
 conn_dfc(:, 24, :, :) = [];
 conn_dfc(:, :, 24, :) = [];
 count = 0;
@@ -15,10 +15,10 @@ for i = 1:number_of_subjects
         end
     end
     for j = 1:number_of_time_points
-        filename = "../dfc_1400_normal/normalize_dfc_1400_subject_" + i + "_time_"+j+".txt";
+        filename = "dfc_1400_normal/normalize_dfc_1400_subject_" + i + "_time_"+j+".txt";
         time_data = reshape(M(j,:,:), [number_of_rois_1, number_of_rois_2]);
         subject_data = corrcoef(transpose(time_data));
-        subject_data_normalize = sqrt(1 - subject_data.*subject_data);
+        subject_data_normalize = 1 - subject_data;
         writematrix(subject_data_normalize, filename, 'Delimiter', 'tab');
         count = count + 1;
     end
