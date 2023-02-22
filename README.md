@@ -74,6 +74,7 @@ Distance:  11, number of subjects:  16, percentage: 5.06%
 Distance:  12, number of subjects:  13, percentage: 4.11%
 Distance:  13, number of subjects:  27, percentage: 8.54%
 ```
+### Results with old formula
 - Clustering with Wasserstein distance (OLD):
 ``` 
 Clustering Method: KMeans
