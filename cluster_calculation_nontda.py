@@ -139,7 +139,7 @@ def main():
     # dfc_2500_mds = "../dfc_2500_subjects_mds"
     # dfc_1400_mds = "../dfc_1400_subjects_mds"
     # dfc_645_mds = "../dfc_645_subjects_mds"
-    # output_dir = "../clusters_kmeans"
+    # output_dir = "../clusters_kmeans_old"
 
     # dfc_2500_mds = "../dfc_2500_subjects_mds_bn"
     # dfc_1400_mds = "../dfc_1400_subjects_mds_bn"

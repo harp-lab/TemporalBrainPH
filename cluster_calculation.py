@@ -208,7 +208,7 @@ def main():
                             file_path=output_dir + "/clusters.json",
                             csv_file_path="clusters.csv")
 
-    # show_pairwise_analysis(file_path="output/clusters_kmeans/clusters.json")
+    # show_pairwise_analysis(file_path="output/clusters_kmeans_old/clusters.json")
     # show_pairwise_analysis(
     #     file_path="output/clusters_kmeans_down/clusters_down.json")
     # show_pairwise_analysis(

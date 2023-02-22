@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```
 - Generated cluster folders:
 ```shell
-../clusters_kmeans
+../clusters_kmeans_old
 ../clusters_kmeans_non_tda
 ```
 ### Run the programs
@@ -53,7 +53,28 @@ python -u distance_calculation_down_sampling.py --data 645 --method ws --start 1
 ```
 
 ### Results
-- Clustering with Wasserstein distance:
+- Clustering with Wasserstein distance (NEW CORRELATION FORMULA):
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects:  62, percentage: 19.62%
+Distance:   1, number of subjects:  47, percentage: 14.87%
+Distance:   2, number of subjects:  25, percentage: 7.91%
+Distance:   3, number of subjects:  22, percentage: 6.96%
+Distance:   4, number of subjects:  18, percentage: 5.70%
+Distance:   5, number of subjects:  13, percentage: 4.11%
+Distance:   6, number of subjects:  12, percentage: 3.80%
+Distance:   7, number of subjects:  23, percentage: 7.28%
+Distance:   8, number of subjects:  11, percentage: 3.48%
+Distance:   9, number of subjects:  11, percentage: 3.48%
+Distance:  10, number of subjects:  16, percentage: 5.06%
+Distance:  11, number of subjects:  16, percentage: 5.06%
+Distance:  12, number of subjects:  13, percentage: 4.11%
+Distance:  13, number of subjects:  27, percentage: 8.54%
+```
+- Clustering with Wasserstein distance (OLD):
 ``` 
 Clustering Method: KMeans
 Best cluster selection using Silhouette Score in 2-15 range
@@ -236,13 +257,13 @@ Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed i
 ### TDA with Wasserstein distance
 
 - Clustering result for subject 1 for TDA pipeline using Wasserstein metrics:
-![alt Subject 1 clustering for WS TDA](output/clusters_kmeans/subject_1.png)
+![alt Subject 1 clustering for WS TDA](output/clusters_kmeans_old/subject_1.png)
 
 - Clustering result for subject 2 for TDA pipeline using Wasserstein metrics:
-![alt Subject 2 clustering for WS TDA](output/clusters_kmeans/subject_2.png)
+![alt Subject 2 clustering for WS TDA](output/clusters_kmeans_old/subject_2.png)
 
 - Clustering result for subject 3 for TDA pipeline using Wasserstein metrics:
-![alt Subject 3 clustering for WS TDA](output/clusters_kmeans/subject_3.png)
+![alt Subject 3 clustering for WS TDA](output/clusters_kmeans_old/subject_3.png)
 
 ### TDA with Wasserstein distance where DFC 645 is down sampled
 

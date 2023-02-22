@@ -61,9 +61,9 @@ scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/normalize_2500.m .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_bn/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_non_tda/ .
-scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds/ .
-scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds/ .
-scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds_ws/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds_ws/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds_ws/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_normal/ .
 ```
 - Download all files from a Cheaha directory to local machine which has a specific pattern:
