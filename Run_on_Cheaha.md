@@ -64,6 +64,7 @@ scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_normal/ .
 ```
 - Download all files from a Cheaha directory to local machine which has a specific pattern:
 ```shell
@@ -111,9 +112,22 @@ squeue -u $USER
 ```
 squeue -p amd-hdr100
 ```
+- See the command history:
+```shell
+history | cut -c 8-
+```
+- See last 5 lines for a pattern of files:
+```shell
+tail -n 5 dfc645_*_job.out
+tail -n 2 dfc645_*.job
+```
 - Check details of a job, (13626634 is the job id):
 ```
 squeue -j 13626634 -o "%all"
+```
+- Check job history for a user within a specific start and end time:
+```shell
+sacct --accounts ashovon  --format=jobname,elapsed,ncpus,state --starttime 2023-02-20 --endtime 2023-02-22
 ```
 - See the running scripts for the user:
 ```
