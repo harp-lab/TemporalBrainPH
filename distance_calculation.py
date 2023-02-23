@@ -86,8 +86,7 @@ def generate_distance_matrix(data_dir, distance_directory,
                                                    distance_method)
         with open(generated_json, "w") as f:
             json.dump(dissimilarity_matrix.tolist(), f)
-            print(
-                f"{distance_method} distance JSON created for Subject {subject_number}")
+            print(f"{distance_method} distance JSON created for Subject {subject_number}: {generated_json}")
     print("Done generating the {distance_method} distance matrix JSON files")
 
 
@@ -106,7 +105,7 @@ def generate_mds(mds_directory, json_directory, total_subjects,
         mds_matrix = get_mds_matrix(subject_number, json_directory)
         with open(generated_mds, "w") as f:
             json.dump(mds_matrix, f)
-            print(f"MDS JSON created for Subject {subject_number}")
+            print(f"MDS JSON created for Subject {subject_number}: {generated_mds}")
     print("Done generating the MDS JSON files")
 
 

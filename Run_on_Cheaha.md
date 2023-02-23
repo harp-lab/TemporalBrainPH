@@ -2,7 +2,7 @@
 - Open the local directory in terminal.
 - Copy all the files from local directory to Cheaha:
 ```
-scp -r . ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/analysis/
+scp -r . ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/
 ```
 - Open an SSH connection to Cheaha:
 ```
@@ -10,7 +10,7 @@ ssh ashovon@cheaha.rc.uab.edu
 ```
 - Change directory to the desired directory:
 ```
-cd newaumri/matfiles/analysis/
+cd newaumri/matfiles/TemporalBrainPH/
 ```
 - Create a virtual environment to one directory up. 
 So, we can pull the current directory to local machine again without the venv files.
@@ -31,10 +31,10 @@ pip install -r requirements.txt
 ```
 - Upload a file from local machine to Cheaha:
 ```
-scp README.md ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/analysis/
-scp run_bg.sh ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/analysis/
-scp distance_calculation.py ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/analysis/
-scp cluster_calculation.py ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/analysis/
+scp README.md ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/
+scp run_bg.sh ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/
+scp distance_calculation.py ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/
+scp cluster_calculation.py ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/
 ```
 - Upload all files from a local directory to Cheaha recursively:
 ```
