@@ -91,7 +91,7 @@ source /home/ashovon/newaumri/matfiles/venv/bin/activate
 # execute your python scripts (change it to whatever it needs to be for you).
 python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/distance_calculation.py
 ```
-- Run the Job in Cheaha:
+- Run the Job in Cheaha (job should run from root directory, not scripts directory):
 ```
 sbatch dfc645.job
 sbatch dfc1400.job
