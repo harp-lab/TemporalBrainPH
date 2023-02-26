@@ -74,6 +74,28 @@ Distance:  11, number of subjects:  16, percentage: 5.06%
 Distance:  12, number of subjects:  13, percentage: 4.11%
 Distance:  13, number of subjects:  27, percentage: 8.54%
 ```
+
+- Clustering with Bottleneck distance (NEW CORRELATION FORMULA):
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects: 109, percentage: 34.49%
+Distance:   1, number of subjects:  50, percentage: 15.82%
+Distance:   2, number of subjects:  39, percentage: 12.34%
+Distance:   3, number of subjects:  26, percentage: 8.23%
+Distance:   4, number of subjects:  27, percentage: 8.54%
+Distance:   5, number of subjects:  11, percentage: 3.48%
+Distance:   6, number of subjects:  11, percentage: 3.48%
+Distance:   7, number of subjects:   5, percentage: 1.58%
+Distance:   8, number of subjects:   6, percentage: 1.90%
+Distance:   9, number of subjects:   5, percentage: 1.58%
+Distance:  10, number of subjects:   5, percentage: 1.58%
+Distance:  11, number of subjects:   6, percentage: 1.90%
+Distance:  12, number of subjects:   8, percentage: 2.53%
+Distance:  13, number of subjects:   8, percentage: 2.53%
+```
 ### Results with old formula
 - Clustering with Wasserstein distance (OLD):
 ``` 

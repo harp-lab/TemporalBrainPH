@@ -55,16 +55,22 @@ scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_normal_non
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/normalize_645.m .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/normalize_1400.m .
 scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/normalize_2500.m .
+
+scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/clusteringresult_job_ws.out .
+scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/clusteringresult_job_bn.out .
 ```
 - Download all files from a Cheaha directory to local machine:
 ```
-scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_bn/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_non_tda/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds_ws/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds_ws/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds_ws/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_normal/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_bn/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds_bn/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds_bn/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds_bn/ .
 ```
 - Download all files from a Cheaha directory to local machine which has a specific pattern:
 ```shell
