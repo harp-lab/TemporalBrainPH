@@ -182,7 +182,7 @@ def main():
     dfc_2500_mds = "../dfc_2500_subjects_mds_ws"
     dfc_1400_mds = "../dfc_1400_subjects_mds_ws"
     dfc_645_mds = "../dfc_645_subjects_mds_ws"
-    output_dir = "../clusters_kmeans"
+    output_dir = "../clusters_kmeans_ws"
 
     # dfc_2500_mds = "../dfc_2500_subjects_mds_bn"
     # dfc_1400_mds = "../dfc_1400_subjects_mds_bn"
@@ -208,7 +208,15 @@ def main():
                             file_path=output_dir + "/clusters.json",
                             csv_file_path="clusters.csv")
 
-    # show_pairwise_analysis(file_path="output/clusters_kmeans_old/clusters.json")
+    # Old formula WS tda pairwise
+    # show_pairwise_analysis(file_path="output/Old_formula_generated/clusters_kmeans/clusters.json")
+
+    # New formula WS tda pairwise
+    # show_pairwise_analysis(file_path="output/New_formula_generated/clusters_kmeans/clusters.json")
+
+    # New formula BN tda pairwise
+    # show_pairwise_analysis(file_path="output/New_formula_generated/clusters_kmeans_bn/clusters.json")
+
     # show_pairwise_analysis(
     #     file_path="output/clusters_kmeans_down/clusters_down.json")
     # show_pairwise_analysis(
