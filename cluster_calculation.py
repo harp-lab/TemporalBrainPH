@@ -217,6 +217,9 @@ def main():
     # New formula BN tda pairwise
     # show_pairwise_analysis(file_path="output/New_formula_generated/clusters_kmeans_bn/clusters.json")
 
+    # New formula EU nontda pairwise
+    # show_pairwise_analysis(file_path="output/New_formula_generated_nontda/clusters_kmeans_non_tda/clusters.json")
+
     # show_pairwise_analysis(
     #     file_path="output/clusters_kmeans_down/clusters_down.json")
     # show_pairwise_analysis(

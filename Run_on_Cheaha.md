@@ -71,6 +71,7 @@ scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds_bn/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_1400_subjects_mds_bn/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_645_subjects_mds_bn/ .
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/New_formula_generated_nontda/ .
 ```
 - Download all files from a Cheaha directory to local machine which has a specific pattern:
 ```shell
