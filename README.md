@@ -53,73 +53,11 @@ python -u distance_calculation_down_sampling.py --data 645 --method ws --start 1
 ```
 
 ### Results
-- Clustering with Wasserstein distance (NEW CORRELATION FORMULA):
-```shell
-Clustering Method: KMeans
-Best cluster selection using Silhouette Score in 2-15 range
-Total subjects: 316
-Match percentages:
-Distance:   0, number of subjects:  62, percentage: 19.62%
-Distance:   1, number of subjects:  47, percentage: 14.87%
-Distance:   2, number of subjects:  25, percentage: 7.91%
-Distance:   3, number of subjects:  22, percentage: 6.96%
-Distance:   4, number of subjects:  18, percentage: 5.70%
-Distance:   5, number of subjects:  13, percentage: 4.11%
-Distance:   6, number of subjects:  12, percentage: 3.80%
-Distance:   7, number of subjects:  23, percentage: 7.28%
-Distance:   8, number of subjects:  11, percentage: 3.48%
-Distance:   9, number of subjects:  11, percentage: 3.48%
-Distance:  10, number of subjects:  16, percentage: 5.06%
-Distance:  11, number of subjects:  16, percentage: 5.06%
-Distance:  12, number of subjects:  13, percentage: 4.11%
-Distance:  13, number of subjects:  27, percentage: 8.54%
-```
 
-- Clustering with Bottleneck distance (NEW CORRELATION FORMULA):
-```shell
-Clustering Method: KMeans
-Best cluster selection using Silhouette Score in 2-15 range
-Total subjects: 316
-Match percentages:
-Distance:   0, number of subjects: 109, percentage: 34.49%
-Distance:   1, number of subjects:  50, percentage: 15.82%
-Distance:   2, number of subjects:  39, percentage: 12.34%
-Distance:   3, number of subjects:  26, percentage: 8.23%
-Distance:   4, number of subjects:  27, percentage: 8.54%
-Distance:   5, number of subjects:  11, percentage: 3.48%
-Distance:   6, number of subjects:  11, percentage: 3.48%
-Distance:   7, number of subjects:   5, percentage: 1.58%
-Distance:   8, number of subjects:   6, percentage: 1.90%
-Distance:   9, number of subjects:   5, percentage: 1.58%
-Distance:  10, number of subjects:   5, percentage: 1.58%
-Distance:  11, number of subjects:   6, percentage: 1.90%
-Distance:  12, number of subjects:   8, percentage: 2.53%
-Distance:  13, number of subjects:   8, percentage: 2.53%
-```
+- TDA and nonTDA distance comparison
 
-- Clustering with Euclidean distance (NEW CORRELATION FORMULA NONTDA):
-```shell
-Clustering Method: KMeans
-Best cluster selection using Silhouette Score in 2-15 range
-Total subjects: 316
-Match percentages:
-Distance:   0, number of subjects:   4, percentage: 1.27%
-Distance:   1, number of subjects:   5, percentage: 1.58%
-Distance:   2, number of subjects:  11, percentage: 3.48%
-Distance:   3, number of subjects:  18, percentage: 5.70%
-Distance:   4, number of subjects:  22, percentage: 6.96%
-Distance:   5, number of subjects:  30, percentage: 9.49%
-Distance:   6, number of subjects:  20, percentage: 6.33%
-Distance:   7, number of subjects:  23, percentage: 7.28%
-Distance:   8, number of subjects:  39, percentage: 12.34%
-Distance:   9, number of subjects:  34, percentage: 10.76%
-Distance:  10, number of subjects:  36, percentage: 11.39%
-Distance:  11, number of subjects:  43, percentage: 13.61%
-Distance:  12, number of subjects:  21, percentage: 6.65%
-Distance:  13, number of subjects:  10, percentage: 3.16%
-```
+![alt TDA nonTDA distance](drawing/tda_nontda.png)
 
-### Results with old formula
 - Clustering with Wasserstein distance (OLD):
 ``` 
 Clustering Method: KMeans
@@ -299,6 +237,73 @@ Method generate_mds(('../dfc_1400_subjects_mds_bn', '../dfc_1400_subjects_distan
 
 Method main((1400, 'bn'), {'start_subject': 255, 'end_subject': 316}) executed in 9149.4538 seconds
 ```
+### Results using new formula
+- Clustering with Wasserstein distance (NEW CORRELATION FORMULA):
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects:  62, percentage: 19.62%
+Distance:   1, number of subjects:  47, percentage: 14.87%
+Distance:   2, number of subjects:  25, percentage: 7.91%
+Distance:   3, number of subjects:  22, percentage: 6.96%
+Distance:   4, number of subjects:  18, percentage: 5.70%
+Distance:   5, number of subjects:  13, percentage: 4.11%
+Distance:   6, number of subjects:  12, percentage: 3.80%
+Distance:   7, number of subjects:  23, percentage: 7.28%
+Distance:   8, number of subjects:  11, percentage: 3.48%
+Distance:   9, number of subjects:  11, percentage: 3.48%
+Distance:  10, number of subjects:  16, percentage: 5.06%
+Distance:  11, number of subjects:  16, percentage: 5.06%
+Distance:  12, number of subjects:  13, percentage: 4.11%
+Distance:  13, number of subjects:  27, percentage: 8.54%
+```
+
+- Clustering with Bottleneck distance (NEW CORRELATION FORMULA):
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects: 109, percentage: 34.49%
+Distance:   1, number of subjects:  50, percentage: 15.82%
+Distance:   2, number of subjects:  39, percentage: 12.34%
+Distance:   3, number of subjects:  26, percentage: 8.23%
+Distance:   4, number of subjects:  27, percentage: 8.54%
+Distance:   5, number of subjects:  11, percentage: 3.48%
+Distance:   6, number of subjects:  11, percentage: 3.48%
+Distance:   7, number of subjects:   5, percentage: 1.58%
+Distance:   8, number of subjects:   6, percentage: 1.90%
+Distance:   9, number of subjects:   5, percentage: 1.58%
+Distance:  10, number of subjects:   5, percentage: 1.58%
+Distance:  11, number of subjects:   6, percentage: 1.90%
+Distance:  12, number of subjects:   8, percentage: 2.53%
+Distance:  13, number of subjects:   8, percentage: 2.53%
+```
+
+- Clustering with Euclidean distance (NEW CORRELATION FORMULA NONTDA):
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects:   4, percentage: 1.27%
+Distance:   1, number of subjects:   5, percentage: 1.58%
+Distance:   2, number of subjects:  11, percentage: 3.48%
+Distance:   3, number of subjects:  18, percentage: 5.70%
+Distance:   4, number of subjects:  22, percentage: 6.96%
+Distance:   5, number of subjects:  30, percentage: 9.49%
+Distance:   6, number of subjects:  20, percentage: 6.33%
+Distance:   7, number of subjects:  23, percentage: 7.28%
+Distance:   8, number of subjects:  39, percentage: 12.34%
+Distance:   9, number of subjects:  34, percentage: 10.76%
+Distance:  10, number of subjects:  36, percentage: 11.39%
+Distance:  11, number of subjects:  43, percentage: 13.61%
+Distance:  12, number of subjects:  21, percentage: 6.65%
+Distance:  13, number of subjects:  10, percentage: 3.16%
+```
+
 
 ### TDA with Wasserstein distance
 
