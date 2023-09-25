@@ -76,12 +76,17 @@ def draw_barcode_only(data):
     print(f"Chart exported to: {output_filename}")
 
 
+def round_values(datasets, decimal_point=1):
+    return [[round(i, decimal_point) for i in ar] for ar in datasets]
+
+
 def draw_line_chart(datasets, dataset_titles,
                     x_label=None,
                     y_label=None,
                     title=None, figure_path=None, limit_y=None,
                     show_text_label=True,
                     log_scale=False):
+    datasets = round_values(datasets)
     fig, ax = plt.subplots(figsize=(8, 4))
     x = list(range(len(datasets[0])))
     for i in range(len(datasets)):
@@ -115,27 +120,32 @@ def draw_line_chart(datasets, dataset_titles,
 
 def show_pairwise_2500_1400():
     distance_2500_1400 = [
-        54.43, 14.873, 5.696, 5.38, 6.329, 2.532, 0.949, 2.532, 1.899, 1.582, 1.266, 0.316, 0.949, 1.266
+        54.43, 14.873, 5.696, 5.38, 6.329, 2.532, 0.949, 2.532, 1.899, 1.582,
+        1.266, 0.316, 0.949, 1.266
     ]
     distance_2500_1400_title = "Distance 2500ms and 1400ms (TDA)"
     distance_2500_1400_nontda = [
-        3.165, 9.81, 10.759, 9.81, 12.025, 11.709, 10.127, 5.696, 7.595, 5.063, 5.063, 5.696, 2.848, 0.633
+        3.165, 9.81, 10.759, 9.81, 12.025, 11.709, 10.127, 5.696, 7.595, 5.063,
+        5.063, 5.696, 2.848, 0.633
     ]
     distance_2500_1400_nontda_title = "Distance 2500ms and 1400ms (nonTDA)"
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
     draw_line_chart([distance_2500_1400, distance_2500_1400_nontda],
-                    [distance_2500_1400_title, distance_2500_1400_nontda_title],
+                    [distance_2500_1400_title,
+                     distance_2500_1400_nontda_title],
                     x_label, y_label,
                     figure_path="drawing/pairwise_2500_1400.png")
 
 
 def show_pairwise_1400_645():
     distance_1400_645 = [
-        55.696, 19.304, 3.797, 3.481, 2.848, 2.848, 2.532, 1.899, 0.949, 2.215, 0.949, 1.582, 0.949, 0.949
+        55.696, 19.304, 3.797, 3.481, 2.848, 2.848, 2.532, 1.899, 0.949, 2.215,
+        0.949, 1.582, 0.949, 0.949
     ]
     distance_1400_645_title = "Distance 1400ms and 645ms (TDA)"
-    distance_1400_645_nontda = [12.342, 14.873, 12.975, 8.228, 11.076, 9.810, 7.595, 5.380, 7.911, 3.797, 2.215, 1.582,
+    distance_1400_645_nontda = [12.342, 14.873, 12.975, 8.228, 11.076, 9.810,
+                                7.595, 5.380, 7.911, 3.797, 2.215, 1.582,
                                 1.266, 0.949]
     distance_1400_645_nontda_title = "Distance 1400ms and 645ms (nonTDA)"
     x_label = "Cluster difference"
@@ -143,15 +153,18 @@ def show_pairwise_1400_645():
     draw_line_chart([distance_1400_645, distance_1400_645_nontda],
                     [distance_1400_645_title, distance_1400_645_nontda_title],
                     x_label, y_label,
-                    figure_path="drawing/pairwise_1400_645.png", log_scale=False)
+                    figure_path="drawing/pairwise_1400_645.png",
+                    log_scale=False)
 
 
 def show_pairwise_645_2500():
     distance_645_2500 = [
-        50.633, 20.570, 6.013, 2.532, 5.380, 3.165, 1.582, 2.848, 1.582, 0.949, 1.266, 0.949, 1.899, 0.633
+        50.633, 20.570, 6.013, 2.532, 5.380, 3.165, 1.582, 2.848, 1.582, 0.949,
+        1.266, 0.949, 1.899, 0.633
     ]
     distance_645_2500_title = "Distance 645ms and 2500ms (TDA)"
-    distance_645_2500_nontda = [4.114, 7.278, 10.759, 10.127, 8.544, 5.696, 9.177, 6.962, 6.962, 6.329, 8.544, 6.962,
+    distance_645_2500_nontda = [4.114, 7.278, 10.759, 10.127, 8.544, 5.696,
+                                9.177, 6.962, 6.962, 6.329, 8.544, 6.962,
                                 6.329, 2.215]
     distance_645_2500_nontda_title = "Distance 645ms and 2500ms (nonTDA)"
 
@@ -165,49 +178,63 @@ def show_pairwise_645_2500():
 
 def show_tda_pairwise():
     distance_2500_1400 = [
-        54.43, 14.873, 5.696, 5.38, 6.329, 2.532, 0.949, 2.532, 1.899, 1.582, 1.266, 0.316, 0.949, 1.266
+        54.43, 14.873, 5.696, 5.38, 6.329, 2.532, 0.949, 2.532, 1.899, 1.582,
+        1.266, 0.316, 0.949, 1.266
     ]
     distance_2500_1400_title = "Distance 2500ms and 1400ms"
     distance_1400_645 = [
-        55.696, 19.304, 3.797, 3.481, 2.848, 2.848, 2.532, 1.899, 0.949, 2.215, 0.949, 1.582, 0.949, 0.949
+        55.696, 19.304, 3.797, 3.481, 2.848, 2.848, 2.532, 1.899, 0.949, 2.215,
+        0.949, 1.582, 0.949, 0.949
     ]
     distance_1400_645_title = "Distance 1400ms and 645ms"
     distance_645_2500 = [
-        50.633, 20.570, 6.013, 2.532, 5.380, 3.165, 1.582, 2.848, 1.582, 0.949, 1.266, 0.949, 1.899, 0.633
+        50.633, 20.570, 6.013, 2.532, 5.380, 3.165, 1.582, 2.848, 1.582, 0.949,
+        1.266, 0.949, 1.899, 0.633
     ]
     distance_645_2500_title = "Distance 645ms and 2500ms"
 
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
     draw_line_chart([distance_2500_1400, distance_1400_645, distance_645_2500],
-                    [distance_2500_1400_title, distance_1400_645_title, distance_645_2500_title],
+                    [distance_2500_1400_title, distance_1400_645_title,
+                     distance_645_2500_title],
                     x_label, y_label,
-                    figure_path="drawing/tda_pairwise.png", show_text_label=False)
+                    figure_path="drawing/tda_pairwise.png",
+                    show_text_label=False)
 
 
 def show_nontda_pairwise():
     distance_2500_1400_nontda = [
-        3.165, 9.81, 10.759, 9.81, 12.025, 11.709, 10.127, 5.696, 7.595, 5.063, 5.063, 5.696, 2.848, 0.633
+        3.165, 9.81, 10.759, 9.81, 12.025, 11.709, 10.127, 5.696, 7.595, 5.063,
+        5.063, 5.696, 2.848, 0.633
     ]
     distance_2500_1400_nontda_title = "Distance 2500ms and 1400ms"
-    distance_1400_645_nontda = [12.342, 14.873, 12.975, 8.228, 11.076, 9.810, 7.595, 5.380, 7.911, 3.797, 2.215, 1.582,
+    distance_1400_645_nontda = [12.342, 14.873, 12.975, 8.228, 11.076, 9.810,
+                                7.595, 5.380, 7.911, 3.797, 2.215, 1.582,
                                 1.266, 0.949]
     distance_1400_645_nontda_title = "Distance 1400ms and 645ms"
-    distance_645_2500_nontda = [4.114, 7.278, 10.759, 10.127, 8.544, 5.696, 9.177, 6.962, 6.962, 6.329, 8.544, 6.962,
+    distance_645_2500_nontda = [4.114, 7.278, 10.759, 10.127, 8.544, 5.696,
+                                9.177, 6.962, 6.962, 6.329, 8.544, 6.962,
                                 6.329, 2.215]
     distance_645_2500_nontda_title = "Distance 645ms and 2500ms"
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
-    draw_line_chart([distance_2500_1400_nontda, distance_1400_645_nontda, distance_645_2500_nontda],
-                    [distance_2500_1400_nontda_title, distance_1400_645_nontda_title, distance_645_2500_nontda_title],
+    draw_line_chart([distance_2500_1400_nontda, distance_1400_645_nontda,
+                     distance_645_2500_nontda],
+                    [distance_2500_1400_nontda_title,
+                     distance_1400_645_nontda_title,
+                     distance_645_2500_nontda_title],
                     x_label, y_label,
-                    figure_path="drawing/nontda_pairwise.png", show_text_label=False)
+                    figure_path="drawing/nontda_pairwise.png",
+                    show_text_label=False)
 
 
 def show_tda_nontda():
-    first_dataset = [37.34, 22.15, 5.7, 5.38, 6.96, 4.11, 2.53, 3.48, 2.53, 2.53, 1.9, 1.58, 1.9, 1.9]
+    first_dataset = [37.34, 22.15, 5.7, 5.38, 6.96, 4.11, 2.53, 3.48, 2.53,
+                     2.53, 1.9, 1.58, 1.9, 1.9]
     first_dataset_title = "TDA"
-    second_dataset = [.32, 1.27, 2.85, 4.75, 7.28, 11.08, 9.81, 8.86, 10.76, 10.13, 10.44, 10.13, 9.18, 3.16]
+    second_dataset = [.32, 1.27, 2.85, 4.75, 7.28, 11.08, 9.81, 8.86, 10.76,
+                      10.13, 10.44, 10.13, 9.18, 3.16]
     second_dataset_title = "nonTDA"
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
@@ -244,8 +271,8 @@ if __name__ == "__main__":
     # gudhi.plot_persistence_barcode(diag)
     # plt.show()
 
-    # show_tda_nontda()
-    # show_nontda_pairwise()
-    # show_pairwise_2500_1400()
-    # show_pairwise_645_2500()
-    show_pairwise_1400_645()
+    show_tda_nontda()
+    show_nontda_pairwise()
+    show_pairwise_2500_1400()
+    show_pairwise_645_2500()
+    # show_pairwise_1400_645()
