@@ -5,6 +5,7 @@ import csv
 import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
+from sklearn.decomposition import PCA
 from utils import timer, get_dataset
 
 
@@ -23,7 +24,7 @@ def get_highest_score(dataset):
 
 def get_cluster_info(dfc_normalize_path,
                      dfc_timeslots,
-                     subject_number, dfc_number):
+                     subject_number, dfc_number, is_pca=False):
     dataset = []
     file_prefix = f"normalize_dfc_{dfc_number}_subject_"
     for i in range(1, dfc_timeslots + 1):
@@ -31,11 +32,17 @@ def get_cluster_info(dfc_normalize_path,
         dataset.append(get_dataset(filename=filename,
                                    fmri=True))
     three_dim_data = np.array(dataset)
-    n_clusters = get_highest_score(three_dim_data.reshape(-1,
-                                                          three_dim_data.shape[
-                                                              1] *
-                                                          three_dim_data.shape[
-                                                              2]))
+    if is_pca:
+        # Flatten to 2D
+        data2d = three_dim_data.reshape(three_dim_data.shape[0], -1)
+        # PCA with 2 components
+        pca = PCA(n_components=2)
+        pca.fit(data2d)
+        two_dim_data = pca.transform(data2d)
+    else:
+        two_dim_data = three_dim_data.reshape(-1, three_dim_data.shape[1] *
+                                              three_dim_data.shape[2])
+    n_clusters = get_highest_score(two_dim_data)
     return n_clusters
 
 
@@ -46,7 +53,7 @@ def generate_kmeans_clusters(start_subject, end_subject,
                              dfc_1400_timeslots,
                              dfc_645_normalize_path,
                              dfc_645_timeslots,
-                             output_directory):
+                             output_directory, is_pca=False):
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
     cluster_info = {}
@@ -54,13 +61,13 @@ def generate_kmeans_clusters(start_subject, end_subject,
         print(f"Generating cluster for Subject: {subject_number}")
         n_clusters_2500 = get_cluster_info(
             dfc_2500_normalize_path, dfc_2500_timeslots,
-            subject_number, 2500)
+            subject_number, 2500, is_pca=is_pca)
         n_clusters_1400 = get_cluster_info(
             dfc_1400_normalize_path, dfc_1400_timeslots,
-            subject_number, 1400)
+            subject_number, 1400, is_pca=is_pca)
         n_clusters_645 = get_cluster_info(
             dfc_645_normalize_path, dfc_645_timeslots,
-            subject_number, 645)
+            subject_number, 645, is_pca=is_pca)
         cluster_info[subject_number] = [
             n_clusters_2500, n_clusters_1400, n_clusters_645
         ]
@@ -173,6 +180,16 @@ def main():
     dfc_1400_timeslots = 336
     dfc_645_normalize = "../dfc_645_normal_original"
     dfc_645_timeslots = 754
+    # cluster_summary = generate_kmeans_clusters(start_subject_number,
+    #                                            end_subject_number,
+    #                                            dfc_2500_normalize,
+    #                                            dfc_2500_timeslots,
+    #                                            dfc_1400_normalize,
+    #                                            dfc_1400_timeslots,
+    #                                            dfc_645_normalize,
+    #                                            dfc_645_timeslots,
+    #                                            output_dir)
+    # Send is_pca = True, to apply PCA rather than reshaping
     cluster_summary = generate_kmeans_clusters(start_subject_number,
                                                end_subject_number,
                                                dfc_2500_normalize,
@@ -181,7 +198,7 @@ def main():
                                                dfc_1400_timeslots,
                                                dfc_645_normalize,
                                                dfc_645_timeslots,
-                                               output_dir)
+                                               output_dir, is_pca=True)
 
     # The following code is to generate the clustering result
     # output_dir = "output/Old_formula_generated/clusters_kmeans_without_mds"
