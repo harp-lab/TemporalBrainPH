@@ -8,9 +8,8 @@ from sklearn.metrics import silhouette_score
 from utils import timer, get_dataset
 
 
-def get_labels_highest_score(dataset):
+def get_highest_score(dataset):
     max_score = -math.inf
-    labels = None
     number_of_clusters = 9
     for i in range(2, 16):
         cluster = KMeans(n_clusters=i, random_state=10)
@@ -19,8 +18,7 @@ def get_labels_highest_score(dataset):
         if score > max_score:
             number_of_clusters = i
             max_score = score
-            labels = cluster_labels
-    return number_of_clusters, labels
+    return number_of_clusters
 
 
 def get_cluster_info(dfc_normalize_path,
@@ -33,10 +31,9 @@ def get_cluster_info(dfc_normalize_path,
         dataset.append(get_dataset(filename=filename,
                                    fmri=True))
     three_dim_data = np.array(dataset)
-    two_dim_data = three_dim_data.reshape(-1,
+    n_clusters = get_highest_score(three_dim_data.reshape(-1,
                                           three_dim_data.shape[1] *
-                                          three_dim_data.shape[2])
-    n_clusters, labels = get_labels_highest_score(two_dim_data)
+                                          three_dim_data.shape[2]))
     return n_clusters
 
 
@@ -65,7 +62,7 @@ def generate_kmeans_clusters(start_subject, end_subject,
         cluster_info[subject_number] = [
             n_clusters_2500, n_clusters_1400, n_clusters_645
         ]
-        print(f"Generated cluster for Subject: {subject_number}\n")
+        print(f"Generated cluster for Subject: {subject_number} {cluster_info[subject_number]}\n")
     with open(f"{output_directory}/clusters.json", "w") as json_file:
         json.dump(cluster_info, json_file)
     print(
