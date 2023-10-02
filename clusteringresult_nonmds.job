@@ -14,4 +14,4 @@ source /home/ashovon/newaumri/matfiles/venv/bin/activate
 
 
 # execute your python scripts (change it to whatever it needs to be for you).
-python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/cluster_calculation_withoutmds.py
+python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/cluster_calculation_without_mds.py
