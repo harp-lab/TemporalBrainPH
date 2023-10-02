@@ -190,6 +190,7 @@ def main():
     #                                            dfc_645_timeslots,
     #                                            output_dir)
     # Send is_pca = True, to apply PCA rather than reshaping
+    output_dir = "../clusters_kmeans_without_mds_pca"
     cluster_summary = generate_kmeans_clusters(start_subject_number,
                                                end_subject_number,
                                                dfc_2500_normalize,
