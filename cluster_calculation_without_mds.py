@@ -32,8 +32,10 @@ def get_cluster_info(dfc_normalize_path,
                                    fmri=True))
     three_dim_data = np.array(dataset)
     n_clusters = get_highest_score(three_dim_data.reshape(-1,
-                                          three_dim_data.shape[1] *
-                                          three_dim_data.shape[2]))
+                                                          three_dim_data.shape[
+                                                              1] *
+                                                          three_dim_data.shape[
+                                                              2]))
     return n_clusters
 
 
@@ -62,7 +64,8 @@ def generate_kmeans_clusters(start_subject, end_subject,
         cluster_info[subject_number] = [
             n_clusters_2500, n_clusters_1400, n_clusters_645
         ]
-        print(f"Generated cluster for Subject: {subject_number} {cluster_info[subject_number]}\n")
+        print(
+            f"Generated cluster for Subject: {subject_number} {cluster_info[subject_number]}\n")
     with open(f"{output_directory}/clusters.json", "w") as json_file:
         json.dump(cluster_info, json_file)
     print(
@@ -116,6 +119,49 @@ def show_clustering_results(cluster_summary,
     return total_subjects, total_matches, match_percentage
 
 
+def show_pairwise_analysis(file_path):
+    cluster_summary = json.load(open(file_path))
+    dfc_2500_1400 = {}
+    dfc_1400_645 = {}
+    dfc_645_2500 = {}
+    total_subjects = 0
+    for subject in cluster_summary:
+        dfc_2500, dfc_1400, dfc_645 = cluster_summary[subject]
+        d_2500_1400 = abs(dfc_2500 - dfc_1400)
+        d_1400_645 = abs(dfc_1400 - dfc_645)
+        d_645_2500 = abs(dfc_645 - dfc_2500)
+        dfc_2500_1400[d_2500_1400] = dfc_2500_1400.get(d_2500_1400, 0) + 1
+        dfc_1400_645[d_1400_645] = dfc_1400_645.get(d_1400_645, 0) + 1
+        dfc_645_2500[d_645_2500] = dfc_645_2500.get(d_645_2500, 0) + 1
+        total_subjects += 1
+    dfc_2500_1400 = sorted(dfc_2500_1400.items(), key=lambda x: x[0])
+    dfc_1400_645 = sorted(dfc_1400_645.items(), key=lambda x: x[0])
+    dfc_645_2500 = sorted(dfc_645_2500.items(), key=lambda x: x[0])
+    # print(len(dfc_2500_1400), len(dfc_1400_645), len(dfc_645_2500))
+
+    for i in range(
+            max([len(dfc_2500_1400), len(dfc_1400_645), len(dfc_645_2500)])):
+        dfc_2500_1400_subjects = 0
+        dfc_1400_645_subjects = 0
+        dfc_645_2500_subjects = 0
+        if i < len(dfc_2500_1400):
+            dfc_2500_1400_subjects = dfc_2500_1400[i][1]
+        if i < len(dfc_1400_645):
+            dfc_1400_645_subjects = dfc_1400_645[i][1]
+        if i < len(dfc_645_2500):
+            dfc_645_2500_subjects = dfc_645_2500[i][1]
+        print(i, end=" & ")
+        print(dfc_2500_1400_subjects, end=" & ")
+        print(f"{(dfc_2500_1400_subjects / total_subjects) * 100:.3f}\\%",
+              end=" & ")
+        print(dfc_1400_645_subjects, end=" & ")
+        print(f"{(dfc_1400_645_subjects / total_subjects) * 100:.3f}\\%",
+              end=" & ")
+        print(dfc_645_2500_subjects, end=" & ")
+        print(f"{(dfc_645_2500_subjects / total_subjects) * 100:.3f}\\%",
+              end=" \\\\ \hline \n")
+
+
 @timer
 def main():
     output_dir = "../clusters_kmeans_without_mds"
@@ -136,12 +182,19 @@ def main():
                                                dfc_645_normalize,
                                                dfc_645_timeslots,
                                                output_dir)
-    note = "Best cluster selection using Silhouette Score in 2-15 range"
+
+    # The following code is to generate the clustering result
+    # output_dir = "output/Old_formula_generated/clusters_kmeans_without_mds"
+    # note = "Best cluster selection using Silhouette Score in 2-15 range"
     # show_clustering_results(None,
     #                         clustering_algorithm="KMeans",
     #                         comments=note,
     #                         file_path=output_dir + "/clusters.json",
-    #                         csv_file_path="clusters.csv")
+    #                         csv_file_path="clusters_without_mds.csv")
+
+    # Old formula WS tda pairwise
+    # show_pairwise_analysis(
+    #     file_path="output/Old_formula_generated/clusters_kmeans_without_mds/clusters.json")
 
 
 if __name__ == "__main__":

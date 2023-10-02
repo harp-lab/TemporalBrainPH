@@ -370,6 +370,48 @@ Distance:  13, number of subjects:  10, percentage: 3.16%
 
 ![alt Pairwise clustering result summary nonTDA](output/pairwise_clustering_result_nontda.png)
 
+### Clustering without MDS on 2D FCN data
+- Comparing three cohorts:
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects:   7, percentage: 2.22%
+Distance:   1, number of subjects:  12, percentage: 3.80%
+Distance:   2, number of subjects:  23, percentage: 7.28%
+Distance:   3, number of subjects:  23, percentage: 7.28%
+Distance:   4, number of subjects:  25, percentage: 7.91%
+Distance:   5, number of subjects:  24, percentage: 7.59%
+Distance:   6, number of subjects:  32, percentage: 10.13%
+Distance:   7, number of subjects:  34, percentage: 10.76%
+Distance:   8, number of subjects:  50, percentage: 15.82%
+Distance:   9, number of subjects:  34, percentage: 10.76%
+Distance:  10, number of subjects:  22, percentage: 6.96%
+Distance:  11, number of subjects:  11, percentage: 3.48%
+Distance:  12, number of subjects:  13, percentage: 4.11%
+Distance:  13, number of subjects:   6, percentage: 1.90%
+Method main((), {}) executed in 0.0094 seconds
+```
+- Pairwise analysis:
+```shell
+Distance & $2500ms$ and $1400ms$ & $1400ms$ and $645ms$ & $645ms$ and $2500ms$ \\ \hline 
+0 & 20 & 6.329\% & 104 & 32.911\% & 17 & 5.380\% \\ \hline 
+1 & 26 & 8.228\% & 81 & 25.633\% & 26 & 8.228\% \\ \hline 
+2 & 27 & 8.544\% & 53 & 16.772\% & 25 & 7.911\% \\ \hline 
+3 & 26 & 8.228\% & 24 & 7.595\% & 25 & 7.911\% \\ \hline 
+4 & 33 & 10.443\% & 23 & 7.278\% & 22 & 6.962\% \\ \hline 
+5 & 28 & 8.861\% & 15 & 4.747\% & 20 & 6.329\% \\ \hline 
+6 & 33 & 10.443\% & 3 & 0.949\% & 36 & 11.392\% \\ \hline 
+7 & 25 & 7.911\% & 6 & 1.899\% & 29 & 9.177\% \\ \hline 
+8 & 40 & 12.658\% & 6 & 1.899\% & 45 & 14.241\% \\ \hline 
+9 & 19 & 6.013\% & 1 & 0.316\% & 26 & 8.228\% \\ \hline 
+10 & 19 & 6.013\% & 0 & 0.000\% & 16 & 5.063\% \\ \hline 
+11 & 10 & 3.165\% & 0 & 0.000\% & 11 & 3.481\% \\ \hline 
+12 & 6 & 1.899\% & 0 & 0.000\% & 12 & 3.797\% \\ \hline 
+13 & 4 & 1.266\% & 0 & 0.000\% & 6 & 1.899\% \\ \hline 
+Method main((), {}) executed in 0.0007 seconds
+```
 ### References
 - [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
 - [Wasserstein docs](https://gudhi.inria.fr/python/3.3.0/wasserstein_distance_user.html)
