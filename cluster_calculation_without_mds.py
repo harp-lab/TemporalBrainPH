@@ -123,7 +123,7 @@ def show_clustering_results(cluster_summary,
 def main():
     output_dir = "../clusters_kmeans_without_mds"
     start_subject_number = 1
-    end_subject_number = 1
+    end_subject_number = 316
     dfc_2500_normalize = "../dfc_2500_normal_original"
     dfc_2500_timeslots = 86
     dfc_1400_normalize = "../dfc_1400_normal_original"
