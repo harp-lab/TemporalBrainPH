@@ -168,9 +168,7 @@ def show_pairwise_analysis(file_path):
         print(f"{(dfc_645_2500_subjects / total_subjects) * 100:.3f}\\%",
               end=" \\\\ \hline \n")
 
-
-@timer
-def main():
+def generate_three_cohorts_clusters_cheaha():
     output_dir = "../clusters_kmeans_without_mds"
     start_subject_number = 1
     end_subject_number = 316
@@ -201,18 +199,24 @@ def main():
                                                dfc_645_timeslots,
                                                output_dir, is_pca=True)
 
-    # The following code is to generate the clustering result
-    # output_dir = "output/Old_formula_generated/clusters_kmeans_without_mds"
+
+@timer
+def main():
+    # The following code is to generate the clustering result in cheaha
+    # generate_three_cohorts_clusters_cheaha()
+
+    # The following code is to show the clustering result
+    # output_dir = "output/Old_formula_generated/clusters_kmeans_without_mds_pca"
     # note = "Best cluster selection using Silhouette Score in 2-15 range"
     # show_clustering_results(None,
     #                         clustering_algorithm="KMeans",
     #                         comments=note,
     #                         file_path=output_dir + "/clusters.json",
-    #                         csv_file_path="clusters_without_mds.csv")
+    #                         csv_file_path="clusters_without_mds_pca.csv")
 
-    # Old formula WS tda pairwise
-    # show_pairwise_analysis(
-    #     file_path="output/Old_formula_generated/clusters_kmeans_without_mds/clusters.json")
+    # The following code is to generate the pairwise clustering analysis
+    show_pairwise_analysis(
+        file_path="output/Old_formula_generated/clusters_kmeans_without_mds_pca/clusters.json")
 
 
 if __name__ == "__main__":

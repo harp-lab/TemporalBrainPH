@@ -412,6 +412,44 @@ Distance & $2500ms$ and $1400ms$ & $1400ms$ and $645ms$ & $645ms$ and $2500ms$ \
 13 & 4 & 1.266\% & 0 & 0.000\% & 6 & 1.899\% \\ \hline 
 Method main((), {}) executed in 0.0007 seconds
 ```
+### Clustering without MDS on 2D FCN data using PCA
+- Comparing three cohorts:
+```shell
+Clustering Method: KMeans
+Best cluster selection using Silhouette Score in 2-15 range
+Total subjects: 316
+Match percentages:
+Distance:   0, number of subjects:  19, percentage: 6.01%
+Distance:   1, number of subjects:  41, percentage: 12.97%
+Distance:   2, number of subjects:  41, percentage: 12.97%
+Distance:   3, number of subjects:  46, percentage: 14.56%
+Distance:   4, number of subjects:  36, percentage: 11.39%
+Distance:   5, number of subjects:  30, percentage: 9.49%
+Distance:   6, number of subjects:  21, percentage: 6.65%
+Distance:   7, number of subjects:  16, percentage: 5.06%
+Distance:   8, number of subjects:  21, percentage: 6.65%
+Distance:   9, number of subjects:  17, percentage: 5.38%
+Distance:  10, number of subjects:  12, percentage: 3.80%
+Distance:  11, number of subjects:   8, percentage: 2.53%
+Distance:  12, number of subjects:   8, percentage: 2.53%
+```
+- Pairwise analysis:
+```shell
+Distance & $2500ms$ and $1400ms$ & $1400ms$ and $645ms$ & $645ms$ and $2500ms$ \\ \hline 
+0 & 64 & 20.253\% & 70 & 22.152\% & 56 & 17.722\% \\ \hline 
+1 & 73 & 23.101\% & 46 & 14.557\% & 70 & 22.152\% \\ \hline 
+2 & 53 & 16.772\% & 43 & 13.608\% & 50 & 15.823\% \\ \hline 
+3 & 36 & 11.392\% & 41 & 12.975\% & 40 & 12.658\% \\ \hline 
+4 & 29 & 9.177\% & 23 & 7.278\% & 25 & 7.911\% \\ \hline 
+5 & 20 & 6.329\% & 17 & 5.380\% & 17 & 5.380\% \\ \hline 
+6 & 9 & 2.848\% & 15 & 4.747\% & 17 & 5.380\% \\ \hline 
+7 & 4 & 1.266\% & 17 & 5.380\% & 8 & 2.532\% \\ \hline 
+8 & 13 & 4.114\% & 14 & 4.430\% & 13 & 4.114\% \\ \hline 
+9 & 5 & 1.582\% & 12 & 3.797\% & 9 & 2.848\% \\ \hline 
+10 & 4 & 1.266\% & 8 & 2.532\% & 4 & 1.266\% \\ \hline 
+11 & 3 & 0.949\% & 8 & 2.532\% & 2 & 0.633\% \\ \hline 
+12 & 3 & 0.949\% & 2 & 0.633\% & 5 & 1.582\% \\ \hline 
+```
 ### References
 - [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
 - [Wasserstein docs](https://gudhi.inria.fr/python/3.3.0/wasserstein_distance_user.html)
