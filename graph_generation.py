@@ -84,7 +84,7 @@ def draw_line_chart(datasets, dataset_titles,
                     x_label=None,
                     y_label=None,
                     title=None, figure_path=None, limit_y=None,
-                    show_text_label=True,
+                    show_text_label=False,
                     log_scale=False):
     datasets = round_values(datasets)
     fig, ax = plt.subplots(figsize=(8, 4))
@@ -128,12 +128,25 @@ def show_pairwise_2500_1400():
         3.165, 9.81, 10.759, 9.81, 12.025, 11.709, 10.127, 5.696, 7.595, 5.063,
         5.063, 5.696, 2.848, 0.633
     ]
-    distance_2500_1400_nontda_title = "Distance 2500ms and 1400ms (nonTDA)"
+    distance_2500_1400_nontda_title = "Distance 2500ms and 1400ms (nonTDA: MDS)"
+
+    distance_2500_1400_nontda_reshape = [6.329, 8.228, 8.544, 8.228, 10.443, 8.861, 10.443, 7.911, 12.658, 6.013,
+                                         6.013, 3.165, 1.899,
+                                         1.266]
+    distance_2500_1400_nontda_reshape_title = "Distance 2500ms and 1400ms (nonTDA: reshaped to 2D)"
+    distance_2500_1400_nontda_pca = [20.253, 23.101, 16.772, 11.392, 9.177, 6.329, 2.848, 1.266, 4.114, 1.582,
+                                     1.266,
+                                     0.949,
+                                     0.949, 0]
+    distance_2500_1400_nontda_pca_title = "Distance 2500ms and 1400ms (nonTDA: PCA)"
+
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
-    draw_line_chart([distance_2500_1400, distance_2500_1400_nontda],
+    draw_line_chart([distance_2500_1400, distance_2500_1400_nontda, distance_2500_1400_nontda_reshape,
+                     distance_2500_1400_nontda_pca],
                     [distance_2500_1400_title,
-                     distance_2500_1400_nontda_title],
+                     distance_2500_1400_nontda_title, distance_2500_1400_nontda_reshape_title,
+                     distance_2500_1400_nontda_pca_title],
                     x_label, y_label,
                     figure_path="drawing/pairwise_2500_1400.png")
 
@@ -147,14 +160,24 @@ def show_pairwise_1400_645():
     distance_1400_645_nontda = [12.342, 14.873, 12.975, 8.228, 11.076, 9.810,
                                 7.595, 5.380, 7.911, 3.797, 2.215, 1.582,
                                 1.266, 0.949]
-    distance_1400_645_nontda_title = "Distance 1400ms and 645ms (nonTDA)"
+    distance_1400_645_nontda_title = "Distance 1400ms and 645ms (nonTDA: MDS)"
+
+    distance_1400_645_nontda_reshape = [32.911, 25.633, 16.772, 7.595, 7.278, 4.747, 0.949, 1.899, 1.899, 0.316, 0, 0,
+                                        0, 0]
+    distance_1400_645_nontda_reshape_title = "Distance 1400ms and 645ms (nonTDA: reshaped to 2D)"
+    distance_1400_645_nontda_pca = [22.152, 14.557, 13.608, 12.975, 7.278, 5.38, 4.747, 5.38, 4.43, 3.797, 2.532, 2.532,
+                                    0.633, 0]
+    distance_1400_645_nontda_pca_title = "Distance 1400ms and 645ms (nonTDA: PCA)"
+
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
-    draw_line_chart([distance_1400_645, distance_1400_645_nontda],
-                    [distance_1400_645_title, distance_1400_645_nontda_title],
-                    x_label, y_label,
-                    figure_path="drawing/pairwise_1400_645.png",
-                    log_scale=False)
+    draw_line_chart(
+        [distance_1400_645, distance_1400_645_nontda, distance_1400_645_nontda_reshape, distance_1400_645_nontda_pca],
+        [distance_1400_645_title, distance_1400_645_nontda_title, distance_1400_645_nontda_reshape_title,
+         distance_1400_645_nontda_pca_title],
+        x_label, y_label,
+        figure_path="drawing/pairwise_1400_645.png",
+        log_scale=False)
 
 
 def show_pairwise_645_2500():
@@ -166,14 +189,26 @@ def show_pairwise_645_2500():
     distance_645_2500_nontda = [4.114, 7.278, 10.759, 10.127, 8.544, 5.696,
                                 9.177, 6.962, 6.962, 6.329, 8.544, 6.962,
                                 6.329, 2.215]
-    distance_645_2500_nontda_title = "Distance 645ms and 2500ms (nonTDA)"
+    distance_645_2500_nontda_title = "Distance 645ms and 2500ms (nonTDA: MDS)"
+
+    distance_645_2500_nontda_reshape = [5.38, 8.228, 7.911, 7.911, 6.962, 6.329, 11.392, 9.177, 14.241, 8.228, 5.063,
+                                        3.481, 3.797,
+                                        1.899]
+    distance_645_2500_nontda_reshape_title = "Distance 645ms and 2500ms (nonTDA: reshaped to 2D)"
+
+    distance_645_2500_nontda_pca = [17.722, 22.152, 15.823, 12.658, 7.911, 5.38, 5.38, 2.532, 4.114, 2.848, 1.266,
+                                    0.633,
+                                    1.582, 0]
+    distance_645_2500_nontda_pca_title = "Distance 1400ms and 645ms (nonTDA: PCA)"
 
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
-    draw_line_chart([distance_645_2500, distance_645_2500_nontda],
-                    [distance_645_2500_title, distance_645_2500_nontda_title],
-                    x_label, y_label,
-                    figure_path="drawing/pairwise_645_2500.png")
+    draw_line_chart(
+        [distance_645_2500, distance_645_2500_nontda, distance_645_2500_nontda_reshape, distance_645_2500_nontda_pca],
+        [distance_645_2500_title, distance_645_2500_nontda_title, distance_645_2500_nontda_reshape_title,
+         distance_645_2500_nontda_pca_title],
+        x_label, y_label,
+        figure_path="drawing/pairwise_645_2500.png")
 
 
 def show_tda_pairwise():
@@ -235,12 +270,16 @@ def show_tda_nontda():
     first_dataset_title = "TDA"
     second_dataset = [.32, 1.27, 2.85, 4.75, 7.28, 11.08, 9.81, 8.86, 10.76,
                       10.13, 10.44, 10.13, 9.18, 3.16]
-    second_dataset_title = "nonTDA"
+    second_dataset_title = "nonTDA (MDS)"
+    third_dataset = [2.22, 3.8, 7.28, 7.28, 7.91, 7.59, 10.13, 10.76, 15.82, 10.76, 6.96, 3.48, 4.11, 1.9]
+    third_dataset_title = "nonTDA (reshaped to 2D)"
+    fourth_dataset = [6.01, 12.97, 12.97, 14.56, 11.39, 9.49, 6.65, 5.06, 6.65, 5.38, 3.8, 2.53, 2.53, 0]
+    fourth_dataset_title = "nonTDA (PCA)"
     x_label = "Cluster difference"
     y_label = "Percentage of total subjects"
     title = "TDA and nonTDA distance comparison"
-    draw_line_chart([first_dataset, second_dataset],
-                    [first_dataset_title, second_dataset_title, ],
+    draw_line_chart([first_dataset, second_dataset, third_dataset, fourth_dataset],
+                    [first_dataset_title, second_dataset_title, third_dataset_title, fourth_dataset_title],
                     x_label, y_label,
                     figure_path="drawing/tda_nontda.png")
 
@@ -272,7 +311,7 @@ if __name__ == "__main__":
     # plt.show()
 
     show_tda_nontda()
-    show_nontda_pairwise()
+    # show_nontda_pairwise()
     show_pairwise_2500_1400()
     show_pairwise_645_2500()
-    # show_pairwise_1400_645()
+    show_pairwise_1400_645()
