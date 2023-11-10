@@ -61,6 +61,7 @@ scp ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/TemporalBrainPH/cl
 ```
 - Download all files from a Cheaha directory to local machine:
 ```
+scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_direct_clustering .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/clusters_kmeans_non_tda/ .
 scp -r ashovon@cheaha.rc.uab.edu:/home/ashovon/newaumri/matfiles/dfc_2500_subjects_mds_ws/ .

@@ -210,9 +210,9 @@ def show_pairwise_analysis(file_path):
               end=" \\\\ \hline \n")
 
 def generate_three_cohorts_clusters_cheaha():
-    output_dir = "../clusters_kmeans_direct_clustering"
-    start_subject_number = 1
-    end_subject_number = 316
+    output_dir = "../clusters_kmeans_pca"
+    start_subject_number = 32
+    end_subject_number = 32
     dfc_2500_normalize = "../dfc_2500_normal_original"
     dfc_2500_timeslots = 86
     dfc_1400_normalize = "../dfc_1400_normal_original"
@@ -227,19 +227,7 @@ def generate_three_cohorts_clusters_cheaha():
                                                dfc_1400_timeslots,
                                                dfc_645_normalize,
                                                dfc_645_timeslots,
-                                               output_dir)
-    # Send is_pca = True, to apply PCA rather than reshaping
-    # output_dir = "../clusters_kmeans_without_mds_pca"
-    # cluster_summary = generate_kmeans_clusters(start_subject_number,
-    #                                            end_subject_number,
-    #                                            dfc_2500_normalize,
-    #                                            dfc_2500_timeslots,
-    #                                            dfc_1400_normalize,
-    #                                            dfc_1400_timeslots,
-    #                                            dfc_645_normalize,
-    #                                            dfc_645_timeslots,
-    #                                            output_dir, is_pca=True)
-
+                                               output_dir, is_pca=True)
 
 @timer
 def main():
