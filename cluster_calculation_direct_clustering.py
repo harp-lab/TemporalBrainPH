@@ -47,6 +47,7 @@ def get_cluster_info(dfc_normalize_path,
         dataset.append(get_dataset(filename=filename,
                                    fmri=True))
     three_dim_data = np.array(dataset)
+    two_dim_data = None
     if is_pca:
         # Flatten to 2D
         data2d = three_dim_data.reshape(three_dim_data.shape[0], -1)
@@ -55,6 +56,7 @@ def get_cluster_info(dfc_normalize_path,
         pca.fit(data2d)
         two_dim_data = pca.transform(data2d)
     else:
+        # same as data2d
         two_dim_data = three_dim_data.reshape(-1, three_dim_data.shape[1] *
                                               three_dim_data.shape[2])
     n_clusters, labels = get_labels_highest_score(two_dim_data)
@@ -90,6 +92,7 @@ def generate_kmeans_clusters(start_subject, end_subject,
         n_clusters_2500, labels_2500, unique_labels_2500, dataset_2500 = get_cluster_info(
             dfc_2500_normalize_path, dfc_2500_timeslots,
             subject_number, 2500, is_pca=is_pca)
+        # print(n_clusters_2500, labels_2500, unique_labels_2500, dataset_2500)
         n_clusters_1400, labels_1400, unique_labels_1400, dataset_1400 = get_cluster_info(
             dfc_1400_normalize_path, dfc_1400_timeslots,
             subject_number, 1400, is_pca=is_pca)
@@ -228,23 +231,38 @@ def generate_three_cohorts_clusters_cheaha():
                                                dfc_645_normalize,
                                                dfc_645_timeslots,
                                                output_dir)
-    # Send is_pca = True, to apply PCA rather than reshaping
-    # output_dir = "../clusters_kmeans_without_mds_pca"
-    # cluster_summary = generate_kmeans_clusters(start_subject_number,
-    #                                            end_subject_number,
-    #                                            dfc_2500_normalize,
-    #                                            dfc_2500_timeslots,
-    #                                            dfc_1400_normalize,
-    #                                            dfc_1400_timeslots,
-    #                                            dfc_645_normalize,
-    #                                            dfc_645_timeslots,
-    #                                            output_dir, is_pca=True)
+
+
+def generate_three_cohorts_clusters_local():
+    output_dir = "../clusters_kmeans_direct_clustering_32"
+    start_subject_number = 32
+    end_subject_number = 32
+    dfc_2500_normalize = "../TemporalBrainPHDataSubject32/dfc_2500_normal_original"
+    dfc_2500_timeslots = 86
+    dfc_1400_normalize = "../TemporalBrainPHDataSubject32/dfc_1400_normal_original"
+    dfc_1400_timeslots = 336
+    dfc_645_normalize = "../TemporalBrainPHDataSubject32/dfc_645_normal_original"
+    dfc_645_timeslots = 754
+    cluster_summary = generate_kmeans_clusters(start_subject_number,
+                                               end_subject_number,
+                                               dfc_2500_normalize,
+                                               dfc_2500_timeslots,
+                                               dfc_1400_normalize,
+                                               dfc_1400_timeslots,
+                                               dfc_645_normalize,
+                                               dfc_645_timeslots,
+                                               output_dir)
+    print(cluster_summary)
 
 
 @timer
 def main():
     # The following code is to generate the clustering result in cheaha
     generate_three_cohorts_clusters_cheaha()
+
+    # Debugging 32nd subjects plot locally
+    # generate_three_cohorts_clusters_local()
+
 
     # The following code is to show the clustering result
     # output_dir = "output/Old_formula_generated/clusters_kmeans_direct_clustering"

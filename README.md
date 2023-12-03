@@ -450,6 +450,25 @@ Distance & $2500ms$ and $1400ms$ & $1400ms$ and $645ms$ & $645ms$ and $2500ms$ \
 11 & 3 & 0.949\% & 8 & 2.532\% & 2 & 0.633\% \\ \hline 
 12 & 3 & 0.949\% & 2 & 0.633\% & 5 & 1.582\% \\ \hline 
 ```
+
+### Number of files
+```shell
+[ashovon@login004 matfiles]$ pwd
+/home/ashovon/newaumri/matfiles
+[ashovon@login004 matfiles]$ ls dfc_2500_normal | wc -l
+27176
+[ashovon@login004 matfiles]$ ls dfc_1400_normal | wc -l
+106176
+[ashovon@login004 matfiles]$ ls dfc_645_normal | wc -l
+238264
+[ashovon@login004 matfiles]$ du -sh dfc_2500_normal
+6.7G	dfc_2500_normal
+[ashovon@login004 matfiles]$ du -sh dfc_1400_normal
+26G	dfc_1400_normal
+[ashovon@login004 matfiles]$ du -sh dfc_645_normal
+59G	dfc_645_normal
+
+```
 ### References
 - [Rips complex docs](https://gudhi.inria.fr/python/latest/rips_complex_user.html)
 - [Wasserstein docs](https://gudhi.inria.fr/python/3.3.0/wasserstein_distance_user.html)
