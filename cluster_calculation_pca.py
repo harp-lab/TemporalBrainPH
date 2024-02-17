@@ -211,8 +211,8 @@ def show_pairwise_analysis(file_path):
 
 def generate_three_cohorts_clusters_cheaha():
     output_dir = "../clusters_kmeans_pca"
-    start_subject_number = 32
-    end_subject_number = 32
+    start_subject_number = 1
+    end_subject_number = 316
     dfc_2500_normalize = "../dfc_2500_normal_original"
     dfc_2500_timeslots = 86
     dfc_1400_normalize = "../dfc_1400_normal_original"

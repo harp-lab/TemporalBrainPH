@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-#SBATCH --job-name=clusteringresultnonmds
-#SBATCH --output=clusteringresultnonmdspca_job.out
+#SBATCH --job-name=clusteringresultpca
+#SBATCH --output=clusteringresultpca_job.out
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=12
 #SBATCH --partition=amd-hdr100
@@ -14,4 +14,4 @@ source /home/ashovon/newaumri/matfiles/venv/bin/activate
 
 
 # execute your python scripts (change it to whatever it needs to be for you).
-python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/cluster_calculation_without_mds.py
+python -u /home/ashovon/newaumri/matfiles/TemporalBrainPH/cluster_calculation_pca.py
