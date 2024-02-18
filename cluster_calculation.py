@@ -201,12 +201,12 @@ def main():
                                                dfc_1400_mds,
                                                dfc_645_mds,
                                                output_dir)
-    note = "Best cluster selection using Silhouette Score in 2-15 range"
-    show_clustering_results(None,
-                            clustering_algorithm="KMeans",
-                            comments=note,
-                            file_path=output_dir + "/clusters.json",
-                            csv_file_path="clusters.csv")
+    # note = "Best cluster selection using Silhouette Score in 2-15 range"
+    # show_clustering_results(None,
+    #                         clustering_algorithm="KMeans",
+    #                         comments=note,
+    #                         file_path=output_dir + "/clusters.json",
+    #                         csv_file_path="clusters.csv")
 
     # Old formula WS tda pairwise
     # show_pairwise_analysis(file_path="output/Old_formula_generated/clusters_kmeans/clusters.json")
