@@ -17,7 +17,7 @@ def get_dataset(datafile):
 def get_labels_highest_score(dataset):
     max_score = -math.inf
     labels = None
-    number_of_clusters = 9
+    number_of_clusters = 0
     for i in range(2, 16):
         cluster = KMeans(n_clusters=i, random_state=10)
         cluster_labels = cluster.fit_predict(dataset)
@@ -87,6 +87,49 @@ def generate_kmeans_clusters(start_subject, end_subject,
         f"Done. Generated clusters: subject {start_subject} - {end_subject}\n")
     return cluster_info
 
+
+def generate_kmeans_clusters_adhd(output_directory, mds_path, total_subjects, group=None):
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+
+    cluster_info = {}
+
+    for subject_number in range(1, total_subjects + 1):
+        print(f"Generating cluster for Subject: {subject_number}")
+        datafile = os.path.join(mds_path, f"subject_{subject_number}.json")
+        dataset = get_dataset(datafile)
+
+        n_clusters, labels = get_labels_highest_score(dataset)
+        cluster_info[subject_number] = n_clusters
+
+        title = f"{group + ' ' if group else ''}Subject {subject_number}: {n_clusters} clusters"
+
+        fig, ax = plt.subplots(figsize=(6, 6))  # Create a new figure
+        cmap = plt.cm.get_cmap("tab10")  # Get a color map
+
+        unique_labels = np.unique(labels)
+        for i in unique_labels:
+            cluster_points = dataset[labels == i]  # Get all points in the cluster
+            ax.scatter(cluster_points[:, 0], cluster_points[:, 1],
+                       label=f"Cluster {i + 1}" if i != -1 else "Noise",
+                       s=10, color=cmap(i % 10))  # Use modulo for color cycling
+
+        ax.legend()
+        ax.set_title(title)
+        plt.tight_layout()
+
+        image_name = os.path.join(output_directory, f"subject_{subject_number}.png")
+        plt.savefig(image_name, dpi=250)
+        plt.close(fig)  # Explicitly close the figure to free memory
+
+        print(f"Generated cluster for Subject {subject_number}: {image_name}\n")
+
+    # Save cluster information
+    with open(os.path.join(output_directory, "clusters.json"), "w") as json_file:
+        json.dump(cluster_info, json_file)
+
+    print(f"Done. Generated clusters for {total_subjects} subjects\n")
+    return cluster_info
 
 def show_clustering_results(cluster_summary,
                             clustering_algorithm="kmeans",

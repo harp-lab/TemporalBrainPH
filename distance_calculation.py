@@ -16,9 +16,8 @@ def get_barcodes_distance(dgm_1, dgm_2, distance_method='ws'):
         return gudhi.bottleneck_distance(dgm_1, dgm_2)
 
 
-@timer
 def get_mds_matrix(subject_id, json_directory):
-    data_path = f'{json_directory}/subject_{subject_id}.json'
+    data_path = os.path.join(json_directory, f"subject_{subject_id}.json")
     dissimilarity_matrix = np.array(json.loads(open(data_path, "r").read()))
     mds_matrix = get_mds(dissimilarity_matrix)
     return json.dumps(mds_matrix.tolist())
@@ -78,7 +77,7 @@ def generate_distance_matrix(data_dir, distance_directory,
         end_subject = total_subjects
     for subject_number in range(start_subject, end_subject + 1):
         print(f"Generating distance matrix for Subject {subject_number}")
-        generated_json = f'{distance_directory}/subject_{subject_number}.json'
+        generated_json = os.path.join(distance_directory, f"subject_{subject_number}.json")
         dissimilarity_matrix = get_distance_matrix(data_dir,
                                                    subject_number,
                                                    total_timeslots,
@@ -90,7 +89,6 @@ def generate_distance_matrix(data_dir, distance_directory,
     print("Done generating the {distance_method} distance matrix JSON files")
 
 
-@timer
 def generate_mds(mds_directory, json_directory, total_subjects,
                  start_subject=None,
                  end_subject=None, distance_method='ws'
@@ -101,7 +99,7 @@ def generate_mds(mds_directory, json_directory, total_subjects,
         start_subject = 1
         end_subject = total_subjects
     for subject_number in range(start_subject, end_subject + 1):
-        generated_mds = f'{mds_directory}/subject_{subject_number}.json'
+        generated_mds = os.path.join(mds_directory, f"subject_{subject_number}.json")
         mds_matrix = get_mds_matrix(subject_number, json_directory)
         with open(generated_mds, "w") as f:
             json.dump(mds_matrix, f)
