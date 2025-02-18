@@ -7,6 +7,31 @@ Distance matrices for /media/shovon/Multimedia/dfc/adhd/data/DFC_adhd_filt_adhd3
 Distance matrices for /media/shovon/Multimedia/dfc/adhd/data/DFC_adhd_filt_controls.mat are generated in 30981.4791 seconds - 573 subjects
 
 ```
+- T and p values for tda TR 2, TR 2.5
+```shell
+Pipeline: tda
+Cohort 1 => control: 290 subjects, ADHD: 285 subjects
+Cohort 2 => control: 189 subjects, ADHD: 68 subjects
+Cohort 1 (TR=2s):
+t-statistic: 0.7493767923512027
+p-value: 0.45396370539190223
+Significant difference: False
+Cohort 2 (TR=2.5s):
+t-statistic: 1.668262210213111
+p-value: 0.09649357532573855
+Significant difference: False
+Pipeline: traditional
+Cohort 1 => control: 290 subjects, ADHD: 285 subjects
+Cohort 2 => control: 189 subjects, ADHD: 68 subjects
+Cohort 1 (TR=2s):
+t-statistic: 1.572242829928382
+p-value: 0.11644987804646008
+Significant difference: False
+Cohort 2 (TR=2.5s):
+t-statistic: 2.0646432077939783
+p-value: 0.04086190789178069
+Significant difference: True
+```
 - Data exploration
 ```shell
 (171, 190) - Means 
