@@ -8,7 +8,9 @@ from time import time
 import gc
 import pandas as pd
 import json
+import copy
 from scipy import stats
+import matplotlib.pyplot as plt
 from distance_calculation import generate_mds
 from cluster_calculation import generate_kmeans_clusters_adhd
 
@@ -249,6 +251,7 @@ def cluster_analysis(pipeline, output_file):
 
 
 def perform_t_test(pipeline, json_file_path):
+    output_file_path = f"adhd/{pipeline}/cohorts.json"
     with open(json_file_path, 'r') as f:
         subject_data = json.load(f)
 
@@ -269,34 +272,93 @@ def perform_t_test(pipeline, json_file_path):
     cohort_2_control_clusters = np.array([data["Cluster"] for key, data in cohort_2_control.items()])
     cohort_2_adhd_clusters = np.array([data["Cluster"] for key, data in cohort_2_adhd.items()])
 
-    # Perform t-tests
-    t_values_c1, p_values_c1 = stats.ttest_ind(cohort_1_control_clusters, cohort_1_adhd_clusters, equal_var=False)
-    t_values_c2, p_values_c2 = stats.ttest_ind(cohort_2_control_clusters, cohort_2_adhd_clusters, equal_var=False)
+    # Compute mean and standard error
+    updated_data = {
+        "cohort1-control": {
+            "mean": round(float(np.mean(cohort_1_control_clusters)), 4),
+            "std_error": round(float(stats.sem(cohort_1_control_clusters)), 4),
+            "data": cohort_1_control_clusters.tolist()
+        },
+        "cohort1-adhd": {
+            "mean": round(float(np.mean(cohort_1_adhd_clusters)), 4),
+            "std_error": round(float(stats.sem(cohort_1_adhd_clusters)), 4),
+            "data": cohort_1_adhd_clusters.tolist()
+        },
+        "cohort2-control": {
+            "mean": round(float(np.mean(cohort_2_control_clusters)), 4),
+            "std_error": round(float(stats.sem(cohort_2_control_clusters)), 4),
+            "data": cohort_2_control_clusters.tolist()
+        },
+        "cohort2-adhd": {
+            "mean": round(float(np.mean(cohort_2_adhd_clusters)), 4),
+            "std_error": round(float(stats.sem(cohort_2_adhd_clusters)), 4),
+            "data": cohort_2_adhd_clusters.tolist()
+        }
+    }
+    updated_data_no_data_dynamic = copy.deepcopy(updated_data)
 
-    # Calculate differences between control and ADHD for each cohort
-    t_values_X1, p_values_X1 = stats.ttest_ind(cohort_1_control_clusters, cohort_2_control_clusters, equal_var=False)
-    t_values_X2, p_values_X2 = stats.ttest_ind(cohort_1_adhd_clusters, cohort_2_adhd_clusters, equal_var=False)
+    # Remove "data" key from each sub-dictionary
+    for key in updated_data_no_data_dynamic:
+        updated_data_no_data_dynamic[key].pop("data", None)
 
-    # Print results
-    print(f"Pipeline: {pipeline}")
-    print(f"Cohort 1 => control: {cohort_1_control_clusters.shape[0]} subjects, "
-          f"ADHD: {cohort_1_adhd_clusters.shape[0]} subjects")
-    print(f"Cohort 2 => control: {cohort_2_control_clusters.shape[0]} subjects, "
-          f"ADHD: {cohort_2_adhd_clusters.shape[0]} subjects")
+    print(updated_data_no_data_dynamic)
 
-    print("Cohort 1 (TR=2s):")
-    print(f"t-statistic (between control and adhd): {t_values_c1:.3f}")
-    print(f"p-value (between control and adhd): {p_values_c1:.3f}")
+    # Save as JSON file
+    with open(output_file_path, "w") as json_file:
+        json.dump(updated_data, json_file)
+    print(f"Generated: {output_file_path}")
 
-    print("Cohort 2 (TR=2.5s):")
-    print(f"t-statistic (between control and adhd): {t_values_c2:.3f}")
-    print(f"p-value (between control and adhd): {p_values_c2:.3f}")
+    # Plot histograms
+    groups = {
+        "Cohort 1 Control": cohort_1_control_clusters,
+        "Cohort 1 ADHD": cohort_1_adhd_clusters,
+        "Cohort 2 Control": cohort_2_control_clusters,
+        "Cohort 2 ADHD": cohort_2_adhd_clusters,
+    }
 
-    print(f"t-statistic (between control of cohorts): {t_values_X1:.3f}")
-    print(f"p-value (between control of cohorts): {p_values_X1:.3f}")
+    for group_name, data in groups.items():
+        plt.figure()
+        plt.hist(data, bins=np.arange(min(data), max(data) + 2) - 0.5, alpha=0.7, edgecolor="black")
+        plt.xlabel("Cluster Values")
+        plt.ylabel("Frequency")
+        plt.title(f"Histogram of {group_name}")
+        plt.grid(axis="y", alpha=0.75)
+        plt.xticks(np.arange(min(data), max(data) + 1, 1))  # Ensure whole number ticks
+        plt.tight_layout()
+        image_name = f"adhd/{pipeline}/{group_name}.png"
+        image_name = image_name.replace(" ", "")
+        plt.savefig(image_name, dpi=250)
+        plt.close()
+        print(f"Generated {image_name}")
 
-    print(f"t-statistic (between adhd of cohorts): {t_values_X2:.3f}")
-    print(f"p-value (between adhd of cohorts): {p_values_X2:.3f}")
+    # # Perform t-tests
+    # t_values_c1, p_values_c1 = stats.ttest_ind(cohort_1_control_clusters, cohort_1_adhd_clusters, equal_var=False)
+    # t_values_c2, p_values_c2 = stats.ttest_ind(cohort_2_control_clusters, cohort_2_adhd_clusters, equal_var=False)
+    #
+    # # Calculate differences between control and ADHD for each cohort
+    # t_values_X1, p_values_X1 = stats.ttest_ind(cohort_1_control_clusters, cohort_2_control_clusters, equal_var=False)
+    # t_values_X2, p_values_X2 = stats.ttest_ind(cohort_1_adhd_clusters, cohort_2_adhd_clusters, equal_var=False)
+    #
+    # # Print results
+    # print(f"Pipeline: {pipeline}")
+    # print(f"Cohort 1 => control: {cohort_1_control_clusters.shape[0]} subjects, "
+    #       f"ADHD: {cohort_1_adhd_clusters.shape[0]} subjects")
+    # print(f"Cohort 2 => control: {cohort_2_control_clusters.shape[0]} subjects, "
+    #       f"ADHD: {cohort_2_adhd_clusters.shape[0]} subjects")
+    #
+    # print("Cohort 1 (TR=2s):")
+    # print(f"t-statistic (between control and adhd): {t_values_c1:.3f}")
+    # print(f"p-value (between control and adhd): {p_values_c1:.3f}")
+    #
+    # print("Cohort 2 (TR=2.5s):")
+    # print(f"t-statistic (between control and adhd): {t_values_c2:.3f}")
+    # print(f"p-value (between control and adhd): {p_values_c2:.3f}")
+    #
+    # print(f"t-statistic (between control of cohorts): {t_values_X1:.3f}")
+    # print(f"p-value (between control of cohorts): {p_values_X1:.3f}")
+    #
+    # print(f"t-statistic (between adhd of cohorts): {t_values_X2:.3f}")
+    # print(f"p-value (between adhd of cohorts): {p_values_X2:.3f}")
 
     # print("Cohort 1 results:", "t-value:", t_values_c1)
     # print("Cohort 2 results:", "t-value:", t_values_c2)
@@ -373,4 +435,4 @@ if __name__ == "__main__":
     }
 
     run_pipeline(datasets, "tda", "ws")
-    run_pipeline(datasets, "traditional", "ws")
+    # run_pipeline(datasets, "traditional", "ws")
