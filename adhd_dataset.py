@@ -9,11 +9,31 @@ import gc
 import pandas as pd
 import json
 import copy
+import csv
 from scipy import stats
 import matplotlib.pyplot as plt
 from distance_calculation import generate_mds
 from cluster_calculation import generate_kmeans_clusters_adhd
 
+def shoelace_formula(vertices):
+    """
+    Calculate the area of a polygon using the shoelace formula.
+
+    Args:
+        vertices: A list of tuples, where each tuple represents the (x, y)
+                  coordinates of a vertex.
+
+    Returns:
+        The area of the polygon.
+    """
+    n = len(vertices)
+    area = 0.0
+    for i in range(n):
+        j = (i + 1) % n  # Next vertex, wraps around to the first vertex
+        area += vertices[i][0] * vertices[j][1]
+        area -= vertices[j][0] * vertices[i][1]
+    area = abs(area) / 2.0
+    return area
 
 def get_barcodes_distance(dgm_1, dgm_2, distance_method='ws'):
     """Computes the Wasserstein or Bottleneck distance between two persistence diagrams."""
@@ -209,6 +229,9 @@ def cluster_analysis(pipeline, output_file):
         8: {"SITE_NAME": "WashU", "TR": 2.5},
     }
 
+    # Define base directory for MDS data
+    mds_base_path = f"adhd/{pipeline}/mds"
+
     # Final dictionary to store subject to TR mapping
     subject_tr_mapping = {}
 
@@ -238,9 +261,18 @@ def cluster_analysis(pipeline, output_file):
                 if site_id not in site_data.keys():
                     continue
                 tr_value = site_data.get(site_id, {}).get("TR", None)  # Get TR value
+                # Construct the MDS file path
+                mds_file_path = os.path.join(mds_base_path, group, f"subject_{subject_id}.json")
+                # Load MDS data if the file exists
+                if os.path.exists(mds_file_path):
+                    with open(mds_file_path, "r") as mds_file:
+                        mds_data = json.load(mds_file)  # Assuming it's a list of [x, y] coordinates
+                else:
+                    mds_data = None  # No MDS data found for this subject
+
                 subject_tr_mapping[f"{group}-{subject_id}"] = {"TR": tr_value, "Cluster": cluster,
                                                                "Subject_ID": subject_id,
-                                                               "Group": group}
+                                                               "Group": group, "MDS": mds_data}
                 count_subject += 1
         print(f"{group} has {count_subject} subjects with TR 2 or 2.5")
 
@@ -250,8 +282,44 @@ def cluster_analysis(pipeline, output_file):
     print(f"Generated subject, cluster, TR mapping: {output_file}")
 
 
+def plot_group_histogram(pipeline, groups, group_names, title, group_type):
+    plt.figure(figsize=(10, 6))
+    all_values = np.concatenate([groups[name] for name in group_names])
+    bins = np.arange(1, 17, 1)
+
+
+    # Determine the width of each bin based on the number of groups
+    total_width = 0.8  # total width taken by bars in one bin space
+    width = total_width / len(group_names)
+
+    for idx, group_name in enumerate(group_names):
+        values = groups[group_name]
+        counts, bin_edges = np.histogram(values, bins=bins)
+        percentages = counts / counts.sum() * 100
+        # bin_centers = bin_edges[:-1] + 0.5
+
+        # Offset for side-by-side arrangement
+        offset = (idx - (len(group_names) - 1) / 2) * width
+        plt.bar(bin_edges[:-1] + offset, percentages, width=width, alpha=0.7, label=group_name, edgecolor='black')
+
+    plt.xlabel("# of Clusters")
+    plt.ylabel("Percentage (%)")
+    plt.title(title)
+    x_ticks = np.arange(1, 17, 1)
+    # print(x_ticks)
+    plt.xticks(x_ticks, [f"{int(x):d}" for x in x_ticks])
+    plt.legend()
+    plt.grid(axis="y", alpha=0.75)
+    plt.tight_layout()
+    image_name = f"adhd/{pipeline}/{pipeline}_{group_type}.png"
+    image_name = image_name.replace(" ", "")
+    plt.savefig(image_name, dpi=250)
+    plt.close()
+    print(f"Generated {image_name}")
+
 def perform_t_test(pipeline, json_file_path):
-    output_file_path = f"adhd/{pipeline}/cohorts.json"
+    output_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.json"
+    output_csv_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.csv"
     with open(json_file_path, 'r') as f:
         subject_data = json.load(f)
 
@@ -297,40 +365,53 @@ def perform_t_test(pipeline, json_file_path):
     }
     updated_data_no_data_dynamic = copy.deepcopy(updated_data)
 
-    # Remove "data" key from each sub-dictionary
-    for key in updated_data_no_data_dynamic:
-        updated_data_no_data_dynamic[key].pop("data", None)
+    # # Remove "data" key from each sub-dictionary
+    # for key in updated_data_no_data_dynamic:
+    #     updated_data_no_data_dynamic[key].pop("data", None)
+    #
+    # print(updated_data_no_data_dynamic)
+    #
+    # # Save as JSON file
+    # with open(output_file_path, "w") as json_file:
+    #     json.dump(updated_data, json_file)
+    # print(f"Generated: {output_file_path}")
+    #
+    # # Write to CSV file
+    #
+    # with open(output_csv_file_path, mode='w', newline='') as file:
+    #     writer = csv.writer(file)
+    #
+    #     # Write header
+    #     writer.writerow(updated_data.keys())
+    #
+    #     # Get max length of data lists
+    #     max_length = max(len(v["data"]) for v in updated_data.values())
+    #
+    #     # Write data row-wise
+    #     for i in range(max_length):
+    #         row = [
+    #             updated_data[key]["data"][i] if i < len(updated_data[key]["data"]) else ""
+    #             for key in updated_data
+    #         ]
+    #         writer.writerow(row)
+    # print(f"Generated: {output_csv_file_path}")
 
-    print(updated_data_no_data_dynamic)
-
-    # Save as JSON file
-    with open(output_file_path, "w") as json_file:
-        json.dump(updated_data, json_file)
-    print(f"Generated: {output_file_path}")
 
     # Plot histograms
     groups = {
-        "Cohort 1 Control": cohort_1_control_clusters,
-        "Cohort 1 ADHD": cohort_1_adhd_clusters,
-        "Cohort 2 Control": cohort_2_control_clusters,
-        "Cohort 2 ADHD": cohort_2_adhd_clusters,
+        "Control (TR=2)": cohort_1_control_clusters,
+        "ADHD (TR=2)": cohort_1_adhd_clusters,
+        "Control (TR=2.5)": cohort_2_control_clusters,
+        "ADHD (TR=2.5)": cohort_2_adhd_clusters,
     }
 
-    for group_name, data in groups.items():
-        plt.figure()
-        plt.hist(data, bins=np.arange(min(data), max(data) + 2) - 0.5, alpha=0.7, edgecolor="black")
-        plt.xlabel("Cluster Values")
-        plt.ylabel("Frequency")
-        plt.title(f"Histogram of {group_name}")
-        plt.grid(axis="y", alpha=0.75)
-        plt.xticks(np.arange(min(data), max(data) + 1, 1))  # Ensure whole number ticks
-        plt.tight_layout()
-        image_name = f"adhd/{pipeline}/{group_name}.png"
-        image_name = image_name.replace(" ", "")
-        plt.savefig(image_name, dpi=250)
-        plt.close()
-        print(f"Generated {image_name}")
+    # print(groups)
 
+    # Plotting figures as requested
+    plot_group_histogram(pipeline, groups, ['Control (TR=2)', 'Control (TR=2)'],
+                         f"Histogram of Control groups ({pipeline.upper()})", "Control")
+    plot_group_histogram(pipeline, groups, ['ADHD (TR=2)', 'ADHD (TR=2.5)'],
+                         f"Histogram of ADHD groups ({pipeline.upper()})", "ADHD")
     # # Perform t-tests
     # t_values_c1, p_values_c1 = stats.ttest_ind(cohort_1_control_clusters, cohort_1_adhd_clusters, equal_var=False)
     # t_values_c2, p_values_c2 = stats.ttest_ind(cohort_2_control_clusters, cohort_2_adhd_clusters, equal_var=False)
@@ -393,6 +474,63 @@ def cluster_generation(datasets, groups, mds_directory, cluster_directory):
         print(f"Generated clusters on {cluster_directory[group]} in {spent_time:.4f} seconds\n")
 
 
+def get_mds_data(pipeline, json_file_path):
+    output_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.json"
+    with open(json_file_path, 'r') as f:
+        subject_data = json.load(f)
+
+    # Separate subjects into cohorts based on TR values
+    cohort_1_subjects = {key: data for key, data in subject_data.items() if data["TR"] == 2}
+    cohort_2_subjects = {key: data for key, data in subject_data.items() if data["TR"] == 2.5}
+
+    # Separate subjects into control and ADHD based on "Group" value
+    cohort_1_control = {key: data for key, data in cohort_1_subjects.items() if data["Group"] == "adhdcontrols"}
+    cohort_1_adhd = {key: data for key, data in cohort_1_subjects.items() if data["Group"] != "adhdcontrols"}
+
+    cohort_2_control = {key: data for key, data in cohort_2_subjects.items() if data["Group"] == "adhdcontrols"}
+    cohort_2_adhd = {key: data for key, data in cohort_2_subjects.items() if data["Group"] != "adhdcontrols"}
+
+
+    # Convert to numpy arrays
+    cohort_1_control_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_1_control.items()]
+    cohort_1_adhd_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_1_adhd.items()]
+    cohort_2_control_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_2_control.items()]
+    cohort_2_adhd_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_2_adhd.items()]
+
+    cohort_1_control_areas = [shoelace_formula(mds) for mds in cohort_1_control_mdss]
+    cohort_1_adhd_areas = [shoelace_formula(mds) for mds in cohort_1_adhd_mdss]
+    cohort_2_control_areas = [shoelace_formula(mds) for mds in cohort_2_control_mdss]
+    cohort_2_adhd_areas = [shoelace_formula(mds) for mds in cohort_2_adhd_mdss]
+
+    # Perform t-tests
+    t_values_c1, p_values_c1 = stats.ttest_ind(cohort_1_control_areas, cohort_1_adhd_areas, equal_var=False)
+    t_values_c2, p_values_c2 = stats.ttest_ind(cohort_2_control_areas, cohort_2_adhd_areas, equal_var=False)
+
+    # Calculate differences between control and ADHD for each cohort
+    t_values_X1, p_values_X1 = stats.ttest_ind(cohort_1_control_areas, cohort_2_control_areas, equal_var=False)
+    t_values_X2, p_values_X2 = stats.ttest_ind(cohort_1_adhd_areas, cohort_2_adhd_areas, equal_var=False)
+
+    print(f"Pipeline: {pipeline}")
+    print(f"Cohort 1 (Control - ADHD): ({t_values_c1:.4f}, {p_values_c1:.4f})")
+    print(f"Cohort 2 (Control - ADHD): ({t_values_c2:.4f}, {p_values_c2:.4f})")
+
+    print(f"Control (Cohort 1 - Cohort 2): ({t_values_X1:.4f}, {p_values_X1:.4f})")
+    print(f"ADHD (Cohort 1 - Cohort 2): ({t_values_X2:.4f}, {p_values_X2:.4f})")
+
+    # print(len(cohort_1_control_mdss), len(cohort_1_adhd_mdss))
+    # print(len(cohort_2_control_mdss), len(cohort_2_adhd_mdss))
+
+    # cohort_1_control_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_1_control_mdss]
+    # cohort_1_adhd_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_1_adhd_mdss]
+    # cohort_2_control_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_2_control_mdss]
+    # cohort_2_adhd_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_2_adhd_mdss]
+
+    # print(len(cohort_1_control_mdss_avg), cohort_1_control_mdss_avg[0])
+
+
+
+
+
 def run_pipeline(datasets, pipeline, distance_method):
     groups = ["adhd2", "adhd1", "adhd3", "adhdcontrols"]
     cluster_tr = f"adhd/{pipeline}/cluster_tr.json"
@@ -411,7 +549,8 @@ def run_pipeline(datasets, pipeline, distance_method):
     # Generate cluster info and tr json
     # cluster_analysis(pipeline, cluster_tr)
 
-    perform_t_test(pipeline, cluster_tr)
+    # perform_t_test(pipeline, cluster_tr)
+    get_mds_data(pipeline, cluster_tr)
 
 
 if __name__ == "__main__":
@@ -435,4 +574,4 @@ if __name__ == "__main__":
     }
 
     run_pipeline(datasets, "tda", "ws")
-    # run_pipeline(datasets, "traditional", "ws")
+    run_pipeline(datasets, "traditional", "ws")

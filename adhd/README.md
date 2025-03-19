@@ -1,4 +1,15 @@
 # ADHD Data
+- ADHD
+```shell
+{'cohort1-control': {'mean': 2.2034, 'std_error': 0.0377}, 'cohort1-adhd': {'mean': 2.1684, 'std_error': 0.0277}, 'cohort2-control': {'mean': 2.4444, 'std_error': 0.1062}, 'cohort2-adhd': {'mean': 2.2353, 'std_error': 0.0666}}
+
+```
+
+- Traditional
+```shell
+{'cohort1-control': {'mean': 11.1448, 'std_error': 0.1706}, 'cohort1-adhd': {'mean': 10.7509, 'std_error': 0.1835}, 'cohort2-control': {'mean': 7.3333, 'std_error': 0.2461}, 'cohort2-adhd': {'mean': 6.4412, 'std_error': 0.3552}}
+```
+
 - Time
 ```shell
 Distance matrices for /media/shovon/Multimedia/dfc/adhd/data/DFC_adhd_filt_adhd2.mat are generated in 829.2459 seconds - 13 subjects

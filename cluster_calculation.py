@@ -217,7 +217,7 @@ def show_pairwise_analysis(file_path):
               end=" & ")
         print(dfc_645_2500_subjects, end=" & ")
         print(f"{(dfc_645_2500_subjects / total_subjects) * 100:.3f}\\%",
-              end=" \\\\ \hline \n")
+              end=" \\\\ \\hline \n")
 
 
 @timer
