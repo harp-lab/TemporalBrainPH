@@ -2,11 +2,11 @@ from sklearn.manifold import MDS
 import matplotlib.pyplot as plt
 
 
-def get_mds(dissimilarity_matrix, is_euclidean=None):
+def get_mds(dissimilarity_matrix, is_euclidean=None, components=2):
     if is_euclidean:
-        embedding = MDS(n_components=2, random_state=6)
+        embedding = MDS(n_components=components, random_state=6)
     else:
-        embedding = MDS(n_components=2, dissimilarity="precomputed",
+        embedding = MDS(n_components=components, dissimilarity="precomputed",
                         random_state=6)
     return embedding.fit_transform(dissimilarity_matrix)
 

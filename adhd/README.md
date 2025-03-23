@@ -1,4 +1,68 @@
 # ADHD Data
+
+### Extending shoelace to 3d from wiki
+```shell
+Pipeline: tda, Components: 3
+Cohort 1 (Control - ADHD): (-0.2263, 0.8211)
+Cohort 2 (Control - ADHD): (1.8328, 0.0688)
+
+```
+
+### Using convex hull
+```shell
+Pipeline: tda, Components: 3
+Cohort 1 (Control - ADHD): (-1.8494, 0.0650)
+Cohort 2 (Control - ADHD): (2.8759, 0.0045)
+
+Pipeline: tda, Components: 4
+Cohort 1 (Control - ADHD): (-1.5053, 0.1329)
+Cohort 2 (Control - ADHD): (3.3181, 0.0011)
+
+Pipeline: tda, Components: 5
+Cohort 1 (Control - ADHD): (-1.4015, 0.1617)
+Cohort 2 (Control - ADHD): (3.8338, 0.0002)
+
+```
+
+### Using PCA and SVD
+- MDS 3 Components
+```shell
+Pipeline: tda
+Cohort 1 (Control - ADHD): (-0.7218, 0.4707)
+Cohort 2 (Control - ADHD): (2.5598, 0.0114)
+```
+- MDS 4 Components
+```shell
+Pipeline: tda
+Cohort 1 (Control - ADHD): (-0.3675, 0.7134)
+Cohort 2 (Control - ADHD): (1.7837, 0.0763)
+```
+- MDS 5:
+```shell
+Pipeline: tda
+Cohort 1 (Control - ADHD): (-0.3955, 0.6926)
+Cohort 2 (Control - ADHD): (1.1608, 0.2474)
+```
+- MDS 6:
+```shell
+Pipeline: tda
+Cohort 1 (Control - ADHD): (-0.5170, 0.6053)
+Cohort 2 (Control - ADHD): (1.6816, 0.0946)
+```
+- MDS 7:
+```shell
+Pipeline: tda
+Cohort 1 (Control - ADHD): (-0.4432, 0.6578)
+Cohort 2 (Control - ADHD): (1.6140, 0.1083)
+```
+- MDS 8:
+```shell
+Pipeline: tda
+Cohort 1 (Control - ADHD): (-0.3842, 0.7010)
+Cohort 2 (Control - ADHD): (1.5346, 0.1269)
+
+```
+
 - ADHD
 ```shell
 {'cohort1-control': {'mean': 2.2034, 'std_error': 0.0377}, 'cohort1-adhd': {'mean': 2.1684, 'std_error': 0.0277}, 'cohort2-control': {'mean': 2.4444, 'std_error': 0.1062}, 'cohort2-adhd': {'mean': 2.2353, 'std_error': 0.0666}}

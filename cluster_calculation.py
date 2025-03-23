@@ -95,7 +95,7 @@ def generate_kmeans_clusters_adhd(output_directory, mds_path, total_subjects, gr
     cluster_info = {}
 
     for subject_number in range(1, total_subjects + 1):
-        print(f"Generating cluster for Subject: {subject_number}")
+        # print(f"Generating cluster for Subject: {subject_number}")
         datafile = os.path.join(mds_path, f"subject_{subject_number}.json")
         dataset = get_dataset(datafile)
 
@@ -122,7 +122,7 @@ def generate_kmeans_clusters_adhd(output_directory, mds_path, total_subjects, gr
         plt.savefig(image_name, dpi=250)
         plt.close(fig)  # Explicitly close the figure to free memory
 
-        print(f"Generated cluster for Subject {subject_number}: {image_name}\n")
+        # print(f"Generated cluster for Subject {subject_number}: {image_name}\n")
 
     # Save cluster information
     with open(os.path.join(output_directory, "clusters.json"), "w") as json_file:

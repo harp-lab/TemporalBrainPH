@@ -10,10 +10,16 @@ import pandas as pd
 import json
 import copy
 import csv
+import math
 from scipy import stats
 import matplotlib.pyplot as plt
+from scipy.spatial import ConvexHull
 from distance_calculation import generate_mds
 from cluster_calculation import generate_kmeans_clusters_adhd
+
+def tetrahedron_volume(a, b, c, d):
+    """Calculate the volume of a single tetrahedron given vertices a, b, c, d."""
+    return np.abs(np.dot(np.cross(b - a, c - a), d - a)) / 6
 
 def shoelace_formula(vertices):
     """
@@ -27,13 +33,50 @@ def shoelace_formula(vertices):
         The area of the polygon.
     """
     n = len(vertices)
-    area = 0.0
-    for i in range(n):
-        j = (i + 1) % n  # Next vertex, wraps around to the first vertex
-        area += vertices[i][0] * vertices[j][1]
-        area -= vertices[j][0] * vertices[i][1]
-    area = abs(area) / 2.0
-    return area
+    dim = len(vertices[0])
+    vertices = np.array(vertices)
+    if dim == 2:
+        area = 0.0
+        for i in range(n):
+            j = (i + 1) % n  # Next vertex, wraps around to the first vertex
+            area += vertices[i][0] * vertices[j][1]
+            area -= vertices[j][0] * vertices[i][1]
+        area = abs(area) / 2.0
+        return area
+    elif dim == 3:
+        vector_area = np.zeros(3)
+        for i in range(1, n - 1):
+            vector_area += np.cross(vertices[i], vertices[(i - 1)])
+        return 0.5 * np.linalg.norm(vector_area)
+    elif dim > 3:
+        hull = ConvexHull(vertices)
+        return hull.volume
+        # volume = 0.0
+        # origin = np.zeros(3)
+        # for i in range(1, n - 1):
+        #     volume += np.dot(vertices[i] - origin, np.cross(vertices[i + 1] - origin, vertices[0] - origin))
+        # return np.abs(volume) / 6.0
+        # volume = 0.0
+        # for i in range(1, n - 1):
+        #     volume += np.dot(vertices[0], np.cross(vertices[i], vertices[i + 1]))
+        # return np.abs(volume) / 6.0
+        # Select any vertex as the base point (e.g., the first vertex)
+        # base_point = vertices[0]
+        #
+        # # Create a matrix of relative positions to the base point
+        # relative_matrix = vertices[1:] - base_point  # Remove the base vertex
+        #
+        # # The generalized volume or measure is related to the determinant
+        # # of the relative position matrix. This handles n-D polygons.
+        # volume = abs(np.linalg.det(relative_matrix)) / math.factorial(dim - 1)
+        # return volume
+
+        # # Calculate volume by forming tetrahedra with origin
+        # origin = vertices[0]
+        # volume = 0.0
+        # for i in range(1, n - 2):
+        #     volume += tetrahedron_volume(origin, vertices[i], vertices[i + 1], vertices[i + 2])
+        # return volume
 
 def get_barcodes_distance(dgm_1, dgm_2, distance_method='ws'):
     """Computes the Wasserstein or Bottleneck distance between two persistence diagrams."""
@@ -202,13 +245,13 @@ def compute_distance_matrix(filepath, distance_directory, distance_method='ws', 
     print("\n\n")
 
 
-def cluster_analysis(pipeline, output_file):
+def cluster_analysis(pipeline, output_file, components=2):
     # Define paths to cluster JSON files
     cluster_files = {
-        "adhd1": f"adhd/{pipeline}/cluster/adhd1/clusters.json",
-        "adhd2": f"adhd/{pipeline}/cluster/adhd2/clusters.json",
-        "adhd3": f"adhd/{pipeline}/cluster/adhd3/clusters.json",
-        "adhdcontrols": f"adhd/{pipeline}/cluster/adhdcontrols/clusters.json",
+        "adhd1": f"adhd/{pipeline}/cluster_{components}/adhd1/clusters.json",
+        "adhd2": f"adhd/{pipeline}/cluster_{components}/adhd2/clusters.json",
+        "adhd3": f"adhd/{pipeline}/cluster_{components}/adhd3/clusters.json",
+        "adhdcontrols": f"adhd/{pipeline}/cluster_{components}/adhdcontrols/clusters.json",
     }
 
     # Define paths to CSV files
@@ -230,7 +273,7 @@ def cluster_analysis(pipeline, output_file):
     }
 
     # Define base directory for MDS data
-    mds_base_path = f"adhd/{pipeline}/mds"
+    mds_base_path = f"adhd/{pipeline}/mds_{components}"
 
     # Final dictionary to store subject to TR mapping
     subject_tr_mapping = {}
@@ -274,7 +317,7 @@ def cluster_analysis(pipeline, output_file):
                                                                "Subject_ID": subject_id,
                                                                "Group": group, "MDS": mds_data}
                 count_subject += 1
-        print(f"{group} has {count_subject} subjects with TR 2 or 2.5")
+        # print(f"{group} has {count_subject} subjects with TR 2 or 2.5")
 
     # Output final mapping
     with open(output_file, "w") as f_out:
@@ -282,11 +325,26 @@ def cluster_analysis(pipeline, output_file):
     print(f"Generated subject, cluster, TR mapping: {output_file}")
 
 
+def plot_avg_mds(pipeline, control_averaged_mdss, adhd_averaged_mdss, group_names, title, tr):
+    plt.figure(figsize=(10, 6))
+    plt.scatter(*zip(*control_averaged_mdss), color='blue', label=group_names[0], alpha=0.7)
+    plt.scatter(*zip(*adhd_averaged_mdss), color='red', label=group_names[1], alpha=0.7)
+    plt.title(title)
+    plt.xlabel('MDS Dimension 1')
+    plt.ylabel('MDS Dimension 2')
+    plt.legend()
+    plt.grid(True)
+    image_name = f"adhd/{pipeline}/{pipeline}_{tr}.png"
+    image_name = image_name.replace(" ", "")
+    plt.savefig(image_name, dpi=250)
+    plt.close()
+    print(f"Generated {image_name}")
+
+
 def plot_group_histogram(pipeline, groups, group_names, title, group_type):
     plt.figure(figsize=(10, 6))
     all_values = np.concatenate([groups[name] for name in group_names])
     bins = np.arange(1, 17, 1)
-
 
     # Determine the width of each bin based on the number of groups
     total_width = 0.8  # total width taken by bars in one bin space
@@ -316,6 +374,7 @@ def plot_group_histogram(pipeline, groups, group_names, title, group_type):
     plt.savefig(image_name, dpi=250)
     plt.close()
     print(f"Generated {image_name}")
+
 
 def perform_t_test(pipeline, json_file_path):
     output_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.json"
@@ -396,7 +455,6 @@ def perform_t_test(pipeline, json_file_path):
     #         writer.writerow(row)
     # print(f"Generated: {output_csv_file_path}")
 
-
     # Plot histograms
     groups = {
         "Control (TR=2)": cohort_1_control_clusters,
@@ -451,31 +509,31 @@ def distance_generation(datasets, groups, pipeline, distance_directory, distance
         compute_distance_matrix(datasets[group]["filepath"], distance_directory[group], distance_method, pipeline)
 
 
-def mds_generation(datasets, groups, distance_directory, mds_directory):
+def mds_generation(datasets, groups, distance_directory, mds_directory, components=2):
     for group in groups:
         start_time = time()
-        print(
-            f"Started processing {distance_directory[group]} containing {datasets[group]['total_subjects']} subjects.")
-        generate_mds(mds_directory[group], distance_directory[group], datasets[group]['total_subjects'])
+        # print(
+        #     f"Started processing {distance_directory[group]} containing {datasets[group]['total_subjects']} subjects.")
+        generate_mds(mds_directory[group], distance_directory[group], datasets[group]['total_subjects'], components=components)
         end_time = time()
         spent_time = end_time - start_time
-        print(f"Generated MDS on {mds_directory[group]} in {spent_time:.4f} seconds\n")
+        # print(f"Generated MDS on {mds_directory[group]} in {spent_time:.4f} seconds\n")
 
 
-def cluster_generation(datasets, groups, mds_directory, cluster_directory):
+def cluster_generation(datasets, groups, mds_directory, cluster_directory, components=2):
     for group in groups:
         start_time = time()
-        print(f"Started clustering {mds_directory[group]} containing {datasets[group]['total_subjects']} subjects.")
+        # print(f"Started clustering {mds_directory[group]} containing {datasets[group]['total_subjects']} subjects.")
         clusters = generate_kmeans_clusters_adhd(cluster_directory[group], mds_directory[group],
                                                  datasets[group]['total_subjects'], group)
         end_time = time()
         spent_time = end_time - start_time
-        print(f"Clusters: {clusters}")
-        print(f"Generated clusters on {cluster_directory[group]} in {spent_time:.4f} seconds\n")
+        # print(f"Clusters: {clusters}")
+        # print(f"Generated clusters on {cluster_directory[group]} in {spent_time:.4f} seconds\n")
 
 
-def get_mds_data(pipeline, json_file_path):
-    output_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.json"
+def get_mds_data(pipeline, json_file_path, components=2):
+    output_file_path = f"adhd/{pipeline}/{pipeline}_{components}_cohorts.json"
     with open(json_file_path, 'r') as f:
         subject_data = json.load(f)
 
@@ -490,12 +548,26 @@ def get_mds_data(pipeline, json_file_path):
     cohort_2_control = {key: data for key, data in cohort_2_subjects.items() if data["Group"] == "adhdcontrols"}
     cohort_2_adhd = {key: data for key, data in cohort_2_subjects.items() if data["Group"] != "adhdcontrols"}
 
-
     # Convert to numpy arrays
     cohort_1_control_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_1_control.items()]
     cohort_1_adhd_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_1_adhd.items()]
     cohort_2_control_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_2_control.items()]
     cohort_2_adhd_mdss = [np.array(json.loads(data["MDS"])) for key, data in cohort_2_adhd.items()]
+
+    # cohort_1_control_averaged_mdss = [np.mean(np.array(json.loads(data["MDS"])), axis=0)
+    #                                   for key, data in cohort_1_control.items()]
+    # cohort_1_adhd_averaged_mdss = [np.mean(np.array(json.loads(data["MDS"])), axis=0)
+    #                                for key, data in cohort_1_adhd.items()]
+    # cohort_2_control_averaged_mdss = [np.mean(np.array(json.loads(data["MDS"])), axis=0)
+    #                                   for key, data in cohort_2_control.items()]
+    # cohort_2_adhd_averaged_mdss = [np.mean(np.array(json.loads(data["MDS"])), axis=0)
+    #                                for key, data in cohort_2_adhd.items()]
+    #
+    # # Plotting figures as requested
+    # plot_avg_mds(pipeline, cohort_1_control_averaged_mdss, cohort_1_adhd_averaged_mdss, ['Control', 'ADHD'],
+    #                      f"MDS visualization of TR = 2 ({pipeline.upper()})", "TR = 2")
+    # plot_avg_mds(pipeline, cohort_2_control_averaged_mdss, cohort_2_adhd_averaged_mdss, ['Control', 'ADHD'],
+    #                      f"MDS visualization of TR = 2.5 ({pipeline.upper()})", "TR = 2.5")
 
     cohort_1_control_areas = [shoelace_formula(mds) for mds in cohort_1_control_mdss]
     cohort_1_adhd_areas = [shoelace_formula(mds) for mds in cohort_1_adhd_mdss]
@@ -505,52 +577,40 @@ def get_mds_data(pipeline, json_file_path):
     # Perform t-tests
     t_values_c1, p_values_c1 = stats.ttest_ind(cohort_1_control_areas, cohort_1_adhd_areas, equal_var=False)
     t_values_c2, p_values_c2 = stats.ttest_ind(cohort_2_control_areas, cohort_2_adhd_areas, equal_var=False)
-
-    # Calculate differences between control and ADHD for each cohort
-    t_values_X1, p_values_X1 = stats.ttest_ind(cohort_1_control_areas, cohort_2_control_areas, equal_var=False)
-    t_values_X2, p_values_X2 = stats.ttest_ind(cohort_1_adhd_areas, cohort_2_adhd_areas, equal_var=False)
-
-    print(f"Pipeline: {pipeline}")
+    #
+    # # Calculate differences between control and ADHD for each cohort
+    # t_values_X1, p_values_X1 = stats.ttest_ind(cohort_1_control_areas, cohort_2_control_areas, equal_var=False)
+    # t_values_X2, p_values_X2 = stats.ttest_ind(cohort_1_adhd_areas, cohort_2_adhd_areas, equal_var=False)
+    #
+    print(f"Pipeline: {pipeline}, Components: {components}")
     print(f"Cohort 1 (Control - ADHD): ({t_values_c1:.4f}, {p_values_c1:.4f})")
     print(f"Cohort 2 (Control - ADHD): ({t_values_c2:.4f}, {p_values_c2:.4f})")
-
-    print(f"Control (Cohort 1 - Cohort 2): ({t_values_X1:.4f}, {p_values_X1:.4f})")
-    print(f"ADHD (Cohort 1 - Cohort 2): ({t_values_X2:.4f}, {p_values_X2:.4f})")
-
-    # print(len(cohort_1_control_mdss), len(cohort_1_adhd_mdss))
-    # print(len(cohort_2_control_mdss), len(cohort_2_adhd_mdss))
-
-    # cohort_1_control_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_1_control_mdss]
-    # cohort_1_adhd_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_1_adhd_mdss]
-    # cohort_2_control_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_2_control_mdss]
-    # cohort_2_adhd_mdss_avg = [np.mean(ar, axis=0) for ar in cohort_2_adhd_mdss]
-
-    # print(len(cohort_1_control_mdss_avg), cohort_1_control_mdss_avg[0])
+    #
+    # print(f"Control (Cohort 1 - Cohort 2): ({t_values_X1:.4f}, {p_values_X1:.4f})")
+    # print(f"ADHD (Cohort 1 - Cohort 2): ({t_values_X2:.4f}, {p_values_X2:.4f})")
 
 
 
-
-
-def run_pipeline(datasets, pipeline, distance_method):
+def run_pipeline(datasets, pipeline, distance_method, components=2):
     groups = ["adhd2", "adhd1", "adhd3", "adhdcontrols"]
-    cluster_tr = f"adhd/{pipeline}/cluster_tr.json"
+    cluster_tr = f"adhd/{pipeline}/cluster_{components}_tr.json"
     distance_directory = {}
     mds_directory = {}
     cluster_directory = {}
     for group in groups:
         distance_directory[group] = f"adhd/{pipeline}/distance_matrix/{group}/"
-        mds_directory[group] = f"adhd/{pipeline}/mds/{group}/"
-        cluster_directory[group] = f"adhd/{pipeline}/cluster/{group}/"
+        mds_directory[group] = f"adhd/{pipeline}/mds_{components}/{group}/"
+        cluster_directory[group] = f"adhd/{pipeline}/cluster_{components}/{group}/"
 
     # distance_generation(datasets, groups, pipeline, distance_directory, distance_method)
-    # mds_generation(datasets, groups, distance_directory, mds_directory)
-    # cluster_generation(datasets, groups, mds_directory, cluster_directory)
+    mds_generation(datasets, groups, distance_directory, mds_directory, components=components)
+    cluster_generation(datasets, groups, mds_directory, cluster_directory)
 
     # Generate cluster info and tr json
-    # cluster_analysis(pipeline, cluster_tr)
+    cluster_analysis(pipeline, cluster_tr, components=components)
 
     # perform_t_test(pipeline, cluster_tr)
-    get_mds_data(pipeline, cluster_tr)
+    get_mds_data(pipeline, cluster_tr, components=components)
 
 
 if __name__ == "__main__":
@@ -572,6 +632,16 @@ if __name__ == "__main__":
             "filepath": "/media/shovon/Multimedia/dfc/adhd/data/DFC_adhd_filt_controls.mat"
         }
     }
+    # # 2D Example
+    # vertices_2d = [(0, 0), (4, 0), (4, 3), (0, 3)]
+    # print(shoelace_formula(vertices_2d))  # Output: 12.0 (Area of a rectangle)
+    # #
+    # # 3D Example (a tetrahedron's volume)
+    # vertices_3d = [(0, 0, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1)]
+    # print(shoelace_formula(vertices_3d))  # Output: 0.1666... (1/6, the tetrahedron's volume)
+    # #
+    # vertices = [(0, 0, 0), (4, 0, 1), (4, 3, 0), (0, 3, -1)]
+    # print(shoelace_formula(vertices))
 
-    run_pipeline(datasets, "tda", "ws")
-    run_pipeline(datasets, "traditional", "ws")
+    run_pipeline(datasets, "tda", "ws", components=4)
+    # run_pipeline(datasets, "traditional", "ws", )
