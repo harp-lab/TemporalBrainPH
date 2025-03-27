@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial import ConvexHull
 from distance_calculation import generate_mds
 from cluster_calculation import generate_kmeans_clusters_adhd
-
+import matplotlib.ticker as ticker
 def tetrahedron_volume(a, b, c, d):
     """Calculate the volume of a single tetrahedron given vertices a, b, c, d."""
     return np.abs(np.dot(np.cross(b - a, c - a), d - a)) / 6
@@ -342,7 +342,7 @@ def plot_avg_mds(pipeline, control_averaged_mdss, adhd_averaged_mdss, group_name
 
 
 def plot_group_histogram(pipeline, groups, group_names, title, group_type):
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(8, 6))
     all_values = np.concatenate([groups[name] for name in group_names])
     bins = np.arange(1, 17, 1)
 
@@ -360,25 +360,31 @@ def plot_group_histogram(pipeline, groups, group_names, title, group_type):
         offset = (idx - (len(group_names) - 1) / 2) * width
         plt.bar(bin_edges[:-1] + offset, percentages, width=width, alpha=0.7, label=group_name, edgecolor='black')
 
-    plt.xlabel("# of Clusters")
-    plt.ylabel("Percentage (%)")
-    plt.title(title)
+    plt.xlabel("# of Clusters", fontsize=18)
+    plt.ylabel("Percentage (%)", fontsize=18)
+    # plt.title(title)
     x_ticks = np.arange(1, 17, 1)
     # print(x_ticks)
-    plt.xticks(x_ticks, [f"{int(x):d}" for x in x_ticks])
+    plt.xticks(x_ticks, [f"{int(x):d}" for x in x_ticks], fontsize=18)
     plt.legend()
     plt.grid(axis="y", alpha=0.75)
     plt.tight_layout()
     image_name = f"adhd/{pipeline}/{pipeline}_{group_type}.png"
     image_name = image_name.replace(" ", "")
-    plt.savefig(image_name, dpi=250)
+    plt.xticks(x_ticks, [f"{int(x):d}" for x in x_ticks])
+    plt.yticks(np.arange(0, 101, 10), fontsize=18)
+    plt.ylim(0, 100)
+    plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    plt.legend(fontsize=18)
+
+    plt.savefig(image_name, dpi=250, bbox_inches="tight")
     plt.close()
     print(f"Generated {image_name}")
 
 
-def perform_t_test(pipeline, json_file_path):
-    output_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.json"
-    output_csv_file_path = f"adhd/{pipeline}/{pipeline}_cohorts.csv"
+def perform_t_test(pipeline, json_file_path, components=2):
+    output_file_path = f"adhd/{pipeline}/{pipeline}_cohorts_{components}.json"
+    output_csv_file_path = f"adhd/{pipeline}/{pipeline}_cohorts_{components}.csv"
     with open(json_file_path, 'r') as f:
         subject_data = json.load(f)
 
@@ -422,8 +428,8 @@ def perform_t_test(pipeline, json_file_path):
             "data": cohort_2_adhd_clusters.tolist()
         }
     }
-    updated_data_no_data_dynamic = copy.deepcopy(updated_data)
-
+    # updated_data_no_data_dynamic = copy.deepcopy(updated_data)
+    #
     # # Remove "data" key from each sub-dictionary
     # for key in updated_data_no_data_dynamic:
     #     updated_data_no_data_dynamic[key].pop("data", None)
@@ -466,7 +472,7 @@ def perform_t_test(pipeline, json_file_path):
     # print(groups)
 
     # Plotting figures as requested
-    plot_group_histogram(pipeline, groups, ['Control (TR=2)', 'Control (TR=2)'],
+    plot_group_histogram(pipeline, groups, ['Control (TR=2)', 'Control (TR=2.5)'],
                          f"Histogram of Control groups ({pipeline.upper()})", "Control")
     plot_group_histogram(pipeline, groups, ['ADHD (TR=2)', 'ADHD (TR=2.5)'],
                          f"Histogram of ADHD groups ({pipeline.upper()})", "ADHD")
@@ -603,14 +609,14 @@ def run_pipeline(datasets, pipeline, distance_method, components=2):
         cluster_directory[group] = f"adhd/{pipeline}/cluster_{components}/{group}/"
 
     # distance_generation(datasets, groups, pipeline, distance_directory, distance_method)
-    mds_generation(datasets, groups, distance_directory, mds_directory, components=components)
-    cluster_generation(datasets, groups, mds_directory, cluster_directory)
+    # mds_generation(datasets, groups, distance_directory, mds_directory, components=components)
+    # cluster_generation(datasets, groups, mds_directory, cluster_directory)
+    #
+    # # Generate cluster info and tr json
+    # cluster_analysis(pipeline, cluster_tr, components=components)
 
-    # Generate cluster info and tr json
-    cluster_analysis(pipeline, cluster_tr, components=components)
-
-    # perform_t_test(pipeline, cluster_tr)
-    get_mds_data(pipeline, cluster_tr, components=components)
+    perform_t_test(pipeline, cluster_tr, components=components)
+    # get_mds_data(pipeline, cluster_tr, components=components)
 
 
 if __name__ == "__main__":
@@ -643,5 +649,5 @@ if __name__ == "__main__":
     # vertices = [(0, 0, 0), (4, 0, 1), (4, 3, 0), (0, 3, -1)]
     # print(shoelace_formula(vertices))
 
-    run_pipeline(datasets, "tda", "ws", components=4)
-    # run_pipeline(datasets, "traditional", "ws", )
+    run_pipeline(datasets, "tda", "ws", components=2)
+    run_pipeline(datasets, "traditional", "ws", components=2)
